@@ -2,7 +2,8 @@
     
     
     
-    {
+    
+        {
         "id": 1,
         "category": "coffee",
         "title": {
@@ -20,8 +21,41 @@
         "hours": {
             "zh": "週一至週日 10:00–18:00",
             "en": "Mon-Sun 10:00–18:00",
-            "ja": "月曜-日曜 10:00–18:00",
+            "ja": "月-日 10:00–18:00",
             "ko": "월~일 10:00–18:00"
+        },
+        "description": {
+            "zh": "專注於公平貿易的精品咖啡，座落於充滿歷史氛圍的大稻埕。",
+            "en": "Specialty fair-trade coffee located in the historic Dadaocheng area.",
+            "ja": "歴史的な雰囲気の大稲埕にある、フェアトレードのスペシャルティコーヒー店。",
+            "ko": "역사적인 분위기의 다다오청에 위치한 공정무역 스페셜티 커피 전문점."
+        }
+    },
+    {
+        "id": 52,
+        "category": "craft",
+        "title": { "zh": "FunLAB 好玩製物所", "en": "FunLAB", "ja": "FunLAB", "ko": "FunLAB" },
+        "address": { "zh": "台北市大同區迪化街一段192號2F", "en": "2F, No. 192, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段192号2階", "ko": "타이베이시 다퉁구 디화제 1단 192호 2층" },
+        "hours": { "zh": "10:00–18:00", "en": "10:00–18:00", "ja": "10:00–18:00", "ko": "10:00–18:00" },
+        "description": {
+            "zh": "作為旅遊科技平台的實體基地，提供在地DIY體驗（如茄芷袋手作），並串聯周邊文創與在地名店。",
+            "en": "A physical hub for a travel tech platform, offering local DIY experiences (like Jia-Zhi bag making) and connecting with nearby cultural shops.",
+            "ja": "旅行テクノロジープラットフォームの拠点として、地元のDIY体験（茄芷袋の手作りなど）を提供し、周辺の文化クリエイティブショップと連携しています。",
+            "ko": "여행 기술 플랫폼의 거점으로서 현지 DIY 체험(가지 가방 만들기 등)을 제공하며 주변의 문화 창작 가게들과 연결합니다."
+        }
+    },
+     {
+      
+       "id": 22,
+        "category": "craft",
+        "title": { "zh": "22STUDIO", "en": "22STUDIO", "ja": "22STUDIO", "ko": "22STUDIO" },
+        "address": { "zh": "台北市大同區迪化街一段167號2樓", "en": "2F, No. 167, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段167号2階", "ko": "타이베이시 다퉁구 디화제 1단 167호 2층" },
+        "hours": { "zh": "週一至週六 11:00–18:00 (週日公休)", "en": "Mon-Sat 11:00–18:00 (Closed Sun)", "ja": "月-土 11:00–18:00 (日曜定休)", "ko": "월~토 11:00–18:00 (일요일 휴무)" },
+        "description": {
+            "zh": "以「水泥」為核心設計材質，將建築美學轉化為鐘錶、飾品與書寫工具。總部空間提供全系列商品銷售、售後維修保固，並不定時舉辦水泥工作坊。",
+            "en": "Focusing on concrete as a design material, transforming architectural aesthetics into watches, jewelry, and writing tools. The studio offers products, after-sales service, and workshops.",
+            "ja": "コンクリートを核とする素材として、建築美学を時計、アクセサリー、筆記具に昇華。本社では全商品の販売、アフターサービス、ワークショップを開催。",
+            "ko": "콘크리트를 핵심 디자인 소재로 사용하여 건축적 미학을 시계, 액세서리, 필기구로 변환합니다. 본사 공간에서는 제품 판매, AS 및 시멘트 워크숍을 제공합니다."
         }
     },
     {
@@ -292,20 +326,15 @@
         "address": { "zh": "台北市大同區重慶北路二段64巷24號", "en": "No. 24, Ln. 64, Sec. 2, Chongqing N. Rd., Datong Dist., Taipei", "ja": "台北市大同区重慶北路二段64巷24号", "ko": "타이베이시 다퉁구 충칭북로 2단 64항 24호" },
         "hours": { "zh": "週一、三至六 12:00–21:00 / 週日 10:00–19:00 (週二公休)", "en": "Mon, Wed-Sat 12:00–21:00 / Sun 10:00–19:00 (Closed Tue)", "ja": "月・水-土 12:00–21:00 / 日 10:00–19:00 (火曜定休)", "ko": "월, 수~토 12:00–21:00 / 일 10:00–19:00 (화요일 휴무)" }
     },
-    {
-        "id": 21,
+        {
+
+        "id": 50,
         "category": "craft",
         "title": { "zh": "印花樂大稻埕店", "en": "In Blooom Dadaocheng", "ja": "印花楽 大稲埕店", "ko": "인블룸 다다오청점" },
         "address": { "zh": "台北市大同區民樂街28號", "en": "No. 28, Minle St., Datong Dist., Taipei", "ja": "台北市大同区民楽街28号", "ko": "타이베이시 다퉁구 민러제 28호" },
         "hours": { "zh": "週一至週日 09:30–19:00", "en": "Mon-Sun 09:30–19:00", "ja": "月-日 09:30–19:00", "ko": "월~일 09:30–19:00" }
     },
-    {
-        "id": 22,
-        "category": "craft",
-        "title": { "zh": "地衣荒物", "en": "Earthing Way", "ja": "地衣荒物", "ko": "디어황우" },
-        "address": { "zh": "台北市大同區民樂街34號", "en": "No. 34, Minle St., Datong Dist., Taipei", "ja": "台北市大同区民楽街34号", "ko": "타이베이시 다퉁구 민러제 34호" },
-        "hours": { "zh": "週三至週日 10:30–19:30", "en": "Wed-Sun 10:30–19:30", "ja": "水-日 10:30–19:30", "ko": "수~일 10:30–19:30" }
-    },
+   
     {
         "id": 23,
         "category": "craft",

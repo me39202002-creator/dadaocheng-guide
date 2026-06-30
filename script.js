@@ -98,6 +98,7 @@ function renderCards() {
         card.innerHTML = `
             <div class="shop-category">${uiTranslations.filters[shop.category][currentLang]}</div>
             <h3 class="shop-title">${shop.title[currentLang]}</h3>
+            <p class="shop-description">${shop.description ? shop.description[currentLang] : ''}</p>
             <div class="shop-info">
                 <span>📍</span>
                 <a href="${mapUrl}" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline; text-underline-offset: 4px;">
