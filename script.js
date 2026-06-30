@@ -92,9 +92,8 @@ function renderCards() {
         const card = document.createElement('div');
         card.className = 'shop-card';
         
-        // 建立 Google Maps 搜尋連結
-        const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(shop.address[currentLang])}`;
-
+        // 建立「店名」與「地址」加在一起丟給 Google Maps 搜尋
+        const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(shop.title[currentLang] + ' ' + shop.address[currentLang])}`;
         card.innerHTML = `
             <div class="shop-category">${uiTranslations.filters[shop.category][currentLang]}</div>
             <h3 class="shop-title">${shop.title[currentLang]}</h3>
