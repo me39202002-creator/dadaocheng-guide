@@ -4,31 +4,31 @@
     
     
         {
-        "id": 1,
+        "id": 6,
         "category": "coffee",
-        "title": {
-            "zh": "生態綠大稻埕門市 OKO café",
-            "en": "OKOGREEN Dadaocheng (OKO café)",
-            "ja": "エコグリーン 大稲埕店 OKO café",
-            "ko": "에코그린 다다오청점 OKO café"
+        "title": { 
+            "zh": "生態綠咖啡 OKO cafe", 
+            "en": "OKOGREEN Coffee (OKO cafe)", 
+            "ja": "エコグリーンコーヒー OKO cafe", 
+            "ko": "에코그린 커피 OKO cafe" 
         },
-        "address": {
-            "zh": "台北市大同區迪化街一段167號",
-            "en": "No. 167, Sec. 1, Dihua St., Datong Dist., Taipei City",
-            "ja": "台北市大同区迪化街一段167号",
-            "ko": "타이베이시 다퉁구 디화제 1단 167호"
+        "address": { 
+            "zh": "台北市大同區迪化街一段167號", 
+            "en": "No. 167, Sec. 1, Dihua St., Datong Dist., Taipei", 
+            "ja": "台北市大同区迪化街一段167号", 
+            "ko": "타이베이시 다퉁구 디화제 1단 167호" 
         },
-        "hours": {
-            "zh": "週一至週日 10:00–18:00",
-            "en": "Mon-Sun 10:00–18:00",
-            "ja": "月-日 10:00–18:00",
-            "ko": "월~일 10:00–18:00"
+        "hours": { 
+            "zh": "週一至週日 10:00–18:00", 
+            "en": "Mon-Sun 10:00–18:00", 
+            "ja": "月-日 10:00–18:00", 
+            "ko": "월~일 10:00–18:00" 
         },
         "description": {
-            "zh": "專注於公平貿易的精品咖啡，座落於充滿歷史氛圍的大稻埕。",
-            "en": "Specialty fair-trade coffee located in the historic Dadaocheng area.",
-            "ja": "歴史的な雰囲気の大稲埕にある、フェアトレードのスペシャルティコーヒー店。",
-            "ko": "역사적인 분위기의 다다오청에 위치한 공정무역 스페셜티 커피 전문점."
+            "zh": "推廣公平貿易的低碳咖啡店，透過透明供應鏈支持小農，並嚴格控管碳足跡，致力於永續生活與高品質咖啡體驗。",
+            "en": "A low-carbon coffee shop promoting fair trade, supporting smallholder farmers through a transparent supply chain, strictly controlling carbon footprints, and dedicating itself to sustainable living and high-quality coffee experiences.",
+            "ja": "フェアトレードを推進する低炭素コーヒーショップ。透明性のあるサプライチェーンを通じて小規模農家を支援し、カーボンフットプリントを厳格に管理しながら、持続可能な生活と高品質なコーヒー体験に取り組んでいます。",
+            "ko": "공정무역을 장려하는 저탄소 커피숍. 투명한 공급망을 통해 소규모 농가를 지원하고 탄소 발자국을 엄격하게 관리하며, 지속 가능한 삶과 고품질 커피 경험을 제공하는 데 전념하고 있습니다."
         }
     },
     {
