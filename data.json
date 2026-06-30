@@ -44,7 +44,35 @@
             "ko": "여행 기술 플랫폼의 거점으로서 현지 DIY 체험(가지 가방 만들기 등)을 제공하며 주변의 문화 창작 가게들과 연결합니다."
         }
     },
-     {
+{
+        "id": 26,
+        "category": "craft",
+        "title": { 
+            "zh": "大華行－竹木造咖", 
+            "en": "Da Hua Hang", 
+            "ja": "大華行－竹木造咖", 
+            "ko": "따화항 (Da Hua Hang)" 
+        },
+        "address": { 
+            "zh": "台北市大同區迪化街一段161號", 
+            "en": "No. 161, Sec. 1, Dihua St., Datong Dist., Taipei", 
+            "ja": "台北市大同区迪化街一段161号", 
+            "ko": "타이베이시 다퉁구 디화제 1단 161호" 
+        },
+        "hours": { 
+            "zh": "10:00–19:00（每日營業）", 
+            "en": "Daily 10:00–19:00", 
+            "ja": "毎日 10:00–19:00", 
+            "ko": "매일 10:00–19:00" 
+        },
+        "description": {
+            "zh": "傳承百年的雜貨鋪，專售蒸籠、竹編餐具、傳統茄芷袋等復古好物，是將傳統工藝結合現代文創的時光寶庫。",
+            "en": "A century-old grocery store specializing in bamboo steamers, woven tableware, and traditional Jia-Zhi bags, serving as a time capsule that combines traditional crafts with modern cultural design.",
+            "ja": "百年の歴史を受け継ぐ雑貨店。せいろ、竹編みの食器、伝統的な「茄芷袋」などのレトロな品を専門に扱い、伝統工芸と現代のカルチャーが融合したタイムカプセルのような空間です。",
+            "ko": "100년의 역사를 이어온 잡화점으로 찜기, 대나무 식기, 전통 가지 가방 등 레트로 소품을 전문으로 판매하며, 전통 공예와 현대 문화 창작이 결합된 보물창고 같은 곳입니다."
+        }
+    },
+    {
       
        "id": 22,
         "category": "craft",
@@ -354,13 +382,6 @@
         "category": "craft",
         "title": { "zh": "高建桶店", "en": "Gao Jian Bucket Store", "ja": "高建桶店", "ko": "까오지엔 통뎬" },
         "address": { "zh": "台北市大同區迪化街一段204號", "en": "No. 204, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段204号", "ko": "타이베이시 다퉁구 디화제 1단 204호" },
-        "hours": { "zh": "週一至週日 09:00–20:00", "en": "Mon-Sun 09:00–20:00", "ja": "月-日 09:00–20:00", "ko": "월~일 09:00–20:00" }
-    },
-    {
-        "id": 26,
-        "category": "craft",
-        "title": { "zh": "大華行竹木造咖", "en": "Da Hua Hang", "ja": "大華行", "ko": "따화항" },
-        "address": { "zh": "台北市大同區迪化街一段161號", "en": "No. 161, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段161号", "ko": "타이베이시 다퉁구 디화제 1단 161호" },
         "hours": { "zh": "週一至週日 09:00–20:00", "en": "Mon-Sun 09:00–20:00", "ja": "月-日 09:00–20:00", "ko": "월~일 09:00–20:00" }
     },
     {
