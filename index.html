@@ -7,9 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1 id="site-title">大稻埕特色店家</h1>
+    <!-- index.html 的 header 區塊修改 -->
+<header>
+    <div class="header-container">
+        <h1 id="site-title">大稻埕特色店家</h1>
+        
+        <!-- 右側區塊：包含時間與選單 -->
+        <div class="header-right">
+            <div class="update-time">
+                <span id="update-label">最後更新: </span>
+                <span id="time-display"></span>
+            </div>
+            
             <div class="lang-selector">
                 <select id="lang-select">
                     <option value="zh">繁體中文</option>
@@ -19,7 +28,9 @@
                 </select>
             </div>
         </div>
-    </header>
+        
+    </div>
+</header>
 
     <main>
         <div class="filter-bar" id="filter-bar">
