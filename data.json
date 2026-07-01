@@ -1,740 +1,1296 @@
 [
-    
-    
-    
-    
-        {
-        "id": 6,
-        "category": "coffee",
-        "title": { 
-            "zh": "生態綠咖啡 OKO cafe", 
-            "en": "OKOGREEN Coffee (OKO cafe)", 
-            "ja": "エコグリーンコーヒー OKO cafe", 
-            "ko": "에코그린 커피 OKO cafe" 
-        },
-        "address": { 
-            "zh": "台北市大同區迪化街一段167號", 
-            "en": "No. 167, Sec. 1, Dihua St., Datong Dist., Taipei", 
-            "ja": "台北市大同区迪化街一段167号", 
-            "ko": "타이베이시 다퉁구 디화제 1단 167호" 
-        },
-        "hours": { 
-            "zh": "週一至週日 10:00–18:00", 
-            "en": "Mon-Sun 10:00–18:00", 
-            "ja": "月-日 10:00–18:00", 
-            "ko": "월~일 10:00–18:00" 
-        },
-        "description": {
-            "zh": "推廣公平貿易的低碳咖啡店，透過透明供應鏈支持小農，並嚴格控管碳足跡，致力於永續生活與高品質咖啡體驗。",
-            "en": "A low-carbon coffee shop promoting fair trade, supporting smallholder farmers through a transparent supply chain, strictly controlling carbon footprints, and dedicating itself to sustainable living and high-quality coffee experiences.",
-            "ja": "フェアトレードを推進する低炭素コーヒーショップ。透明性のあるサプライチェーンを通じて小規模農家を支援し、カーボンフットプリントを厳格に管理しながら、持続可能な生活と高品質なコーヒー体験に取り組んでいます。",
-            "ko": "공정무역을 장려하는 저탄소 커피숍. 투명한 공급망을 통해 소규모 농가를 지원하고 탄소 발자국을 엄격하게 관리하며, 지속 가능한 삶과 고품질 커피 경험을 제공하는 데 전념하고 있습니다."
-        }
+  {
+    "id": 1,
+    "category": "coffee",
+    "title": {
+      "zh": "生態綠咖啡 OKO cafe",
+      "en": "OKOGREEN Coffee (OKO cafe)",
+      "ja": "エコグリーンコーヒー OKO cafe",
+      "ko": "에코그린 커피 OKO cafe"
     },
-    {
-        "id": 52,
-        "category": "craft",
-        "title": { "zh": "FunLAB 好玩製物所", "en": "FunLAB", "ja": "FunLAB", "ko": "FunLAB" },
-        "address": { "zh": "台北市大同區迪化街一段192號2F", "en": "2F, No. 192, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段192号2階", "ko": "타이베이시 다퉁구 디화제 1단 192호 2층" },
-        "hours": { "zh": "10:00–18:00", "en": "10:00–18:00", "ja": "10:00–18:00", "ko": "10:00–18:00" },
-        "description": {
-            "zh": "作為旅遊科技平台的實體基地，提供在地DIY體驗（如茄芷袋手作），並串聯周邊文創與在地名店。",
-            "en": "A physical hub for a travel tech platform, offering local DIY experiences (like Jia-Zhi bag making) and connecting with nearby cultural shops.",
-            "ja": "旅行テクノロジープラットフォームの拠点として、地元のDIY体験（茄芷袋の手作りなど）を提供し、周辺の文化クリエイティブショップと連携しています。",
-            "ko": "여행 기술 플랫폼의 거점으로서 현지 DIY 체험(가지 가방 만들기 등)을 제공하며 주변의 문화 창작 가게들과 연결합니다."
-        }
+    "address": {
+      "zh": "台北市大同區迪化街一段167號",
+      "en": "No. 167, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段167号",
+      "ko": "타이베이시 다퉁구 디화제 1단 167호"
     },
-{
-        "id": 26,
-        "category": "craft",
-        "title": { 
-            "zh": "大華行－竹木造咖", 
-            "en": "Da Hua Hang", 
-            "ja": "大華行－竹木造咖", 
-            "ko": "따화항 (Da Hua Hang)" 
-        },
-        "address": { 
-            "zh": "台北市大同區迪化街一段161號", 
-            "en": "No. 161, Sec. 1, Dihua St., Datong Dist., Taipei", 
-            "ja": "台北市大同区迪化街一段161号", 
-            "ko": "타이베이시 다퉁구 디화제 1단 161호" 
-        },
-        "hours": { 
-            "zh": "10:00–19:00（每日營業）", 
-            "en": "Daily 10:00–19:00", 
-            "ja": "毎日 10:00–19:00", 
-            "ko": "매일 10:00–19:00" 
-        },
-        "description": {
-            "zh": "傳承百年的雜貨鋪，專售蒸籠、竹編餐具、傳統茄芷袋等復古好物，是將傳統工藝結合現代文創的時光寶庫。",
-            "en": "A century-old grocery store specializing in bamboo steamers, woven tableware, and traditional Jia-Zhi bags, serving as a time capsule that combines traditional crafts with modern cultural design.",
-            "ja": "百年の歴史を受け継ぐ雑貨店。せいろ、竹編みの食器、伝統的な「茄芷袋」などのレトロな品を専門に扱い、伝統工芸と現代のカルチャーが融合したタイムカプセルのような空間です。",
-            "ko": "100년의 역사를 이어온 잡화점으로 찜기, 대나무 식기, 전통 가지 가방 등 레트로 소품을 전문으로 판매하며, 전통 공예와 현대 문화 창작이 결합된 보물창고 같은 곳입니다."
-        }
+    "hours": {
+      "zh": "週一至週日 10:00–18:00",
+      "en": "Mon-Sun 10:00–18:00",
+      "ja": "月-日 10:00–18:00",
+      "ko": "월~일 10:00–18:00"
     },
-    {
-      
-       "id": 22,
-        "category": "craft",
-        "title": { "zh": "22STUDIO", "en": "22STUDIO", "ja": "22STUDIO", "ko": "22STUDIO" },
-        "address": { "zh": "台北市大同區迪化街一段167號2樓", "en": "2F, No. 167, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段167号2階", "ko": "타이베이시 다퉁구 디화제 1단 167호 2층" },
-        "hours": { "zh": "週一至週六 11:00–18:00 (週日公休)", "en": "Mon-Sat 11:00–18:00 (Closed Sun)", "ja": "月-土 11:00–18:00 (日曜定休)", "ko": "월~토 11:00–18:00 (일요일 휴무)" },
-        "description": {
-            "zh": "以「水泥」為核心設計材質，將建築美學轉化為鐘錶、飾品與書寫工具。總部空間提供全系列商品銷售、售後維修保固，並不定時舉辦水泥工作坊。",
-            "en": "Focusing on concrete as a design material, transforming architectural aesthetics into watches, jewelry, and writing tools. The studio offers products, after-sales service, and workshops.",
-            "ja": "コンクリートを核とする素材として、建築美学を時計、アクセサリー、筆記具に昇華。本社では全商品の販売、アフターサービス、ワークショップを開催。",
-            "ko": "콘크리트를 핵심 디자인 소재로 사용하여 건축적 미학을 시계, 액세서리, 필기구로 변환합니다. 본사 공간에서는 제품 판매, AS 및 시멘트 워크숍을 제공합니다."
-        }
+    "description": {
+      "zh": "推廣公平貿易的低碳咖啡店，透過透明供應鏈支持小農，並嚴格控管碳足跡，致力於永續生活與高品質咖啡體驗。",
+      "en": "A low-carbon coffee shop promoting fair trade, supporting smallholder farmers through a transparent supply chain, strictly controlling carbon footprints, and dedicating itself to sustainable living and high-quality coffee experiences.",
+      "ja": "フェアトレードを推進する低炭素コーヒーショップ。透明性のあるサプライチェーンを通じて小規模農家を支援し、カーボンフットプリントを厳格に管理しながら、持続可能な生活と高品質なコーヒー体験に取り組んでいます。",
+      "ko": "공정무역을 장려하는 저탄소 커피숍. 투명한 공급망을 통해 소규모 농가를 지원하고 탄소 발자국을 엄격하게 관리하며, 지속 가능한 삶과 고품질 커피 경험을 제공하는 데 전념하고 있습니다."
+    }
+  },
+  {
+    "id": 2,
+    "category": "craft",
+    "title": {
+      "zh": "FunLAB 好玩製物所",
+      "en": "FunLAB",
+      "ja": "FunLAB",
+      "ko": "FunLAB"
     },
-    {
-        "id": 2,
-        "category": "coffee",
-        "title": {
-            "zh": "AKA Café",
-            "en": "AKA Café",
-            "ja": "AKA Café",
-            "ko": "AKA 카페"
-        },
-        "address": {
-            "zh": "台北市大同區民樂街66號後棟",
-            "en": "Rear Bldg., No. 66, Minle St., Datong Dist., Taipei City",
-            "ja": "台北市大同区民楽街66号 後棟",
-            "ko": "타이베이시 다퉁구 민러제 66호 후동"
-        },
-        "hours": {
-            "zh": "週一至週四 10:30–00:00 / 週五 10:30–01:00 / 週日 10:30–18:30",
-            "en": "Mon-Thu 10:30-00:00 / Fri 10:30-01:00 / Sun 10:30-18:30",
-            "ja": "月-木 10:30-00:00 / 金 10:30-01:00 / 日 10:30-18:30",
-            "ko": "월~목 10:30-00:00 / 금 10:30-01:00 / 일 10:30-18:30"
-        }
+    "address": {
+      "zh": "台北市大同區迪化街一段192號2F",
+      "en": "2F, No. 192, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段192号2階",
+      "ko": "타이베이시 다퉁구 디화제 1단 192호 2층"
     },
-    {
-        "id": 3,
-        "category": "coffee",
-        "title": {
-            "zh": "耳邊風 ebf.cafe",
-            "en": "ebf.cafe",
-            "ja": "耳辺風 ebf.cafe",
-            "ko": "얼볜펑 ebf.cafe"
-        },
-        "address": {
-            "zh": "台北市大同區迪化街一段224巷26號",
-            "en": "No. 26, Ln. 224, Sec. 1, Dihua St., Datong Dist., Taipei City",
-            "ja": "台北市大同区迪化街一段224巷26号",
-            "ko": "타이베이시 다퉁구 디화제 1단 224항 26호"
-        },
-        "hours": {
-            "zh": "平日 11:00–18:00 / 週末 10:30–18:00 (週二、三公休)",
-            "en": "Weekdays 11:00-18:00 / Weekends 10:30-18:00 (Closed Tue, Wed)",
-            "ja": "平日 11:00-18:00 / 週末 10:30-18:00 (火・水曜定休)",
-            "ko": "평일 11:00-18:00 / 주말 10:30-18:00 (화, 수 휴무)"
-        }
+    "hours": {
+      "zh": "10:00–18:00",
+      "en": "10:00–18:00",
+      "ja": "10:00–18:00",
+      "ko": "10:00–18:00"
     },
-    {
-        "id": 4,
-        "category": "coffee",
-        "title": {
-            "zh": "COFE 喫茶·咖啡",
-            "en": "COFE",
-            "ja": "COFE 喫茶・珈琲",
-            "ko": "COFE 찻집·커피"
-        },
-        "address": {
-            "zh": "台北市大同區迪化街一段248號2樓",
-            "en": "2F, No. 248, Sec. 1, Dihua St., Datong Dist., Taipei City",
-            "ja": "台北市大同区迪化街一段248号2階",
-            "ko": "타이베이시 다퉁구 디화제 1단 248호 2층"
-        },
-        "hours": {
-            "zh": "10:00–18:00 (週二公休)",
-            "en": "10:00-18:00 (Closed Tue)",
-            "ja": "10:00-18:00 (火曜定休)",
-            "ko": "10:00-18:00 (화요일 휴무)"
-        }
+    "description": {
+      "zh": "作為旅遊科技平台的實體基地，提供在地DIY體驗（如茄芷袋手作），並串聯周邊文創與在地名店。",
+      "en": "A physical hub for a travel tech platform, offering local DIY experiences (like Jia-Zhi bag making) and connecting with nearby cultural shops.",
+      "ja": "旅行テクノロジープラットフォームの拠点として、地元のDIY体験（茄芷袋の手作りなど）を提供し、周辺の文化クリエイティブショップと連携しています。",
+      "ko": "여행 기술 플랫폼의 거점으로서 현지 DIY 체험(가지 가방 만들기 등)을 제공하며 주변의 문화 창작 가게들과 연결합니다."
+    }
+  },
+  {
+    "id": 3,
+    "category": "craft",
+    "title": {
+      "zh": "22STUDIO",
+      "en": "22STUDIO",
+      "ja": "22STUDIO",
+      "ko": "22STUDIO"
     },
-    {
-        "id": 5,
-        "category": "coffee",
-        "title": {
-            "zh": "幻猻家珈琲",
-            "en": "Pallas Café",
-            "ja": "幻猻家珈琲",
-            "ko": "환쑨자 커피"
-        },
-        "address": {
-            "zh": "台北市大同區迪化街一段14巷14號",
-            "en": "No. 14, Ln. 14, Sec. 1, Dihua St., Datong Dist., Taipei City",
-            "ja": "台北市大同区迪化街一段14巷14号",
-            "ko": "타이베이시 다퉁구 디화제 1단 14항 14호"
-        },
-        "hours": {
-            "zh": "11:00–19:00 (週一、二公休)",
-            "en": "11:00-19:00 (Closed Mon, Tue)",
-            "ja": "11:00-19:00 (月・火曜定休)",
-            "ko": "11:00-19:00 (월, 화 휴무)"
-        }
+    "address": {
+      "zh": "台北市大同區迪化街一段167號2樓",
+      "en": "2F, No. 167, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段167号2階",
+      "ko": "타이베이시 다퉁구 디화제 1단 167호 2층"
     },
-    {
-        "id": 6,
-        "category": "coffee",
-        "title": {
-            "zh": "初二 Ao Tao Zu",
-            "en": "Ao Tao Zu Café",
-            "ja": "初二 Ao Tao Zu",
-            "ko": "추얼 Ao Tao Zu"
-        },
-        "address": {
-            "zh": "台北市大同區涼州街106號2樓",
-            "en": "2F, No. 106, Liangzhou St., Datong Dist., Taipei City",
-            "ja": "台北市大同区涼州街106号2階",
-            "ko": "타이베이시 다퉁구 량저우제 106호 2층"
-        },
-        "hours": {
-            "zh": "14:30–00:00",
-            "en": "14:30-00:00",
-            "ja": "14:30-00:00",
-            "ko": "14:30-00:00"
-        }
+    "hours": {
+      "zh": "週一至週六 11:00–18:00 (週日公休)",
+      "en": "Mon-Sat 11:00–18:00 (Closed Sun)",
+      "ja": "月-土 11:00–18:00 (日曜定休)",
+      "ko": "월~토 11:00–18:00 (일요일 휴무)"
     },
-    {
+    "description": {
+      "zh": "以「水泥」為核心設計材質，將建築美學轉化為鐘錶、飾品與書寫工具。總部空間提供全系列商品銷售、售後維修保固，並不定時舉辦水泥工作坊。",
+      "en": "Focusing on concrete as a design material, transforming architectural aesthetics into watches, jewelry, and writing tools. The studio offers products, after-sales service, and workshops.",
+      "ja": "コンクリートを核とする素材として、建築美学を時計、アクセサリー、筆記具に昇華。本社では全商品の販売、アフターサービス、ワークショップを開催。",
+      "ko": "콘크리트를 핵심 디자인 소재로 사용하여 건축적 미학을 시계, 액세서리, 필기구로 변환합니다. 본사 공간에서는 제품 판매, AS 및 시멘트 워크숍을 제공합니다."
+    }
+  },
+  {
+    "id": 4,
+    "category": "craft",
+    "title": {
+      "zh": "大華行－竹木造咖",
+      "en": "Da Hua Hang",
+      "ja": "大華行－竹木造咖",
+      "ko": "따화항 (Da Hua Hang)"
+    },
+    "address": {
+      "zh": "台北市大同區迪化街一段161號",
+      "en": "No. 161, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段161号",
+      "ko": "타이베이시 다퉁구 디화제 1단 161호"
+    },
+    "hours": {
+      "zh": "10:00–19:00（每日營業）",
+      "en": "Daily 10:00–19:00",
+      "ja": "毎日 10:00–19:00",
+      "ko": "매일 10:00–19:00"
+    },
+    "description": {
+      "zh": "傳承百年的雜貨鋪，專售蒸籠、竹編餐具、傳統茄芷袋等復古好物，是將傳統工藝結合現代文創的時光寶庫。",
+      "en": "A century-old grocery store specializing in bamboo steamers, woven tableware, and traditional Jia-Zhi bags, serving as a time capsule that combines traditional crafts with modern cultural design.",
+      "ja": "百年の歴史を受け継ぐ雑貨店。せいろ、竹編みの食器、伝統的な「茄芷袋」などのレトロな品を専門に扱い、伝統工芸と現代のカルチャーが融合したタイムカプセルのような空間です。",
+      "ko": "100년의 역사를 이어온 잡화점으로 찜기, 대나무 식기, 전통 가지 가방 등 레트로 소품을 전문으로 판매하며, 전통 공예와 현대 문화 창작이 결합된 보물창고 같은 곳입니다."
+    }
+  },
+  {
+    "id": 5,
+    "category": "coffee",
+    "title": {
+      "zh": "幻猻家珈琲",
+      "en": "Pallas Café",
+      "ja": "幻猻家珈琲",
+      "ko": "환쑨자 커피"
+    },
+    "address": {
+      "zh": "台北市大同區迪化街一段14巷14號",
+      "en": "No. 14, Ln. 14, Sec. 1, Dihua St., Datong Dist., Taipei City",
+      "ja": "台北市大同区迪化街一段14巷14号",
+      "ko": "타이베이시 다퉁구 디화제 1단 14항 14호"
+    },
+    "hours": {
+      "zh": "11:00–19:00 (週一、二公休)",
+      "en": "11:00-19:00 (Closed Mon, Tue)",
+      "ja": "11:00-19:00 (月・火曜定休)",
+      "ko": "11:00-19:00 (월, 화 휴무)"
+    }
+  },
+  {
+    "id": 6,
+    "category": "snack",
+    "title": {
+      "zh": "宮本家復古味台灣冰淇淋",
+      "en": "Miyamotoka Traditional Taiwanese Ice Cream",
+      "ja": "宮本家 レトロ台湾風アイスクリーム",
+      "ko": "미야모토가 레트로 대만식 아이스크림"
+    },
+    "address": {
+      "zh": "103台北市大同區迪化街一段186號",
+      "en": "No. 186, Sec. 1, Dihua St., Datong Dist., Taipei City 103, Taiwan",
+      "ja": "台湾台北市大同区迪化街一段186号",
+      "ko": "대만 타이베이시 다퉁구 디화제 1단 186호"
+    },
+    "hours": {
+      "zh": "週二至週五 10:30–17:30，週六至週一 12:00–17:30",
+      "en": "Tue-Fri 10:30 AM - 5:30 PM, Sat-Mon 12:00 PM - 5:30 PM",
+      "ja": "火〜金 10:30–17:30、土〜月 12:00–17:30",
+      "ko": "화~금 10:30–17:30, 토~월 12:00–17:30"
+    },
+    "description": {
+      "zh": "迪化街傳統叭噗冰專賣，嚴選在地水果手工製作，無添加奶類，口感純粹天然，是感受大稻埕復古風情的消暑散步甜點。",
+      "en": "A traditional 'ba-pu' ice cream stall on Dihua St. offering natural, fruit-based flavors without dairy. A perfect refreshing treat while exploring Dadaocheng.",
+      "ja": "迪化街にある伝統的なアイスクリームの屋台。旬の果物を使用し、乳製品不使用の自然な味わいが特徴。大稻埕散策の休憩に最適です。",
+      "ko": "디화제에 위치한 전통 아이스크림 노점. 유제품 없이 대만산 과일로 직접 만들어 자연 그대로의 맛을 즐길 수 있는 다다오청 산책 필수 디저트입니다."
+    }
+  },
+  {
     "id": 7,
     "category": "coffee",
     "title": {
-        "zh": "Under160 by _holic / 尻蕊有限公司",
-        "en": "Under160 by _holic",
-        "ja": "Under160 by _holic",
-        "ko": "언더160 바이 홀릭 (Under160 by _holic)"
+      "zh": "Under160 by _holic / 尻蕊有限公司",
+      "en": "Under160 by _holic",
+      "ja": "Under160 by _holic",
+      "ko": "언더160 바이 홀릭 (Under160 by _holic)"
     },
     "address": {
-        "zh": "103台北市大同區南京西路239巷16號",
-        "en": "No. 16, Ln. 239, Nanjing W. Rd., Datong Dist., Taipei City 103, Taiwan",
-        "ja": "103 台湾台北市大同区南京西路239巷16号",
-        "ko": "대만 타이베이시 다퉁구 난징시루 239샹 16호 (우편번호: 103)"
+      "zh": "103台北市大同區南京西路239巷16號",
+      "en": "No. 16, Ln. 239, Nanjing W. Rd., Datong Dist., Taipei City 103, Taiwan",
+      "ja": "103 台湾台北市大同区南京西路239巷16号",
+      "ko": "대만 타이베이시 다퉁구 난징시루 239샹 16호 (우편번호: 103)"
     },
     "hours": {
-        "zh": "週一、週三至週五、週日 08:00 - 17:00，週六 08:00 - 20:00，週二公休",
-        "en": "Mon, Wed-Fri, Sun 08:00 - 17:00, Sat 08:00 - 20:00 (Closed Tue)",
-        "ja": "月・水〜金・日 08:00 - 17:00、土 08:00 - 20:00（火曜定休）",
-        "ko": "월, 수~금, 일 08:00 - 17:00, 토 08:00 - 20:00 (화요일 휴무)"
+      "zh": "週一、週三至週五、週日 08:00 - 17:00，週六 08:00 - 20:00，週二公休",
+      "en": "Mon, Wed-Fri, Sun 08:00 - 17:00, Sat 08:00 - 20:00 (Closed Tue)",
+      "ja": "月・水〜金・日 08:00 - 17:00、土 08:00 - 20:00（火曜定休）",
+      "ko": "월, 수~금, 일 08:00 - 17:00, 토 08:00 - 20:00 (화요일 휴무)"
     },
     "description": {
-        "zh": "隱身大稻埕巷弄的特色咖啡空間。主打創意特調與職人咖啡，在充滿設計巧思與舒適的氛圍中，帶來獨特的品飲體驗。",
-        "en": "A hidden specialty cafe in Dadaocheng offering creative drinks and artisanal coffee in a cozy, uniquely designed space.",
-        "ja": "大稲埕の路地裏に佇む個性的なカフェ。こだわりの特製ドリンクや職人淹れのコーヒーを、リラックスできる空間で提供します。",
-        "ko": "다다오청 골목에 숨겨진 개성 있는 카페. 편안한 분위기 속에서 창의적인 특제 음료와 장인이 내린 커피를 즐길 수 있습니다."
+      "zh": "隱身大稻埕巷弄的特色咖啡空間。主打創意特調與職人咖啡，在充滿設計巧思與舒適的氛圍中，帶來獨特的品飲體驗。",
+      "en": "A hidden specialty cafe in Dadaocheng offering creative drinks and artisanal coffee in a cozy, uniquely designed space.",
+      "ja": "大稲埕の路地裏に佇む個性的なカフェ。こだわりの特製ドリンクや職人淹れのコーヒーを、リラックスできる空間で提供します。",
+      "ko": "다다오청 골목에 숨겨진 개성 있는 카페. 편안한 분위기 속에서 창의적인 특제 음료와 장인이 내린 커피를 즐길 수 있습니다."
     }
-},
-    {
-        "id": 8,
-        "category": "coffee",
-        "title": {
-            "zh": "昭和浪漫洗濯屋",
-            "en": "Showa Romantic Laundry Store",
-            "ja": "昭和浪漫洗濯屋",
-            "ko": "쇼와 낭만 세탁소"
-        },
-        "address": {
-            "zh": "台北市大同區安西街3號",
-            "en": "No. 3, Anxi St., Datong Dist., Taipei City",
-            "ja": "台北市大同区安西街3号",
-            "ko": "타이베이시 다퉁구 안시제 3호"
-        },
-        "hours": {
-            "zh": "平日 11:00–17:30 / 週末 11:00–18:30 (週一公休)",
-            "en": "Weekdays 11:00-17:30 / Weekends 11:00-18:30 (Closed Mon)",
-            "ja": "平日 11:00-17:30 / 週末 11:00-18:30 (月曜定休)",
-            "ko": "평일 11:00-17:30 / 주말 11:00-18:30 (월요일 휴무)"
-        }
+  },
+  {
+    "id": 8,
+    "category": "coffee",
+    "title": {
+      "zh": "昭和浪漫洗濯屋",
+      "en": "Showa Romantic Laundry Store",
+      "ja": "昭和浪漫洗濯屋",
+      "ko": "쇼와 낭만 세탁소"
     },
-    {
-        "id": 9,
-        "category": "coffee",
-        "title": {
-            "zh": "TWATUTIA Coffee",
-            "en": "TWATUTIA Coffee & Co.",
-            "ja": "TWATUTIA Coffee",
-            "ko": "TWATUTIA 커피"
-        },
-        "address": {
-            "zh": "台北市大同區南京西路279號",
-            "en": "No. 279, Nanjing W. Rd., Datong Dist., Taipei City",
-            "ja": "台北市大同区南京西路279号",
-            "ko": "타이베이시 다퉁구 난징서로 279호"
-        },
-        "hours": {
-            "zh": "平日 09:30–17:30 / 週末 10:30–18:30",
-            "en": "Weekdays 09:30-17:30 / Weekends 10:30-18:30",
-            "ja": "平日 09:30-17:30 / 週末 10:30-18:30",
-            "ko": "평일 09:30-17:30 / 주말 10:30-18:30"
-        }
+    "address": {
+      "zh": "台北市大同區安西街3號",
+      "en": "No. 3, Anxi St., Datong Dist., Taipei City",
+      "ja": "台北市大同区安西街3号",
+      "ko": "타이베이시 다퉁구 안시제 3호"
     },
-    {
-        "id": 10,
-        "category": "coffee",
-        "title": {
-            "zh": "嘉點 CHIA.CAFE",
-            "en": "CHIA.CAFE",
-            "ja": "嘉點 CHIA.CAFE",
-            "ko": "자뎬 CHIA.CAFE"
-        },
-        "address": {
-            "zh": "台北市大同區迪化街一段291號",
-            "en": "No. 291, Sec. 1, Dihua St., Datong Dist., Taipei City",
-            "ja": "台北市大同区迪化街一段291号",
-            "ko": "타이베이시 다퉁구 디화제 1단 291호"
-        },
-        "hours": {
-            "zh": "11:30–18:00 (週二、三公休)",
-            "en": "11:30-18:00 (Closed Tue, Wed)",
-            "ja": "11:30-18:00 (火・水曜定休)",
-            "ko": "11:30-18:00 (화, 수 휴무)"
-        }
+    "hours": {
+      "zh": "平日 11:00–17:30 / 週末 11:00–18:30 (週一公休)",
+      "en": "Weekdays 11:00-17:30 / Weekends 11:00-18:30 (Closed Mon)",
+      "ja": "平日 11:00-17:30 / 週末 11:00-18:30 (月曜定休)",
+      "ko": "평일 11:00-17:30 / 주말 11:00-18:30 (월요일 휴무)"
+    }
+  },
+  {
+    "id": 9,
+    "category": "coffee",
+    "title": {
+      "zh": "TWATUTIA Coffee",
+      "en": "TWATUTIA Coffee & Co.",
+      "ja": "TWATUTIA Coffee",
+      "ko": "TWATUTIA 커피"
     },
-    {
-        "id": 11,
-        "category": "coffee",
-        "title": {"zh": "Modern Mode Café", "en": "Modern Mode Café", "ja": "Modern Mode Café", "ko": "모던 모드 카페"},
-        "address": {"zh": "台北市大同區迪化街一段278號","en": "No. 278, Sec. 1, Dihua St., Datong Dist., Taipei City","ja": "台北市大同区迪化街一段278号","ko": "타이베이시 다퉁구 디화제 1단 278호"},
-        "hours": {"zh": "週日至週四 11:30–20:30 / 週五、六 11:30–00:00","en": "Sun-Thu 11:30-20:30 / Fri-Sat 11:30-00:00","ja": "日曜-木曜 11:30-20:30 / 金・土曜 11:30-00:00","ko": "일~목 11:30-20:30 / 금, 토 11:30-00:00"}
+    "address": {
+      "zh": "台北市大同區南京西路279號",
+      "en": "No. 279, Nanjing W. Rd., Datong Dist., Taipei City",
+      "ja": "台北市大同区南京西路279号",
+      "ko": "타이베이시 다퉁구 난징서로 279호"
     },
-    {
-        "id": 12,
-        "category": "tea",
-        "title": { "zh": "林華泰茶行", "en": "Lin Hua Tai Tea Co.", "ja": "林華泰茶行", "ko": "린화타이 차행" },
-        "address": { "zh": "台北市大同區重慶北路二段193號", "en": "No. 193, Sec. 2, Chongqing N. Rd., Datong Dist., Taipei", "ja": "台北市大同区重慶北路二段193号", "ko": "타이베이시 다퉁구 충칭북로 2단 193호" },
-        "hours": { "zh": "每日 07:30–21:00", "en": "Daily 07:30–21:00", "ja": "毎日 07:30–21:00", "ko": "매일 07:30–21:00" }
+    "hours": {
+      "zh": "平日 09:30–17:30 / 週末 10:30–18:30",
+      "en": "Weekdays 09:30-17:30 / Weekends 10:30-18:30",
+      "ja": "平日 09:30-17:30 / 週末 10:30-18:30",
+      "ko": "평일 09:30-17:30 / 주말 10:30-18:30"
+    }
+  },
+  {
+    "id": 10,
+    "category": "coffee",
+    "title": {
+      "zh": "嘉點 CHIA.CAFE",
+      "en": "CHIA.CAFE",
+      "ja": "嘉點 CHIA.CAFE",
+      "ko": "자뎬 CHIA.CAFE"
     },
-    {
+    "address": {
+      "zh": "台北市大同區迪化街一段291號",
+      "en": "No. 291, Sec. 1, Dihua St., Datong Dist., Taipei City",
+      "ja": "台北市大同区迪化街一段291号",
+      "ko": "타이베이시 다퉁구 디화제 1단 291호"
+    },
+    "hours": {
+      "zh": "11:30–18:00 (週二、三公休)",
+      "en": "11:30-18:00 (Closed Tue, Wed)",
+      "ja": "11:30-18:00 (火・水曜定休)",
+      "ko": "11:30-18:00 (화, 수 휴무)"
+    }
+  },
+  {
+    "id": 11,
+    "category": "coffee",
+    "title": {
+      "zh": "Modern Mode Café",
+      "en": "Modern Mode Café",
+      "ja": "Modern Mode Café",
+      "ko": "모던 모드 카페"
+    },
+    "address": {
+      "zh": "台北市大同區迪化街一段278號",
+      "en": "No. 278, Sec. 1, Dihua St., Datong Dist., Taipei City",
+      "ja": "台北市大同区迪化街一段278号",
+      "ko": "타이베이시 다퉁구 디화제 1단 278호"
+    },
+    "hours": {
+      "zh": "週日至週四 11:30–20:30 / 週五、六 11:30–00:00",
+      "en": "Sun-Thu 11:30-20:30 / Fri-Sat 11:30-00:00",
+      "ja": "日曜-木曜 11:30-20:30 / 金・土曜 11:30-00:00",
+      "ko": "일~목 11:30-20:30 / 금, 토 11:30-00:00"
+    }
+  },
+  {
+    "id": 12,
+    "category": "tea",
+    "title": {
+      "zh": "林華泰茶行",
+      "en": "Lin Hua Tai Tea Co.",
+      "ja": "林華泰茶行",
+      "ko": "린화타이 차행"
+    },
+    "address": {
+      "zh": "台北市大同區重慶北路二段193號",
+      "en": "No. 193, Sec. 2, Chongqing N. Rd., Datong Dist., Taipei",
+      "ja": "台北市大同区重慶北路二段193号",
+      "ko": "타이베이시 다퉁구 충칭북로 2단 193호"
+    },
+    "hours": {
+      "zh": "每日 07:30–21:00",
+      "en": "Daily 07:30–21:00",
+      "ja": "毎日 07:30–21:00",
+      "ko": "매일 07:30–21:00"
+    }
+  },
+  {
     "id": 13,
     "category": "tea",
     "title": {
-        "zh": "有記名茶",
-        "en": "Wangtea",
-        "ja": "有記名茶 (Wangtea)",
-        "ko": "왕티 (有記名茶)"
+      "zh": "有記名茶",
+      "en": "Wangtea",
+      "ja": "有記名茶 (Wangtea)",
+      "ko": "왕티 (有記名茶)"
     },
     "address": {
-        "zh": "103台北市大同區重慶北路二段64巷26號",
-        "en": "No. 26, Ln. 64, Sec. 2, Chongqing N. Rd., Datong Dist., Taipei City 103, Taiwan",
-        "ja": "103 台湾台北市大同区重慶北路二段64巷26号",
-        "ko": "대만 타이베이시 다퉁구 충칭베이루 2단 64샹 26호 (우편번호: 103)"
+      "zh": "103台北市大同區重慶北路二段64巷26號",
+      "en": "No. 26, Ln. 64, Sec. 2, Chongqing N. Rd., Datong Dist., Taipei City 103, Taiwan",
+      "ja": "103 台湾台北市大同区重慶北路二段64巷26号",
+      "ko": "대만 타이베이시 다퉁구 충칭베이루 2단 64샹 26호 (우편번호: 103)"
     },
     "hours": {
-        "zh": "週一至週六 09:00 - 19:00，週日公休",
-        "en": "Mon-Sat 09:00 - 19:00 (Closed Sun)",
-        "ja": "月〜土 09:00 - 19:00（日曜定休）",
-        "ko": "월~토 09:00 - 19:00 (일요일 휴무)"
+      "zh": "週一至週六 09:00 - 19:00，週日公休",
+      "en": "Mon-Sat 09:00 - 19:00 (Closed Sun)",
+      "ja": "月〜土 09:00 - 19:00（日曜定休）",
+      "ko": "월~토 09:00 - 19:00 (일요일 휴무)"
     },
     "description": {
-        "zh": "位於大稻埕的百年茶行，保留傳統炭焙製茶工藝與古蹟焙籠間。提供高品質台灣茶與舒適品茗空間，為體驗台灣茶文化的絕佳去處。",
-        "en": "A century-old tea shop in Dadaocheng preserving traditional charcoal roasting techniques. Offers premium Taiwanese tea in a historic setting.",
-        "ja": "大稲埕にある100年以上の歴史を持つ老舗茶館。伝統的な炭火焙煎技術と焙煎室を保存し、高品質な台湾茶を提供しています。",
-        "ko": "다다오청에 위치한 100년 전통의 찻집. 전통 숯불 로스팅 기술과 역사적인 로스팅 룸을 보존하며 고품질 대만 차를 제공합니다."
+      "zh": "位於大稻埕的百年茶行，保留傳統炭焙製茶工藝與古蹟焙籠間。提供高品質台灣茶與舒適品茗空間，為體驗台灣茶文化的絕佳去處。",
+      "en": "A century-old tea shop in Dadaocheng preserving traditional charcoal roasting techniques. Offers premium Taiwanese tea in a historic setting.",
+      "ja": "大稲埕にある100年以上の歴史を持つ老舗茶館。伝統的な炭火焙煎技術と焙煎室を保存し、高品質な台湾茶を提供しています。",
+      "ko": "다다오청에 위치한 100년 전통의 찻집. 전통 숯불 로스팅 기술과 역사적인 로스팅 룸을 보존하며 고품질 대만 차를 제공합니다."
     }
-},
-    {
-        "id": 14,
-        "category": "tea",
-        "title": {
-            "zh": "東泰茗茶",
-            "en": "Dong Tai Tea",
-            "ja": "東泰茗茶",
-"ko": "동타이밍차 (東泰茗茶)"
-},
-"address": {
-"zh": "103台北市大同區迪化街一段230號",
-"en": "No. 230, Sec. 1, Dihua St., Datong Dist., Taipei City 103, Taiwan",
-"ja": "103 台湾台北市大同区迪化街一段230号",
-"ko": "대만 타이베이시 다퉁구 디화제 1단 230호 (우편번호: 103)"
-},
-"hours": {
-"zh": "週一至週五 10:00 - 17:30，週六至週日 10:00 - 17:00",
-"en": "Mon-Fri 10:00 - 17:30, Sat-Sun 10:00 - 17:00",
-"ja": "月〜金 10:00 - 17:30、土・日 10:00 - 17:00",
-"ko": "월~금 10:00 - 17:30, 토~일 10:00 - 17:00"
-},
-"description": {
-"zh": "位於迪化街的百年茶莊老店。提供各式優質台灣茶葉，傳承百年製茶工藝，是品茗與選購伴手禮的絕佳選擇。",
-"en": "A century-old tea shop on Dihua Street offering a wide selection of premium Taiwanese teas. A great choice for souvenirs.",
-"ja": "迪化街にある創業百年の老舗茶荘。様々な上質な台湾茶を提供しており、お土産選びにも最適なスポットです。",
-"ko": "디화제에 위치한 100년 전통의 찻집. 다양한 최고급 대만 차를 제공하며 대만 여행 기념품을 고르기에 좋은 곳입니다."
-}
-},
-    {
-        "id": 15,
-        "category": "tea",
-        "title": { "zh": "草茶之家", "en": "Cao Cha Zhi Jia", "ja": "草茶之家", "ko": "차오차즈자" },
-        "address": { "zh": "台北市大同區迪化街一段66號", "en": "No. 66, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段66号", "ko": "타이베이시 다퉁구 디화제 1단 66호" },
-        "hours": { "zh": "週一至週五 09:30–18:30 / 週六至週日 09:30–19:30", "en": "Mon-Fri 09:30–18:30 / Sat-Sun 09:30–19:30", "ja": "月-金 09:30–18:30 / 土-日 09:30–19:30", "ko": "월~금 09:30–18:30 / 토~일 09:30–19:30" }
+  },
+  {
+    "id": 14,
+    "category": "tea",
+    "title": {
+      "zh": "東泰茗茶",
+      "en": "Dong Tai Tea",
+      "ja": "東泰茗茶",
+      "ko": "동타이밍차 (東泰茗茶)"
     },
-    {
-        "id": 16,
-        "category": "tea",
-        "title": { "zh": "臻味茶苑", "en": "Zhen Wei Tea", "ja": "臻味茶苑", "ko": "쩐웨이 차원" },
-        "address": { "zh": "台北市大同區迪化街一段156號", "en": "No. 156, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段156号", "ko": "타이베이시 다퉁구 디화제 1단 156호" },
-        "hours": { "zh": "每日 11:00–20:00", "en": "Daily 11:00–20:00", "ja": "毎日 11:00–20:00", "ko": "매일 11:00–20:00" }
+    "address": {
+      "zh": "103台北市大同區迪化街一段230號",
+      "en": "No. 230, Sec. 1, Dihua St., Datong Dist., Taipei City 103, Taiwan",
+      "ja": "103 台湾台北市大同区迪化街一段230号",
+      "ko": "대만 타이베이시 다퉁구 디화제 1단 230호 (우편번호: 103)"
     },
-    {
-        "id": 17,
-        "category": "tea",
-        "title": { "zh": "迪化半日茶屋", "en": "Dihua Half-Day Tea House", "ja": "迪化半日茶屋", "ko": "디화 반일 찻집" },
-        "address": { "zh": "台北市大同區迪化街一段133號", "en": "No. 133, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段133号", "ko": "타이베이시 다퉁구 디화제 1단 133호" },
-        "hours": { "zh": "每日 10:00–18:00", "en": "Daily 10:00–18:00", "ja": "毎日 10:00–18:00", "ko": "매일 10:00–18:00" }
+    "hours": {
+      "zh": "週一至週五 10:00 - 17:30，週六至週日 10:00 - 17:00",
+      "en": "Mon-Fri 10:00 - 17:30, Sat-Sun 10:00 - 17:00",
+      "ja": "月〜金 10:00 - 17:30、土・日 10:00 - 17:00",
+      "ko": "월~금 10:00 - 17:30, 토~일 10:00 - 17:00"
     },
-    {
-        "id": 18,
-        "category": "tea",
-        "title": { "zh": "CHA-EN", "en": "CHA-EN", "ja": "CHA-EN", "ko": "CHA-EN" },
-        "address": { "zh": "台北市大同區迪化街一段32巷2號", "en": "No. 2, Ln. 32, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段32巷2号", "ko": "타이베이시 다퉁구 디화제 1단 32항 2호" },
-        "hours": { "zh": "10:00–17:00 (週三公休)", "en": "10:00–17:00 (Closed Wed)", "ja": "10:00–17:00 (水曜定休)", "ko": "10:00–17:00 (수요일 휴무)" }
+    "description": {
+      "zh": "位於迪化街的百年茶莊老店。提供各式優質台灣茶葉，傳承百年製茶工藝，是品茗與選購伴手禮的絕佳選擇。",
+      "en": "A century-old tea shop on Dihua Street offering a wide selection of premium Taiwanese teas. A great choice for souvenirs.",
+      "ja": "迪化街にある創業百年の老舗茶荘。様々な上質な台湾茶を提供しており、お土産選びにも最適なスポットです。",
+      "ko": "디화제에 위치한 100년 전통의 찻집. 다양한 최고급 대만 차를 제공하며 대만 여행 기념품을 고르기에 좋은 곳입니다."
+    }
+  },
+  {
+    "id": 15,
+    "category": "tea",
+    "title": {
+      "zh": "草茶之家",
+      "en": "Cao Cha Zhi Jia",
+      "ja": "草茶之家",
+      "ko": "차오차즈자"
     },
-    {
-        "id": 19,
-        "category": "tea",
-        "title": { "zh": "南街得意", "en": "South St. Delight", "ja": "南街得意", "ko": "난지에 더이" },
-        "address": { "zh": "台北市大同區迪化街一段67號2樓", "en": "2F, No. 67, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段67号2階", "ko": "타이베이시 다퉁구 디화제 1단 67호 2층" },
-        "hours": { "zh": "每日 10:30–18:20", "en": "Daily 10:30–18:20", "ja": "毎日 10:30–18:20", "ko": "매일 10:30–18:20" }
+    "address": {
+      "zh": "台北市大同區迪化街一段66號",
+      "en": "No. 66, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段66号",
+      "ko": "타이베이시 다퉁구 디화제 1단 66호"
     },
-    {
-        "id": 20,
-        "category": "tea",
-        "title": { "zh": "Wangtea Lab", "en": "Wangtea Lab", "ja": "Wangtea Lab", "ko": "Wangtea Lab" },
-        "address": { "zh": "台北市大同區重慶北路二段64巷24號", "en": "No. 24, Ln. 64, Sec. 2, Chongqing N. Rd., Datong Dist., Taipei", "ja": "台北市大同区重慶北路二段64巷24号", "ko": "타이베이시 다퉁구 충칭북로 2단 64항 24호" },
-        "hours": { "zh": "週一、三至六 12:00–21:00 / 週日 10:00–19:00 (週二公休)", "en": "Mon, Wed-Sat 12:00–21:00 / Sun 10:00–19:00 (Closed Tue)", "ja": "月・水-土 12:00–21:00 / 日 10:00–19:00 (火曜定休)", "ko": "월, 수~토 12:00–21:00 / 일 10:00–19:00 (화요일 휴무)" }
+    "hours": {
+      "zh": "週一至週五 09:30–18:30 / 週六至週日 09:30–19:30",
+      "en": "Mon-Fri 09:30–18:30 / Sat-Sun 09:30–19:30",
+      "ja": "月-金 09:30–18:30 / 土-日 09:30–19:30",
+      "ko": "월~금 09:30–18:30 / 토~일 09:30–19:30"
+    }
+  },
+  {
+    "id": 16,
+    "category": "tea",
+    "title": {
+      "zh": "臻味茶苑",
+      "en": "Zhen Wei Tea",
+      "ja": "臻味茶苑",
+      "ko": "쩐웨이 차원"
     },
-        {
-
-        "id": 50,
-        "category": "craft",
-        "title": { "zh": "印花樂大稻埕店", "en": "In Blooom Dadaocheng", "ja": "印花楽 大稲埕店", "ko": "인블룸 다다오청점" },
-        "address": { "zh": "台北市大同區民樂街28號", "en": "No. 28, Minle St., Datong Dist., Taipei", "ja": "台北市大同区民楽街28号", "ko": "타이베이시 다퉁구 민러제 28호" },
-        "hours": { "zh": "週一至週日 09:30–19:00", "en": "Mon-Sun 09:30–19:00", "ja": "月-日 09:30–19:00", "ko": "월~일 09:30–19:00" }
+    "address": {
+      "zh": "台北市大同區迪化街一段156號",
+      "en": "No. 156, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段156号",
+      "ko": "타이베이시 다퉁구 디화제 1단 156호"
     },
-   
-    {
-        "id": 23,
-        "category": "craft",
-        "title": { "zh": "繭裹輕衫 稻埕店", "en": "Twine Dadaocheng", "ja": "繭裹軽衫 大稲埕店", "ko": "지엔구오칭산 다다오청점" },
-        "address": { "zh": "台北市大同區迪化街一段213號", "en": "No. 213, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段213号", "ko": "타이베이시 다퉁구 디화제 1단 213호" },
-        "hours": { "zh": "週一至週日 10:00–19:30", "en": "Mon-Sun 10:00–19:30", "ja": "月-日 10:00–19:30", "ko": "월~일 10:00–19:30" }
+    "hours": {
+      "zh": "每日 11:00–20:00",
+      "en": "Daily 11:00–20:00",
+      "ja": "毎日 11:00–20:00",
+      "ko": "매일 11:00–20:00"
+    }
+  },
+  {
+    "id": 17,
+    "category": "tea",
+    "title": {
+      "zh": "迪化半日茶屋",
+      "en": "Dihua Half-Day Tea House",
+      "ja": "迪化半日茶屋",
+      "ko": "디화 반일 찻집"
     },
-    {
-        "id": 24,
-        "category": "craft",
-        "title": { "zh": "A Design & Life Project", "en": "A Design & Life Project", "ja": "A Design & Life Project", "ko": "A Design & Life Project" },
-        "address": { "zh": "台北市大同區南京西路279號", "en": "No. 279, Nanjing W. Rd., Datong Dist., Taipei", "ja": "台北市大同区南京西路279号", "ko": "타이베이시 다퉁구 난징서로 279호" },
-        "hours": { "zh": "週一至週日 11:00–19:00", "en": "Mon-Sun 11:00–19:00", "ja": "月-日 11:00–19:00", "ko": "월~일 11:00–19:00" }
+    "address": {
+      "zh": "台北市大同區迪化街一段133號",
+      "en": "No. 133, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段133号",
+      "ko": "타이베이시 다퉁구 디화제 1단 133호"
     },
-    {
-        "id": 25,
-        "category": "craft",
-        "title": { "zh": "高建桶店", "en": "Gao Jian Bucket Store", "ja": "高建桶店", "ko": "까오지엔 통뎬" },
-        "address": { "zh": "台北市大同區迪化街一段204號", "en": "No. 204, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段204号", "ko": "타이베이시 다퉁구 디화제 1단 204호" },
-        "hours": { "zh": "週一至週日 09:00–20:00", "en": "Mon-Sun 09:00–20:00", "ja": "月-日 09:00–20:00", "ko": "월~일 09:00–20:00" }
+    "hours": {
+      "zh": "每日 10:00–18:00",
+      "en": "Daily 10:00–18:00",
+      "ja": "毎日 10:00–18:00",
+      "ko": "매일 10:00–18:00"
+    }
+  },
+  {
+    "id": 18,
+    "category": "tea",
+    "title": {
+      "zh": "CHA-EN",
+      "en": "CHA-EN",
+      "ja": "CHA-EN",
+      "ko": "CHA-EN"
     },
-    {
-        "id": 27,
-        "category": "craft",
-        "title": { "zh": "你好我好", "en": "Ni Hao Wo Hao", "ja": "你好我好", "ko": "니하오워하오" },
-        "address": { "zh": "台北市大同區迪化街一段14巷8號", "en": "No. 8, Ln. 14, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段14巷8号", "ko": "타이베이시 다퉁구 디화제 1단 14항 8호" },
-        "hours": { "zh": "週一至週日 10:00–18:00 (週三公休)", "en": "Mon-Sun 10:00–18:00 (Closed Wed)", "ja": "月-日 10:00–18:00 (水曜定休)", "ko": "월~일 10:00–18:00 (수요일 휴무)" }
+    "address": {
+      "zh": "台北市大同區迪化街一段32巷2號",
+      "en": "No. 2, Ln. 32, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段32巷2号",
+      "ko": "타이베이시 다퉁구 디화제 1단 32항 2호"
     },
-    {
-        "id": 28,
-        "category": "craft",
-        "title": { "zh": "BRUSH & GREEN", "en": "BRUSH & GREEN", "ja": "BRUSH & GREEN", "ko": "BRUSH & GREEN" },
-        "address": { "zh": "台北市大同區安西街33號", "en": "No. 33, Anxi St., Datong Dist., Taipei", "ja": "台北市大同区安西街33号", "ko": "타이베이시 다퉁구 안시제 33호" },
-        "hours": { "zh": "週三至週日 10:00–18:00", "en": "Wed-Sun 10:00–18:00", "ja": "水-日 10:00–18:00", "ko": "수~일 10:00–18:00" }
+    "hours": {
+      "zh": "10:00–17:00 (週三公休)",
+      "en": "10:00–17:00 (Closed Wed)",
+      "ja": "10:00–17:00 (水曜定休)",
+      "ko": "10:00–17:00 (수요일 휴무)"
+    }
+  },
+  {
+    "id": 19,
+    "category": "tea",
+    "title": {
+      "zh": "南街得意",
+      "en": "South St. Delight",
+      "ja": "南街得意",
+      "ko": "난지에 더이"
     },
-    {
-        "id": 29,
-        "category": "craft",
-        "title": { "zh": "岩筆模 MBmore", "en": "MBmore", "ja": "岩筆模 MBmore", "ko": "이옌비모 MBmore" },
-        "address": { "zh": "台北市大同區南京西路275號", "en": "No. 275, Nanjing W. Rd., Datong Dist., Taipei", "ja": "台北市大同区南京西路275号", "ko": "타이베이시 다퉁구 난징서로 275호" },
-        "hours": { "zh": "週二至週日 11:00–19:00 (週一公休)", "en": "Tue-Sun 11:00–19:00 (Closed Mon)", "ja": "火-日 11:00–19:00 (月曜定休)", "ko": "화~일 11:00–19:00 (월요일 휴무)" }
+    "address": {
+      "zh": "台北市大同區迪化街一段67號2樓",
+      "en": "2F, No. 67, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段67号2階",
+      "ko": "타이베이시 다퉁구 디화제 1단 67호 2층"
     },
-    {
-        "id": 30,
-        "category": "craft",
-        "title": { "zh": "台灣日和", "en": "Taiwan Biyori", "ja": "台湾日和", "ko": "타이완 비요리" },
-        "address": { "zh": "台北市大同區延平北路二段41號", "en": "No. 41, Sec. 2, Yanping N. Rd., Datong Dist., Taipei", "ja": "台北市大同区延平北路二段41号", "ko": "타이베이시 다퉁구 옌핑북로 2단 41호" },
-        "hours": { "zh": "週一至週日 10:30–18:30 (週二、三公休)", "en": "Mon-Sun 10:30–18:30 (Closed Tue, Wed)", "ja": "月-日 10:30–18:30 (火・水曜定休)", "ko": "월~일 10:30–18:30 (화, 수 휴무)" }
+    "hours": {
+      "zh": "每日 10:30–18:20",
+      "en": "Daily 10:30–18:20",
+      "ja": "毎日 10:30–18:20",
+      "ko": "매일 10:30–18:20"
+    }
+  },
+  {
+    "id": 20,
+    "category": "tea",
+    "title": {
+      "zh": "Wangtea Lab",
+      "en": "Wangtea Lab",
+      "ja": "Wangtea Lab",
+      "ko": "Wangtea Lab"
     },
-    {
-        "id": 31,
-        "category": "pastry",
-        "title": { "zh": "合興壹玖肆柒", "en": "Ho Hsing 1947", "ja": "合興壹玖肆柒", "ko": "허싱 1947" },
-        "address": { "zh": "台北市大同區迪化街一段223號", "en": "No. 223, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段223号", "ko": "타이베이시 다퉁구 디화제 1단 223호" },
-        "hours": { "zh": "每日 10:00–18:00", "en": "Daily 10:00–18:00", "ja": "毎日 10:00–18:00", "ko": "매일 10:00–18:00" }
+    "address": {
+      "zh": "台北市大同區重慶北路二段64巷24號",
+      "en": "No. 24, Ln. 64, Sec. 2, Chongqing N. Rd., Datong Dist., Taipei",
+      "ja": "台北市大同区重慶北路二段64巷24号",
+      "ko": "타이베이시 다퉁구 충칭북로 2단 64항 24호"
     },
-    {
-        "id": 32,
-        "category": "pastry",
-        "title": { "zh": "李亭香", "en": "Lee Chi-Tsang", "ja": "李亭香", "ko": "리팅샹" },
-        "address": { "zh": "台北市大同區迪化街一段309號", "en": "No. 309, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段309号", "ko": "타이베이시 다퉁구 디화제 1단 309호" },
-        "hours": { "zh": "每日 10:00–19:00", "en": "Daily 10:00–19:00", "ja": "毎日 10:00–19:00", "ko": "매일 10:00–19:00" }
-    },
-    {
-        "id": 33,
-        "category": "pastry",
-        "title": { "zh": "龍月堂糕餅鋪", "en": "Long Yue Tang", "ja": "龍月堂糕餅鋪", "ko": "룽위에탕" },
-        "address": { "zh": "台北市大同區延平北路二段169號", "en": "No. 169, Sec. 2, Yanping N. Rd., Datong Dist., Taipei", "ja": "台北市大同区延平北路二段169号", "ko": "타이베이시 다퉁구 옌핑북로 2단 169호" },
-        "hours": { "zh": "08:00–20:30 (週六公休)", "en": "08:00–20:30 (Closed Sat)", "ja": "08:00–20:30 (土曜定休)", "ko": "08:00–20:30 (토요일 휴무)" }
-    },
-    {
-        "id": 34,
-        "category": "pastry",
-        "title": { "zh": "十字軒糕餅鋪", "en": "Shi Zi Xuan", "ja": "十字軒糕餅鋪", "ko": "스즈쉬안" },
-        "address": { "zh": "台北市大同區延平北路二段68號", "en": "No. 68, Sec. 2, Yanping N. Rd., Datong Dist., Taipei", "ja": "台北市大同区延平北路二段68号", "ko": "타이베이시 다퉁구 옌핑북로 2단 68호" },
-        "hours": { "zh": "週一至六 09:00–19:00；週日 09:00–18:00", "en": "Mon-Sat 09:00–19:00; Sun 09:00–18:00", "ja": "月-土 09:00–19:00; 日 09:00–18:00", "ko": "월~토 09:00–19:00; 일 09:00–18:00" }
-    },
-    {
-        "id": 35,
-        "category": "pastry",
-        "title": { "zh": "林貞粿行", "en": "Lin Zhen Guo Hang", "ja": "林貞粿行", "ko": "린전궈항" },
-        "address": { "zh": "台北市大同區迪化街二段172巷12-2號", "en": "No. 12-2, Ln. 172, Sec. 2, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街二段172巷12-2号", "ko": "타이베이시 다퉁구 디화제 2단 172항 12-2호" },
-        "hours": { "zh": "週三至五 11:00–18:00；週末 11:00–19:00 (週一二公休)", "en": "Wed-Fri 11:00–18:00; Sat-Sun 11:00–19:00 (Closed Mon, Tue)", "ja": "水-金 11:00–18:00; 土-日 11:00–19:00 (月・火曜定休)", "ko": "수~금 11:00–18:00; 토~일 11:00–19:00 (월, 화 휴무)" }
-    },
-    {
-        "id": 36,
-        "category": "pastry",
-        "title": { "zh": "滋養和菓子", "en": "Zi Yang Wagashi", "ja": "滋養和菓子", "ko": "쯔양 와가시" },
-        "address": { "zh": "台北市大同區迪化街一段247號", "en": "No. 247, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段247号", "ko": "타이베이시 다퉁구 디화제 1단 247호" },
-        "hours": { "zh": "每日 09:00–19:00", "en": "Daily 09:00–19:00", "ja": "毎日 09:00–19:00", "ko": "매일 09:00–19:00" }
-    },
-    {
-        "id": 37,
-        "category": "pastry",
-        "title": { "zh": "江記華隆商行", "en": "Chiang Kee Hwa Long", "ja": "江記華隆商行", "ko": "장지화룽 상항" },
-        "address": { "zh": "台北市大同區迪化街一段311號", "en": "No. 311, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段311号", "ko": "타이베이시 다퉁구 디화제 1단 311호" },
-        "hours": { "zh": "週一至六 09:00–20:00；週日 09:00–19:00", "en": "Mon-Sat 09:00–20:00; Sun 09:00–19:00", "ja": "月-土 09:00–20:00; 日 09:00–19:00", "ko": "월~토 09:00–20:00; 일 09:00–19:00" }
-    },
-    {
-        "id": 38,
-        "category": "pastry",
-        "title": { "zh": "加福奇士蛋糕專門店", "en": "Jia Fu Cheesecake", "ja": "加福奇士蛋糕專門店", "ko": "자푸 치즈케이크" },
-        "address": { "zh": "台北市大同區延平北路二段72號", "en": "No. 72, Sec. 2, Yanping N. Rd., Datong Dist., Taipei", "ja": "台北市大同区延平北路二段72号", "ko": "타이베이시 다퉁구 옌핑북로 2단 72호" },
-        "hours": { "zh": "週一至六 09:00–21:00；週日 09:00–17:00", "en": "Mon-Sat 09:00–21:00; Sun 09:00–17:00", "ja": "月-土 09:00–21:00; 日 09:00–17:00", "ko": "월~토 09:00–21:00; 일 09:00–17:00" }
-    },
-    {
-        "id": 39,
-        "category": "pastry",
-        "title": { "zh": "霞海城隍廟週邊糕點攤", "en": "Xia Hai Temple Stalls", "ja": "霞海城隍廟周辺菓子店", "ko": "시아하이 성황묘 주변 점포" },
-        "address": { "zh": "台北市大同區迪化街一段61號", "en": "No. 61, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段61号", "ko": "타이베이시 다퉁구 디화제 1단 61호" },
-        "hours": { "zh": "隨市場營業時間", "en": "Market Hours", "ja": "市場営業時間に準じる", "ko": "시장 운영 시간" }
-    },
-    {
-        "id": 40,
-        "category": "medicine",
-        "title": { "zh": "黃長生藥行", "en": "Huang Chang Sheng", "ja": "黄長生薬行", "ko": "황창성 약행" },
-        "address": { "zh": "台北市大同區迪化街一段134號", "en": "No. 134, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段134号", "ko": "타이베이시 다퉁구 디화제 1단 134호" },
-        "hours": { "zh": "09:30–18:00 (週四、日 17:00 關店)", "en": "09:30–18:00 (Thu, Sun 17:00 Close)", "ja": "09:30–18:00 (木・日曜 17:00閉店)", "ko": "09:30–18:00 (목, 일 17:00 마감)" }
-    },
-    {
-        "id": 41,
-        "category": "medicine",
-        "title": { "zh": "和新蔘藥行", "en": "He Xin Ginseng", "ja": "和新参薬行", "ko": "허신 삼약행" },
-        "address": { "zh": "台北市大同區迪化街一段126號2樓", "en": "2F, No. 126, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段126号2階", "ko": "타이베이시 다퉁구 디화제 1단 126호 2층" },
-        "hours": { "zh": "10:00–20:00 (週日 18:00 關店)", "en": "10:00–20:00 (Sun 18:00 Close)", "ja": "10:00–20:00 (日曜 18:00閉店)", "ko": "10:00–20:00 (일요일 18:00 마감)" }
-    },
-    {
-        "id": 42,
-        "category": "medicine",
-        "title": { "zh": "正新中藥行", "en": "Zheng Xin Medicine", "ja": "正新中薬行", "ko": "쩡신 중약행" },
-        "address": { "zh": "台北市大同區迪化街一段126號", "en": "No. 126, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段126号", "ko": "타이베이시 다퉁구 디화제 1단 126호" },
-        "hours": { "zh": "09:30–20:00 (週日 18:00 關店)", "en": "09:30–20:00 (Sun 18:00 Close)", "ja": "09:30–20:00 (日曜 18:00閉店)", "ko": "09:30–20:00 (일요일 18:00 마감)" }
-    },
-    {
-        "id": 43,
-        "category": "medicine",
-        "title": { "zh": "生記藥行", "en": "Sheng Ji Medicine", "ja": "生記薬行", "ko": "셩지 약행" },
-        "address": { "zh": "台北市大同區迪化街一段60號", "en": "No. 60, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段60号", "ko": "타이베이시 다퉁구 디화제 1단 60호" },
-        "hours": { "zh": "10:00–19:00 (週六 18:00 關店，週日公休)", "en": "10:00–19:00 (Sat 18:00 Close, Sun Closed)", "ja": "10:00–19:00 (土曜 18:00閉店, 日曜定休)", "ko": "10:00–19:00 (토요일 18:00 마감, 일요일 휴무)" }
-    },
-    {
-        "id": 44,
-        "category": "medicine",
-        "title": { "zh": "和億中藥行", "en": "He Yi Medicine", "ja": "和億中薬行", "ko": "허이 중약행" },
-        "address": { "zh": "台北市大同區迪化街一段90號", "en": "No. 90, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段90号", "ko": "타이베이시 다퉁구 디화제 1단 90호" },
-        "hours": { "zh": "10:00–18:00", "en": "10:00–18:00", "ja": "10:00–18:00", "ko": "10:00–18:00" }
-    },
-    {
-        "id": 45,
-        "category": "medicine",
-        "title": { "zh": "生元藥行", "en": "Sheng Yuan Medicine", "ja": "生元薬行", "ko": "셩위안 약행" },
-        "address": { "zh": "台北市大同區迪化街一段89號", "en": "No. 89, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段89号", "ko": "타이베이시 다퉁구 디화제 1단 89호" },
-        "hours": { "zh": "09:00–18:00 (週日公休)", "en": "09:00–18:00 (Sun Closed)", "ja": "09:00–18:00 (日曜定休)", "ko": "09:00–18:00 (일요일 휴무)" }
-    },
-    {
-        "id": 46,
-        "category": "medicine",
-        "title": { "zh": "正太藥行", "en": "Zheng Tai Medicine", "ja": "正太薬行", "ko": "쩡타이 약행" },
-        "address": { "zh": "台北市大同區迪化街一段132號", "en": "No. 132, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段132号", "ko": "타이베이시 다퉁구 디화제 1단 132호" },
-        "hours": { "zh": "09:00–19:00 (週日公休)", "en": "09:00–19:00 (Sun Closed)", "ja": "09:00–19:00 (日曜定休)", "ko": "09:00–19:00 (일요일 휴무)" }
-    },
-    {
-        "id": 47,
-        "category": "medicine",
-        "title": { "zh": "乾元藥行", "en": "Qian Yuan Medicine", "ja": "乾元薬行", "ko": "치엔위안 약행" },
-        "address": { "zh": "台北市大同區迪化街一段71號", "en": "No. 71, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段71号", "ko": "타이베이시 다퉁구 디화제 1단 71호" },
-        "hours": { "zh": "09:00–18:00", "en": "09:00–18:00", "ja": "09:00–18:00", "ko": "09:00–18:00" }
-    },
-    {
-        "id": 48,
-        "category": "medicine",
-        "title": { "zh": "龍源蔘藥行", "en": "Long Yuan Ginseng", "ja": "龍源参薬行", "ko": "롱위안 삼약행" },
-        "address": { "zh": "台北市大同區迪化街一段104號", "en": "No. 104, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段104号", "ko": "타이베이시 다퉁구 디화제 1단 104호" },
-        "hours": { "zh": "09:30–18:30 (週日公休)", "en": "09:30–18:30 (Sun Closed)", "ja": "09:30–18:30 (日曜定休)", "ko": "09:30–18:30 (일요일 휴무)" }
-    },
-    {
-        "id": 49,
-        "category": "medicine",
-        "title": { "zh": "葉金記藥行", "en": "Ye Jin Ji Medicine", "ja": "葉金記薬行", "ko": "예진지 약행" },
-        "address": { "zh": "台北市大同區迪化街一段150號", "en": "No. 150, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段150号", "ko": "타이베이시 다퉁구 디화제 1단 150호" },
-        "hours": { "zh": "09:00–18:00 (週日公休)", "en": "09:00–18:00 (Sun Closed)", "ja": "09:00–18:00 (日曜定休)", "ko": "09:00–18:00 (일요일 휴무)" }
-    },
-    {
-"id": 9,
-"category": "snack",
-"title": {
-"zh": "導演的豆花店",
-"en": "Director's Tofu Pudding Shop",
-"ja": "導演的豆花店",
-"ko": "감독의 도우화 (導演的豆花店)"
-},
-"address": {
-"zh": "103台北市大同區迪化街一段224巷24號",
-"en": "No. 24, Ln. 224, Sec. 1, Dihua St., Datong Dist., Taipei City 103, Taiwan",
-"ja": "103 台湾台北市大同区迪化街一段224巷24号",
-"ko": "대만 타이베이시 다퉁구 디화제 1단 224샹 24호 (우편번호: 103)"
-},
-"hours": {
-"zh": "週三至週四 12:00 - 18:00，週五至週日 11:00 - 18:00，週一、二公休",
-"en": "Wed-Thu 12:00 - 18:00, Fri-Sun 11:00 - 18:00 (Closed Mon & Tue)",
-"ja": "水・木 12:00 - 18:00、金〜日 11:00 - 18:00（月・火定休）",
-"ko": "수~목 12:00 - 18:00, 금~일 11:00 - 18:00 (월, 화요일 휴무)"
-},
-"description": {
-"zh": "隱身大稻埕巷弄的豆花店，由紀錄片導演開設。主打天然手作鹽滷豆花與山梔子粉粿，結合影像空間傳遞純樸古早味。",
-"en": "A cozy shop in Dadaocheng run by a documentary director, offering traditional handmade tofu pudding and fen-guo in a photography-themed space.",
-"ja": "大稲埕の路地裏にあるドキュメンタリー監督が営むお店。天然素材にこだわった手作りの豆花と粉粿（フングェ）が楽しめます。",
-"ko": "다다오청 골목에 위치한 다큐멘터리 감독이 운영하는 디저트 가게. 천연 식재료로 만든 수제 도우화와 펀궈를 사진 테마 공간에서 즐길 수 있습니다."
-}
-},{
-"id": 10,
-"category": "snack",
-"title": {
-"zh": "夏樹甜品",
-"en": "Summer Tree Sweet",
-"ja": "夏樹甜品",
-"ko": "샤수티엔핀 (夏樹甜品)"
-},
-"address": {
-"zh": "103台北市大同區迪化街一段240號",
-"en": "No. 240, Sec. 1, Dihua St., Datong Dist., Taipei City 103, Taiwan",
-"ja": "103 台湾台北市大同区迪化街一段240号",
-"ko": "대만 타이베이시 다퉁구 디화제 1단 240호 (우편번호: 103)"
-},
-"hours": {
-"zh": "每日 10:30 - 18:30",
-"en": "Daily 10:30 - 18:30",
-"ja": "毎日 10:30 - 18:30",
-"ko": "매일 10:30 - 18:30"
-},
-"description": {
-"zh": "位於迪化街的日系文青甜品店。主打天然養生的純手工杏仁豆腐、雪花冰與各式傳統甜品，口感細緻溫潤，深受國內外旅客喜愛。",
-"en": "A charming Japanese-style dessert shop on Dihua Street specializing in natural, handmade almond tofu and shaved ice. Loved by visitors for its comforting flavors.",
-"ja": "迪化街にある和風のレトロなスイーツ店。天然素材で作られた手作りの杏仁豆腐やふわふわのかき氷が人気で、優しい味わいが観光客に愛されています。",
-"ko": "디화제에 위치한 일본 감성의 디저트 카페. 천연 재료로 만든 수제 살구씨 두부와 빙수가 인기이며, 부드럽고 건강한 맛으로 여행객들의 사랑을 받고 있습니다."
-}
-},
-{
-"id": 11,
-"category": "snack",
-"title": {
-"zh": "魚刺人雞蛋糕-大稻埕店",
-"en": "Yuciren Egg Waffle - Dadaocheng Branch",
-"ja": "魚刺人雞蛋糕 大稲埕店",
-"ko": "위츠런 지단가오 다다오청점"
-},
-"address": {
-"zh": "103台北市大同區迪化街一段205號",
-"en": "No. 205, Sec. 1, Dihua St., Datong Dist., Taipei City 103, Taiwan",
-"ja": "103 台湾台北市大同区迪化街一段205号",
-"ko": "대만 타이베이시 다퉁구 디화제 1단 205호 (우편번호: 103)"
-},
-"hours": {
-"zh": "每日 11:00 - 18:30",
-"en": "Daily 11:00 - 18:30",
-"ja": "毎日 11:00 - 18:30",
-"ko": "매일 11:00 - 18:30"
-},
-"description": {
-"zh": "發跡於台中的超人氣品牌。大稻埕分店以老屋復古氛圍搭配創新口味的台式雞蛋糕，是漫步迪化街不可錯過的散步甜點。",
-"en": "A popular egg waffle brand from Taichung. The Dadaocheng branch combines a retro vibe with innovative flavors, making it a must-try walking dessert on Dihua Street.",
-"ja": "台中発の超人気ベビーカステラ専門店。大稲埕店はレトロな雰囲気の中で、斬新なフレーバーの台湾式カステラが楽しめる、迪化街の食べ歩きにぴったりの一品です。",
-"ko": "타이중에서 시작된 인기 대만식 계란빵 브랜드. 다다오청점은 레트로한 분위기 속에서 독창적인 맛을 제공하며, 디화제 산책 시 꼭 맛봐야 할 길거리 디저트입니다."
-}
-},
-{
-    "id": 12,
+    "hours": {
+      "zh": "週一、三至六 12:00–21:00 / 週日 10:00–19:00 (週二公休)",
+      "en": "Mon, Wed-Sat 12:00–21:00 / Sun 10:00–19:00 (Closed Tue)",
+      "ja": "月・水-土 12:00–21:00 / 日 10:00–19:00 (火曜定休)",
+      "ko": "월, 수~토 12:00–21:00 / 일 10:00–19:00 (화요일 휴무)"
+    }
+  },
+  {
+    "id": 21,
     "category": "snack",
     "title": {
-
-
-        "zh": "[維多麗亞的秋天]雞蛋糕）",
-        "en": "Victoria's Autumn (Egg Waffles)",
-        "ja": "ヴィクトリアの秋（ベビーカステラ）",
-        "ko": "빅토리아의 가을 (계란빵)"
+      "zh": "[維多麗亞的秋天]雞蛋糕）",
+      "en": "Victoria's Autumn (Egg Waffles)",
+      "ja": "ヴィクトリアの秋（ベビーカステラ）",
+      "ko": "빅토리아의 가을 (계란빵)"
     },
     "address": {
-        "zh": "103台北市大同區大有里迪化街一段144號",
-        "en": "No. 144, Sec. 1, Dihua St., Datong Dist., Taipei City 103, Taiwan",
-        "ja": "台湾台北市大同区大有里迪化街一段144号",
-        "ko": "대만 타이베이시 다퉁구 다유리 디화제 1단 144호"
+      "zh": "103台北市大同區大有里迪化街一段144號",
+      "en": "No. 144, Sec. 1, Dihua St., Datong Dist., Taipei City 103, Taiwan",
+      "ja": "台湾台北市大同区大有里迪化街一段144号",
+      "ko": "대만 타이베이시 다퉁구 다유리 디화제 1단 144호"
     },
     "hours": {
-        "zh": "星期六至星期日 10:00–18:30 (星期一至五休息)",
-        "en": "Sat-Sun 10:00 AM - 6:30 PM (Closed Mon-Fri)",
-        "ja": "土・日 10:00–18:30（月〜金 定休）",
-        "ko": "토~일 10:00–18:30 (월~금 휴무)"
+      "zh": "星期六至星期日 10:00–18:30 (星期一至五休息)",
+      "en": "Sat-Sun 10:00 AM - 6:30 PM (Closed Mon-Fri)",
+      "ja": "土・日 10:00–18:30（月〜金 定休）",
+      "ko": "토~일 10:00–18:30 (월~금 휴무)"
     },
     "description": {
-        "zh": "位於迪化街的精緻雞蛋糕攤位，造型獨特外酥內軟，帶有濃郁蛋香。週末限定營業，是逛大稻埕不可錯過的散步甜點。",
-        "en": "An exquisite egg waffle stand on Dihua Street offering crispy and fluffy treats. Open weekends only, perfect for a stroll.",
-        "ja": "迪化街にあるベビーカステラの屋台。外はサクサク、中はふんわりで卵の豊かな香りが特徴。週末のみの限定営業です。",
-        "ko": "디화제에 위치한 계란빵 노점. 겉은 바삭하고 속은 부드러운 식감과 진한 계란 향이 일품입니다. 주말 한정 영업합니다."
+      "zh": "位於迪化街的精緻雞蛋糕攤位，造型獨特外酥內軟，帶有濃郁蛋香。週末限定營業，是逛大稻埕不可錯過的散步甜點。",
+      "en": "An exquisite egg waffle stand on Dihua Street offering crispy and fluffy treats. Open weekends only, perfect for a stroll.",
+      "ja": "迪化街にあるベビーカステラの屋台。外はサクサク、中はふんわりで卵の豊かな香りが特徴。週末のみの限定営業です。",
+      "ko": "디화제에 위치한 계란빵 노점. 겉은 바삭하고 속은 부드러운 식감과 진한 계란 향이 일품입니다. 주말 한정 영업합니다."
     }
-},
-{
-    "id": 1,
+  },
+  {
+    "id": 22,
+    "category": "coffee",
+    "title": {
+      "zh": "AKA Café",
+      "en": "AKA Café",
+      "ja": "AKA Café",
+      "ko": "AKA 카페"
+    },
+    "address": {
+      "zh": "台北市大同區民樂街66號後棟",
+      "en": "Rear Bldg., No. 66, Minle St., Datong Dist., Taipei City",
+      "ja": "台北市大同区民楽街66号 後棟",
+      "ko": "타이베이시 다퉁구 민러제 66호 후동"
+    },
+    "hours": {
+      "zh": "週一至週四 10:30–00:00 / 週五 10:30–01:00 / 週日 10:30–18:30",
+      "en": "Mon-Thu 10:30-00:00 / Fri 10:30-01:00 / Sun 10:30-18:30",
+      "ja": "月-木 10:30-00:00 / 金 10:30-01:00 / 日 10:30-18:30",
+      "ko": "월~목 10:30-00:00 / 금 10:30-01:00 / 일 10:30-18:30"
+    }
+  },
+  {
+    "id": 23,
+    "category": "craft",
+    "title": {
+      "zh": "繭裹輕衫 稻埕店",
+      "en": "Twine Dadaocheng",
+      "ja": "繭裹軽衫 大稲埕店",
+      "ko": "지엔구오칭산 다다오청점"
+    },
+    "address": {
+      "zh": "台北市大同區迪化街一段213號",
+      "en": "No. 213, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段213号",
+      "ko": "타이베이시 다퉁구 디화제 1단 213호"
+    },
+    "hours": {
+      "zh": "週一至週日 10:00–19:30",
+      "en": "Mon-Sun 10:00–19:30",
+      "ja": "月-日 10:00–19:30",
+      "ko": "월~일 10:00–19:30"
+    }
+  },
+  {
+    "id": 24,
+    "category": "craft",
+    "title": {
+      "zh": "A Design & Life Project",
+      "en": "A Design & Life Project",
+      "ja": "A Design & Life Project",
+      "ko": "A Design & Life Project"
+    },
+    "address": {
+      "zh": "台北市大同區南京西路279號",
+      "en": "No. 279, Nanjing W. Rd., Datong Dist., Taipei",
+      "ja": "台北市大同区南京西路279号",
+      "ko": "타이베이시 다퉁구 난징서로 279호"
+    },
+    "hours": {
+      "zh": "週一至週日 11:00–19:00",
+      "en": "Mon-Sun 11:00–19:00",
+      "ja": "月-日 11:00–19:00",
+      "ko": "월~일 11:00–19:00"
+    }
+  },
+  {
+    "id": 25,
+    "category": "craft",
+    "title": {
+      "zh": "高建桶店",
+      "en": "Gao Jian Bucket Store",
+      "ja": "高建桶店",
+      "ko": "까오지엔 통뎬"
+    },
+    "address": {
+      "zh": "台北市大同區迪化街一段204號",
+      "en": "No. 204, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段204号",
+      "ko": "타이베이시 다퉁구 디화제 1단 204호"
+    },
+    "hours": {
+      "zh": "週一至週日 09:00–20:00",
+      "en": "Mon-Sun 09:00–20:00",
+      "ja": "月-日 09:00–20:00",
+      "ko": "월~일 09:00–20:00"
+    }
+  },
+  {
+    "id": 26,
+    "category": "coffee",
+    "title": {
+      "zh": "耳邊風 ebf.cafe",
+      "en": "ebf.cafe",
+      "ja": "耳辺風 ebf.cafe",
+      "ko": "얼볜펑 ebf.cafe"
+    },
+    "address": {
+      "zh": "台北市大同區迪化街一段224巷26號",
+      "en": "No. 26, Ln. 224, Sec. 1, Dihua St., Datong Dist., Taipei City",
+      "ja": "台北市大同区迪化街一段224巷26号",
+      "ko": "타이베이시 다퉁구 디화제 1단 224항 26호"
+    },
+    "hours": {
+      "zh": "平日 11:00–18:00 / 週末 10:30–18:00 (週二、三公休)",
+      "en": "Weekdays 11:00-18:00 / Weekends 10:30-18:00 (Closed Tue, Wed)",
+      "ja": "平日 11:00-18:00 / 週末 10:30-18:00 (火・水曜定休)",
+      "ko": "평일 11:00-18:00 / 주말 10:30-18:00 (화, 수 휴무)"
+    }
+  },
+  {
+    "id": 27,
+    "category": "craft",
+    "title": {
+      "zh": "你好我好",
+      "en": "Ni Hao Wo Hao",
+      "ja": "你好我好",
+      "ko": "니하오워하오"
+    },
+    "address": {
+      "zh": "台北市大同區迪化街一段14巷8號",
+      "en": "No. 8, Ln. 14, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段14巷8号",
+      "ko": "타이베이시 다퉁구 디화제 1단 14항 8호"
+    },
+    "hours": {
+      "zh": "週一至週日 10:00–18:00 (週三公休)",
+      "en": "Mon-Sun 10:00–18:00 (Closed Wed)",
+      "ja": "月-日 10:00–18:00 (水曜定休)",
+      "ko": "월~일 10:00–18:00 (수요일 휴무)"
+    }
+  },
+  {
+    "id": 28,
+    "category": "craft",
+    "title": {
+      "zh": "BRUSH & GREEN",
+      "en": "BRUSH & GREEN",
+      "ja": "BRUSH & GREEN",
+      "ko": "BRUSH & GREEN"
+    },
+    "address": {
+      "zh": "台北市大同區安西街33號",
+      "en": "No. 33, Anxi St., Datong Dist., Taipei",
+      "ja": "台北市大同区安西街33号",
+      "ko": "타이베이시 다퉁구 안시제 33호"
+    },
+    "hours": {
+      "zh": "週三至週日 10:00–18:00",
+      "en": "Wed-Sun 10:00–18:00",
+      "ja": "水-日 10:00–18:00",
+      "ko": "수~일 10:00–18:00"
+    }
+  },
+  {
+    "id": 29,
+    "category": "craft",
+    "title": {
+      "zh": "岩筆模 MBmore",
+      "en": "MBmore",
+      "ja": "岩筆模 MBmore",
+      "ko": "이옌비모 MBmore"
+    },
+    "address": {
+      "zh": "台北市大同區南京西路275號",
+      "en": "No. 275, Nanjing W. Rd., Datong Dist., Taipei",
+      "ja": "台北市大同区南京西路275号",
+      "ko": "타이베이시 다퉁구 난징서로 275호"
+    },
+    "hours": {
+      "zh": "週二至週日 11:00–19:00 (週一公休)",
+      "en": "Tue-Sun 11:00–19:00 (Closed Mon)",
+      "ja": "火-日 11:00–19:00 (月曜定休)",
+      "ko": "화~일 11:00–19:00 (월요일 휴무)"
+    }
+  },
+  {
+    "id": 30,
+    "category": "craft",
+    "title": {
+      "zh": "台灣日和",
+      "en": "Taiwan Biyori",
+      "ja": "台湾日和",
+      "ko": "타이완 비요리"
+    },
+    "address": {
+      "zh": "台北市大同區延平北路二段41號",
+      "en": "No. 41, Sec. 2, Yanping N. Rd., Datong Dist., Taipei",
+      "ja": "台北市大同区延平北路二段41号",
+      "ko": "타이베이시 다퉁구 옌핑북로 2단 41호"
+    },
+    "hours": {
+      "zh": "週一至週日 10:30–18:30 (週二、三公休)",
+      "en": "Mon-Sun 10:30–18:30 (Closed Tue, Wed)",
+      "ja": "月-日 10:30–18:30 (火・水曜定休)",
+      "ko": "월~일 10:30–18:30 (화, 수 휴무)"
+    }
+  },
+  {
+    "id": 31,
+    "category": "pastry",
+    "title": {
+      "zh": "合興壹玖肆柒",
+      "en": "Ho Hsing 1947",
+      "ja": "合興壹玖肆柒",
+      "ko": "허싱 1947"
+    },
+    "address": {
+      "zh": "台北市大同區迪化街一段223號",
+      "en": "No. 223, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段223号",
+      "ko": "타이베이시 다퉁구 디화제 1단 223호"
+    },
+    "hours": {
+      "zh": "每日 10:00–18:00",
+      "en": "Daily 10:00–18:00",
+      "ja": "毎日 10:00–18:00",
+      "ko": "매일 10:00–18:00"
+    }
+  },
+  {
+    "id": 32,
+    "category": "pastry",
+    "title": {
+      "zh": "李亭香",
+      "en": "Lee Chi-Tsang",
+      "ja": "李亭香",
+      "ko": "리팅샹"
+    },
+    "address": {
+      "zh": "台北市大同區迪化街一段309號",
+      "en": "No. 309, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段309号",
+      "ko": "타이베이시 다퉁구 디화제 1단 309호"
+    },
+    "hours": {
+      "zh": "每日 10:00–19:00",
+      "en": "Daily 10:00–19:00",
+      "ja": "毎日 10:00–19:00",
+      "ko": "매일 10:00–19:00"
+    }
+  },
+  {
+    "id": 33,
+    "category": "pastry",
+    "title": {
+      "zh": "龍月堂糕餅鋪",
+      "en": "Long Yue Tang",
+      "ja": "龍月堂糕餅鋪",
+      "ko": "룽위에탕"
+    },
+    "address": {
+      "zh": "台北市大同區延平北路二段169號",
+      "en": "No. 169, Sec. 2, Yanping N. Rd., Datong Dist., Taipei",
+      "ja": "台北市大同区延平北路二段169号",
+      "ko": "타이베이시 다퉁구 옌핑북로 2단 169호"
+    },
+    "hours": {
+      "zh": "08:00–20:30 (週六公休)",
+      "en": "08:00–20:30 (Closed Sat)",
+      "ja": "08:00–20:30 (土曜定休)",
+      "ko": "08:00–20:30 (토요일 휴무)"
+    }
+  },
+  {
+    "id": 34,
+    "category": "pastry",
+    "title": {
+      "zh": "十字軒糕餅鋪",
+      "en": "Shi Zi Xuan",
+      "ja": "十字軒糕餅鋪",
+      "ko": "스즈쉬안"
+    },
+    "address": {
+      "zh": "台北市大同區延平北路二段68號",
+      "en": "No. 68, Sec. 2, Yanping N. Rd., Datong Dist., Taipei",
+      "ja": "台北市大同区延平北路二段68号",
+      "ko": "타이베이시 다퉁구 옌핑북로 2단 68호"
+    },
+    "hours": {
+      "zh": "週一至六 09:00–19:00；週日 09:00–18:00",
+      "en": "Mon-Sat 09:00–19:00; Sun 09:00–18:00",
+      "ja": "月-土 09:00–19:00; 日 09:00–18:00",
+      "ko": "월~토 09:00–19:00; 일 09:00–18:00"
+    }
+  },
+  {
+    "id": 35,
+    "category": "pastry",
+    "title": {
+      "zh": "林貞粿行",
+      "en": "Lin Zhen Guo Hang",
+      "ja": "林貞粿行",
+      "ko": "린전궈항"
+    },
+    "address": {
+      "zh": "台北市大同區迪化街二段172巷12-2號",
+      "en": "No. 12-2, Ln. 172, Sec. 2, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街二段172巷12-2号",
+      "ko": "타이베이시 다퉁구 디화제 2단 172항 12-2호"
+    },
+    "hours": {
+      "zh": "週三至五 11:00–18:00；週末 11:00–19:00 (週一二公休)",
+      "en": "Wed-Fri 11:00–18:00; Sat-Sun 11:00–19:00 (Closed Mon, Tue)",
+      "ja": "水-金 11:00–18:00; 土-日 11:00–19:00 (月・火曜定休)",
+      "ko": "수~금 11:00–18:00; 토~일 11:00–19:00 (월, 화 휴무)"
+    }
+  },
+  {
+    "id": 36,
+    "category": "pastry",
+    "title": {
+      "zh": "滋養和菓子",
+      "en": "Ziyang Wagashi",
+      "ja": "滋養和菓子",
+      "ko": "쯔양 화과자 (滋養和菓子)"
+    },
+    "address": {
+      "zh": "103台北市大同區迪化街一段247號",
+      "en": "No. 247, Sec. 1, Dihua St., Datong Dist., Taipei City 103, Taiwan",
+      "ja": "103 台湾台北市大同区迪化街一段247号",
+      "ko": "대만 타이베이시 다퉁구 디화제 1단 247호 (우편번호: 103)"
+    },
+    "hours": {
+      "zh": "每日 09:00 - 18:00",
+      "en": "Daily 09:00 - 18:00",
+      "ja": "毎日 09:00 - 18:00",
+      "ko": "매일 09:00 - 18:00"
+    },
+    "description": {
+      "zh": "大稻埕老字號日式和菓子店，創立於1953年。嚴選頂級食材，純手工製作最中、草莓大福等經典甜點，為經典伴手禮首選。",
+      "en": "A historic Japanese sweet shop in Dadaocheng founded in 1953. Renowned for its premium handmade wagashi, especially monaka and strawberry daifuku.",
+      "ja": "1953年創業、大稲埕にある老舗和菓子店。厳選素材を使用し、最中やいちご大福など、手作りの伝統的な和スイーツを提供しています。",
+      "ko": "1953년에 설립된 다다오청의 유서 깊은 화과자 전문점. 엄선된 최고급 재료로 만든 수제 모나카와 딸기 찹쌀떡 등 전통 디저트를 선보입니다."
+    }
+  },
+  {
+    "id": 37,
+    "category": "pastry",
+    "title": {
+      "zh": "江記華隆商行",
+      "en": "Chiang Kee Hwa Long",
+      "ja": "江記華隆商行",
+      "ko": "장지화룽 상항"
+    },
+    "address": {
+      "zh": "台北市大同區迪化街一段311號",
+      "en": "No. 311, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段311号",
+      "ko": "타이베이시 다퉁구 디화제 1단 311호"
+    },
+    "hours": {
+      "zh": "週一至六 09:00–20:00；週日 09:00–19:00",
+      "en": "Mon-Sat 09:00–20:00; Sun 09:00–19:00",
+      "ja": "月-土 09:00–20:00; 日 09:00–19:00",
+      "ko": "월~토 09:00–20:00; 일 09:00–19:00"
+    }
+  },
+  {
+    "id": 38,
+    "category": "pastry",
+    "title": {
+      "zh": "加福奇士蛋糕專門店",
+      "en": "Jia Fu Cheesecake",
+      "ja": "加福奇士蛋糕專門店",
+      "ko": "자푸 치즈케이크"
+    },
+    "address": {
+      "zh": "台北市大同區延平北路二段72號",
+      "en": "No. 72, Sec. 2, Yanping N. Rd., Datong Dist., Taipei",
+      "ja": "台北市大同区延平北路二段72号",
+      "ko": "타이베이시 다퉁구 옌핑북로 2단 72호"
+    },
+    "hours": {
+      "zh": "週一至六 09:00–21:00；週日 09:00–17:00",
+      "en": "Mon-Sat 09:00–21:00; Sun 09:00–17:00",
+      "ja": "月-土 09:00–21:00; 日 09:00–17:00",
+      "ko": "월~토 09:00–21:00; 일 09:00–17:00"
+    }
+  },
+  {
+    "id": 39,
+    "category": "pastry",
+    "title": {
+      "zh": "霞海城隍廟週邊糕點攤",
+      "en": "Xia Hai Temple Stalls",
+      "ja": "霞海城隍廟周辺菓子店",
+      "ko": "시아하이 성황묘 주변 점포"
+    },
+    "address": {
+      "zh": "台北市大同區迪化街一段61號",
+      "en": "No. 61, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段61号",
+      "ko": "타이베이시 다퉁구 디화제 1단 61호"
+    },
+    "hours": {
+      "zh": "隨市場營業時間",
+      "en": "Market Hours",
+      "ja": "市場営業時間に準じる",
+      "ko": "시장 운영 시간"
+    }
+  },
+  {
+    "id": 40,
+    "category": "medicine",
+    "title": {
+      "zh": "黃長生藥行",
+      "en": "Huang Chang Sheng",
+      "ja": "黄長生薬行",
+      "ko": "황창성 약행"
+    },
+    "address": {
+      "zh": "台北市大同區迪化街一段134號",
+      "en": "No. 134, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段134号",
+      "ko": "타이베이시 다퉁구 디화제 1단 134호"
+    },
+    "hours": {
+      "zh": "09:30–18:00 (週四、日 17:00 關店)",
+      "en": "09:30–18:00 (Thu, Sun 17:00 Close)",
+      "ja": "09:30–18:00 (木・日曜 17:00閉店)",
+      "ko": "09:30–18:00 (목, 일 17:00 마감)"
+    }
+  },
+  {
+    "id": 41,
+    "category": "medicine",
+    "title": {
+      "zh": "和新蔘藥行",
+      "en": "He Xin Ginseng",
+      "ja": "和新参薬行",
+      "ko": "허신 삼약행"
+    },
+    "address": {
+      "zh": "台北市大同區迪化街一段126號2樓",
+      "en": "2F, No. 126, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段126号2階",
+      "ko": "타이베이시 다퉁구 디화제 1단 126호 2층"
+    },
+    "hours": {
+      "zh": "10:00–20:00 (週日 18:00 關店)",
+      "en": "10:00–20:00 (Sun 18:00 Close)",
+      "ja": "10:00–20:00 (日曜 18:00閉店)",
+      "ko": "10:00–20:00 (일요일 18:00 마감)"
+    }
+  },
+  {
+    "id": 42,
+    "category": "medicine",
+    "title": {
+      "zh": "正新中藥行",
+      "en": "Zheng Xin Medicine",
+      "ja": "正新中薬行",
+      "ko": "쩡신 중약행"
+    },
+    "address": {
+      "zh": "台北市大同區迪化街一段126號",
+      "en": "No. 126, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段126号",
+      "ko": "타이베이시 다퉁구 디화제 1단 126호"
+    },
+    "hours": {
+      "zh": "09:30–20:00 (週日 18:00 關店)",
+      "en": "09:30–20:00 (Sun 18:00 Close)",
+      "ja": "09:30–20:00 (日曜 18:00閉店)",
+      "ko": "09:30–20:00 (일요일 18:00 마감)"
+    }
+  },
+  {
+    "id": 43,
+    "category": "medicine",
+    "title": {
+      "zh": "生記藥行",
+      "en": "Sheng Ji Medicine",
+      "ja": "生記薬行",
+      "ko": "셩지 약행"
+    },
+    "address": {
+      "zh": "台北市大同區迪化街一段60號",
+      "en": "No. 60, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段60号",
+      "ko": "타이베이시 다퉁구 디화제 1단 60호"
+    },
+    "hours": {
+      "zh": "10:00–19:00 (週六 18:00 關店，週日公休)",
+      "en": "10:00–19:00 (Sat 18:00 Close, Sun Closed)",
+      "ja": "10:00–19:00 (土曜 18:00閉店, 日曜定休)",
+      "ko": "10:00–19:00 (토요일 18:00 마감, 일요일 휴무)"
+    }
+  },
+  {
+    "id": 44,
+    "category": "medicine",
+    "title": {
+      "zh": "和億中藥行",
+      "en": "He Yi Medicine",
+      "ja": "和億中薬行",
+      "ko": "허이 중약행"
+    },
+    "address": {
+      "zh": "台北市大同區迪化街一段90號",
+      "en": "No. 90, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段90号",
+      "ko": "타이베이시 다퉁구 디화제 1단 90호"
+    },
+    "hours": {
+      "zh": "10:00–18:00",
+      "en": "10:00–18:00",
+      "ja": "10:00–18:00",
+      "ko": "10:00–18:00"
+    }
+  },
+  {
+    "id": 45,
+    "category": "medicine",
+    "title": {
+      "zh": "生元藥行",
+      "en": "Sheng Yuan Medicine",
+      "ja": "生元薬行",
+      "ko": "셩위안 약행"
+    },
+    "address": {
+      "zh": "台北市大同區迪化街一段89號",
+      "en": "No. 89, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段89号",
+      "ko": "타이베이시 다퉁구 디화제 1단 89호"
+    },
+    "hours": {
+      "zh": "09:00–18:00 (週日公休)",
+      "en": "09:00–18:00 (Sun Closed)",
+      "ja": "09:00–18:00 (日曜定休)",
+      "ko": "09:00–18:00 (일요일 휴무)"
+    }
+  },
+  {
+    "id": 46,
+    "category": "medicine",
+    "title": {
+      "zh": "正太藥行",
+      "en": "Zheng Tai Medicine",
+      "ja": "正太薬行",
+      "ko": "쩡타이 약행"
+    },
+    "address": {
+      "zh": "台北市大同區迪化街一段132號",
+      "en": "No. 132, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段132号",
+      "ko": "타이베이시 다퉁구 디화제 1단 132호"
+    },
+    "hours": {
+      "zh": "09:00–19:00 (週日公休)",
+      "en": "09:00–19:00 (Sun Closed)",
+      "ja": "09:00–19:00 (日曜定休)",
+      "ko": "09:00–19:00 (일요일 휴무)"
+    }
+  },
+  {
+    "id": 47,
+    "category": "medicine",
+    "title": {
+      "zh": "乾元藥行",
+      "en": "Qian Yuan Medicine",
+      "ja": "乾元薬行",
+      "ko": "치엔위안 약행"
+    },
+    "address": {
+      "zh": "台北市大同區迪化街一段71號",
+      "en": "No. 71, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段71号",
+      "ko": "타이베이시 다퉁구 디화제 1단 71호"
+    },
+    "hours": {
+      "zh": "09:00–18:00",
+      "en": "09:00–18:00",
+      "ja": "09:00–18:00",
+      "ko": "09:00–18:00"
+    }
+  },
+  {
+    "id": 48,
+    "category": "medicine",
+    "title": {
+      "zh": "龍源蔘藥行",
+      "en": "Long Yuan Ginseng",
+      "ja": "龍源参薬行",
+      "ko": "롱위안 삼약행"
+    },
+    "address": {
+      "zh": "台北市大同區迪化街一段104號",
+      "en": "No. 104, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段104号",
+      "ko": "타이베이시 다퉁구 디화제 1단 104호"
+    },
+    "hours": {
+      "zh": "09:30–18:30 (週日公休)",
+      "en": "09:30–18:30 (Sun Closed)",
+      "ja": "09:30–18:30 (日曜定休)",
+      "ko": "09:30–18:30 (일요일 휴무)"
+    }
+  },
+  {
+    "id": 49,
+    "category": "medicine",
+    "title": {
+      "zh": "葉金記藥行",
+      "en": "Ye Jin Ji Medicine",
+      "ja": "葉金記薬行",
+      "ko": "예진지 약행"
+    },
+    "address": {
+      "zh": "台北市大同區迪化街一段150號",
+      "en": "No. 150, Sec. 1, Dihua St., Datong Dist., Taipei",
+      "ja": "台北市大同区迪化街一段150号",
+      "ko": "타이베이시 다퉁구 디화제 1단 150호"
+    },
+    "hours": {
+      "zh": "09:00–18:00 (週日公休)",
+      "en": "09:00–18:00 (Sun Closed)",
+      "ja": "09:00–18:00 (日曜定休)",
+      "ko": "09:00–18:00 (일요일 휴무)"
+    }
+  },
+  {
+    "id": 50,
+    "category": "craft",
+    "title": {
+      "zh": "印花樂大稻埕店",
+      "en": "In Blooom Dadaocheng",
+      "ja": "印花楽 大稲埕店",
+      "ko": "인블룸 다다오청점"
+    },
+    "address": {
+      "zh": "台北市大同區民樂街28號",
+      "en": "No. 28, Minle St., Datong Dist., Taipei",
+      "ja": "台北市大同区民楽街28号",
+      "ko": "타이베이시 다퉁구 민러제 28호"
+    },
+    "hours": {
+      "zh": "週一至週日 09:30–19:00",
+      "en": "Mon-Sun 09:30–19:00",
+      "ja": "月-日 09:30–19:00",
+      "ko": "월~일 09:30–19:00"
+    }
+  },
+  {
+    "id": 51,
+    "category": "coffee",
+    "title": {
+      "zh": "初二 Ao Tao Zu 咖啡",
+      "en": "Ao Tao Zu Cafe",
+      "ja": "初二 Ao Tao Zu カフェ",
+      "ko": "추얼(初二) Ao Tao Zu 카페"
+    },
+    "address": {
+      "zh": "103台北市大同區涼州街106號2樓",
+      "en": "2F., No. 106, Liangzhou St., Datong Dist., Taipei City 103, Taiwan",
+      "ja": "103 台湾台北市大同区涼州街106号2階",
+      "ko": "대만 타이베이시 다퉁구 량저우제 106호 2층 (우편번호: 103)"
+    },
+    "hours": {
+      "zh": "每日 14:30 - 00:00",
+      "en": "Daily 14:30 - 00:00",
+      "ja": "毎日 14:30 - 00:00",
+      "ko": "매일 14:30 - 00:00"
+    },
+    "description": {
+      "zh": "隱身大稻埕老公寓二樓的深夜咖啡廳。復古靜謐的空間內提供手沖咖啡、手作甜點與招牌水餃，是夜晚放鬆的秘密基地。",
+      "en": "A late-night cafe hidden on the second floor of an old Dadaocheng apartment. It offers pour-over coffee, desserts, and signature dumplings in a retro, tranquil vibe.",
+      "ja": "大稲埕の古いアパートの2階に隠れ家のように佇む深夜営業のカフェ。レトロで静かな空間で、ハンドドリップコーヒーや名物の水餃子が楽しめます。",
+      "ko": "다다오청 오래된 아파트 2층에 숨겨진 심야 카페. 레트로하고 조용한 공간에서 핸드드립 커피, 디저트, 시그니처 물만두를 즐기며 휴식하기 좋은 비밀 아지트입니다."
+    }
+  },
+  {
+    "id": 52,
     "category": "snack",
     "title": {
-        "zh": "宮本家復古味台灣冰淇淋",
-        "en": "Miyamotoka Traditional Taiwanese Ice Cream",
-        "ja": "宮本家 レトロ台湾風アイスクリーム",
-        "ko": "미야모토가 레트로 대만식 아이스크림"
+      "zh": "導演的豆花店",
+      "en": "Director's Tofu Pudding Shop",
+      "ja": "導演的豆花店",
+      "ko": "감독의 도우화 (導演的豆花店)"
     },
     "address": {
-        "zh": "103台北市大同區迪化街一段186號",
-        "en": "No. 186, Sec. 1, Dihua St., Datong Dist., Taipei City 103, Taiwan",
-        "ja": "台湾台北市大同区迪化街一段186号",
-        "ko": "대만 타이베이시 다퉁구 디화제 1단 186호"
+      "zh": "103台北市大同區迪化街一段224巷24號",
+      "en": "No. 24, Ln. 224, Sec. 1, Dihua St., Datong Dist., Taipei City 103, Taiwan",
+      "ja": "103 台湾台北市大同区迪化街一段224巷24号",
+      "ko": "대만 타이베이시 다퉁구 디화제 1단 224샹 24호 (우편번호: 103)"
     },
     "hours": {
-        "zh": "週二至週五 10:30–17:30，週六至週一 12:00–17:30",
-        "en": "Tue-Fri 10:30 AM - 5:30 PM, Sat-Mon 12:00 PM - 5:30 PM",
-        "ja": "火〜金 10:30–17:30、土〜月 12:00–17:30",
-        "ko": "화~금 10:30–17:30, 토~월 12:00–17:30"
+      "zh": "週三至週四 12:00 - 18:00，週五至週日 11:00 - 18:00，週一、二公休",
+      "en": "Wed-Thu 12:00 - 18:00, Fri-Sun 11:00 - 18:00 (Closed Mon & Tue)",
+      "ja": "水・木 12:00 - 18:00、金〜日 11:00 - 18:00（月・火定休）",
+      "ko": "수~목 12:00 - 18:00, 금~일 11:00 - 18:00 (월, 화요일 휴무)"
     },
     "description": {
-        "zh": "迪化街傳統叭噗冰專賣，嚴選在地水果手工製作，無添加奶類，口感純粹天然，是感受大稻埕復古風情的消暑散步甜點。",
-        "en": "A traditional 'ba-pu' ice cream stall on Dihua St. offering natural, fruit-based flavors without dairy. A perfect refreshing treat while exploring Dadaocheng.",
-        "ja": "迪化街にある伝統的なアイスクリームの屋台。旬の果物を使用し、乳製品不使用の自然な味わいが特徴。大稻埕散策の休憩に最適です。",
-        "ko": "디화제에 위치한 전통 아이스크림 노점. 유제품 없이 대만산 과일로 직접 만들어 자연 그대로의 맛을 즐길 수 있는 다다오청 산책 필수 디저트입니다."
+      "zh": "隱身大稻埕巷弄的豆花店，由紀錄片導演開設。主打天然手作鹽滷豆花與山梔子粉粿，結合影像空間傳遞純樸古早味。",
+      "en": "A cozy shop in Dadaocheng run by a documentary director, offering traditional handmade tofu pudding and fen-guo in a photography-themed space.",
+      "ja": "大稲埕の路地裏にあるドキュメンタリー監督が営むお店。天然素材にこだわった手作りの豆花と粉粿（フングェ）が楽しめます。",
+      "ko": "다다오청 골목에 위치한 다큐멘터리 감독이 운영하는 디저트 가게. 천연 식재료로 만든 수제 도우화와 펀궈를 사진 테마 공간에서 즐길 수 있습니다."
     }
-}
-    
-    
-
+  },
+  {
+    "id": 53,
+    "category": "coffee",
+    "title": {
+      "zh": "COFE 喫茶·咖啡",
+      "en": "COFE",
+      "ja": "COFE 喫茶・珈琲",
+      "ko": "COFE 찻집·커피"
+    },
+    "address": {
+      "zh": "台北市大同區迪化街一段248號2樓",
+      "en": "2F, No. 248, Sec. 1, Dihua St., Datong Dist., Taipei City",
+      "ja": "台北市大同区迪化街一段248号2階",
+      "ko": "타이베이시 다퉁구 디화제 1단 248호 2층"
+    },
+    "hours": {
+      "zh": "10:00–18:00 (週二公休)",
+      "en": "10:00-18:00 (Closed Tue)",
+      "ja": "10:00-18:00 (火曜定休)",
+      "ko": "10:00-18:00 (화요일 휴무)"
+    }
+  },
+  {
+    "id": 54,
+    "category": "snack",
+    "title": {
+      "zh": "夏樹甜品",
+      "en": "Summer Tree Sweet",
+      "ja": "夏樹甜品",
+      "ko": "샤수티엔핀 (夏樹甜品)"
+    },
+    "address": {
+      "zh": "103台北市大同區迪化街一段240號",
+      "en": "No. 240, Sec. 1, Dihua St., Datong Dist., Taipei City 103, Taiwan",
+      "ja": "103 台湾台北市大同区迪化街一段240号",
+      "ko": "대만 타이베이시 다퉁구 디화제 1단 240호 (우편번호: 103)"
+    },
+    "hours": {
+      "zh": "每日 10:30 - 18:30",
+      "en": "Daily 10:30 - 18:30",
+      "ja": "毎日 10:30 - 18:30",
+      "ko": "매일 10:30 - 18:30"
+    },
+    "description": {
+      "zh": "位於迪化街的日系文青甜品店。主打天然養生的純手工杏仁豆腐、雪花冰與各式傳統甜品，口感細緻溫潤，深受國內外旅客喜愛。",
+      "en": "A charming Japanese-style dessert shop on Dihua Street specializing in natural, handmade almond tofu and shaved ice. Loved by visitors for its comforting flavors.",
+      "ja": "迪化街にある和風のレトロなスイーツ店。天然素材で作られた手作りの杏仁豆腐やふわふわのかき氷が人気で、優しい味わいが観光客に愛されています。",
+      "ko": "디화제에 위치한 일본 감성의 디저트 카페. 천연 재료로 만든 수제 살구씨 두부와 빙수가 인기이며, 부드럽고 건강한 맛으로 여행객들의 사랑을 받고 있습니다."
+    }
+  },
+  {
+    "id": 55,
+    "category": "snack",
+    "title": {
+      "zh": "魚刺人雞蛋糕-大稻埕店",
+      "en": "Yuciren Egg Waffle - Dadaocheng Branch",
+      "ja": "魚刺人雞蛋糕 大稲埕店",
+      "ko": "위츠런 지단가오 다다오청점"
+    },
+    "address": {
+      "zh": "103台北市大同區迪化街一段205號",
+      "en": "No. 205, Sec. 1, Dihua St., Datong Dist., Taipei City 103, Taiwan",
+      "ja": "103 台湾台北市大同区迪化街一段205号",
+      "ko": "대만 타이베이시 다퉁구 디화제 1단 205호 (우편번호: 103)"
+    },
+    "hours": {
+      "zh": "每日 11:00 - 18:30",
+      "en": "Daily 11:00 - 18:30",
+      "ja": "毎日 11:00 - 18:30",
+      "ko": "매일 11:00 - 18:30"
+    },
+    "description": {
+      "zh": "發跡於台中的超人氣品牌。大稻埕分店以老屋復古氛圍搭配創新口味的台式雞蛋糕，是漫步迪化街不可錯過的散步甜點。",
+      "en": "A popular egg waffle brand from Taichung. The Dadaocheng branch combines a retro vibe with innovative flavors, making it a must-try walking dessert on Dihua Street.",
+      "ja": "台中発の超人気ベビーカステラ専門店。大稲埕店はレトロな雰囲気の中で、斬新なフレーバーの台湾式カステラが楽しめる、迪化街の食べ歩きにぴったりの一品です。",
+      "ko": "타이중에서 시작된 인기 대만식 계란빵 브랜드. 다다오청점은 레트로한 분위기 속에서 독창적인 맛을 제공하며, 디화제 산책 시 꼭 맛봐야 할 길거리 디저트입니다."
+    }
+  }
 ]
