@@ -197,27 +197,33 @@
         }
     },
     {
-        "id": 7,
-        "category": "coffee",
-        "title": {
-            "zh": "草原派對",
-            "en": "Grassland Party",
-            "ja": "草原派対",
-            "ko": "초원파티"
-        },
-        "address": {
-            "zh": "台北市大同區迪化街一段14巷4號",
-            "en": "No. 4, Ln. 14, Sec. 1, Dihua St., Datong Dist., Taipei City",
-            "ja": "台北市大同区迪化街一段14巷4号",
-            "ko": "타이베이시 다퉁구 디화제 1단 14항 4호"
-        },
-        "hours": {
-            "zh": "10:00–20:00",
-            "en": "10:00-20:00",
-            "ja": "10:00-20:00",
-            "ko": "10:00-20:00"
-        }
+    "id": 7,
+    "category": "coffee",
+    "title": {
+        "zh": "Under160 by _holic / 尻蕊有限公司",
+        "en": "Under160 by _holic",
+        "ja": "Under160 by _holic",
+        "ko": "언더160 바이 홀릭 (Under160 by _holic)"
     },
+    "address": {
+        "zh": "103台北市大同區南京西路239巷16號",
+        "en": "No. 16, Ln. 239, Nanjing W. Rd., Datong Dist., Taipei City 103, Taiwan",
+        "ja": "103 台湾台北市大同区南京西路239巷16号",
+        "ko": "대만 타이베이시 다퉁구 난징시루 239샹 16호 (우편번호: 103)"
+    },
+    "hours": {
+        "zh": "週一、週三至週五、週日 08:00 - 17:00，週六 08:00 - 20:00，週二公休",
+        "en": "Mon, Wed-Fri, Sun 08:00 - 17:00, Sat 08:00 - 20:00 (Closed Tue)",
+        "ja": "月・水〜金・日 08:00 - 17:00、土 08:00 - 20:00（火曜定休）",
+        "ko": "월, 수~금, 일 08:00 - 17:00, 토 08:00 - 20:00 (화요일 휴무)"
+    },
+    "description": {
+        "zh": "隱身大稻埕巷弄的特色咖啡空間。主打創意特調與職人咖啡，在充滿設計巧思與舒適的氛圍中，帶來獨特的品飲體驗。",
+        "en": "A hidden specialty cafe in Dadaocheng offering creative drinks and artisanal coffee in a cozy, uniquely designed space.",
+        "ja": "大稲埕の路地裏に佇む個性的なカフェ。こだわりの特製ドリンクや職人淹れのコーヒーを、リラックスできる空間で提供します。",
+        "ko": "다다오청 골목에 숨겨진 개성 있는 카페. 편안한 분위기 속에서 창의적인 특제 음료와 장인이 내린 커피를 즐길 수 있습니다."
+    }
+},
     {
         "id": 8,
         "category": "coffee",
@@ -299,19 +305,61 @@
         "hours": { "zh": "每日 07:30–21:00", "en": "Daily 07:30–21:00", "ja": "毎日 07:30–21:00", "ko": "매일 07:30–21:00" }
     },
     {
-        "id": 13,
-        "category": "tea",
-        "title": { "zh": "有記名茶", "en": "WANGTEA", "ja": "有記名茶", "ko": "유기명차" },
-        "address": { "zh": "台北市大同區重慶北路二段64巷26號", "en": "No. 26, Ln. 64, Sec. 2, Chongqing N. Rd., Datong Dist., Taipei", "ja": "台北市大同区重慶北路二段64巷26号", "ko": "타이베이시 다퉁구 충칭북로 2단 64항 26호" },
-        "hours": { "zh": "週一至週六 09:00–18:00 (週日公休)", "en": "Mon-Sat 09:00–18:00 (Closed Sun)", "ja": "月-土 09:00–18:00 (日曜定休)", "ko": "월~토 09:00–18:00 (일요일 휴무)" }
+    "id": 13,
+    "category": "tea",
+    "title": {
+        "zh": "有記名茶",
+        "en": "Wangtea",
+        "ja": "有記名茶 (Wangtea)",
+        "ko": "왕티 (有記名茶)"
     },
+    "address": {
+        "zh": "103台北市大同區重慶北路二段64巷26號",
+        "en": "No. 26, Ln. 64, Sec. 2, Chongqing N. Rd., Datong Dist., Taipei City 103, Taiwan",
+        "ja": "103 台湾台北市大同区重慶北路二段64巷26号",
+        "ko": "대만 타이베이시 다퉁구 충칭베이루 2단 64샹 26호 (우편번호: 103)"
+    },
+    "hours": {
+        "zh": "週一至週六 09:00 - 19:00，週日公休",
+        "en": "Mon-Sat 09:00 - 19:00 (Closed Sun)",
+        "ja": "月〜土 09:00 - 19:00（日曜定休）",
+        "ko": "월~토 09:00 - 19:00 (일요일 휴무)"
+    },
+    "description": {
+        "zh": "位於大稻埕的百年茶行，保留傳統炭焙製茶工藝與古蹟焙籠間。提供高品質台灣茶與舒適品茗空間，為體驗台灣茶文化的絕佳去處。",
+        "en": "A century-old tea shop in Dadaocheng preserving traditional charcoal roasting techniques. Offers premium Taiwanese tea in a historic setting.",
+        "ja": "大稲埕にある100年以上の歴史を持つ老舗茶館。伝統的な炭火焙煎技術と焙煎室を保存し、高品質な台湾茶を提供しています。",
+        "ko": "다다오청에 위치한 100년 전통의 찻집. 전통 숯불 로스팅 기술과 역사적인 로스팅 룸을 보존하며 고품질 대만 차를 제공합니다."
+    }
+},
     {
         "id": 14,
         "category": "tea",
-        "title": { "zh": "東泰茗茶", "en": "Dong Tai Tea", "ja": "東泰茗茶", "ko": "둥타이 명차" },
-        "address": { "zh": "台北市大同區迪化街一段230號", "en": "No. 230, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段230号", "ko": "타이베이시 다퉁구 디화제 1단 230호" },
-        "hours": { "zh": "每日 10:30–17:30", "en": "Daily 10:30–17:30", "ja": "毎日 10:30–17:30", "ko": "매일 10:30–17:30" }
-    },
+        "title": {
+            "zh": "東泰茗茶",
+            "en": "Dong Tai Tea",
+            "ja": "東泰茗茶",
+"ko": "동타이밍차 (東泰茗茶)"
+},
+"address": {
+"zh": "103台北市大同區迪化街一段230號",
+"en": "No. 230, Sec. 1, Dihua St., Datong Dist., Taipei City 103, Taiwan",
+"ja": "103 台湾台北市大同区迪化街一段230号",
+"ko": "대만 타이베이시 다퉁구 디화제 1단 230호 (우편번호: 103)"
+},
+"hours": {
+"zh": "週一至週五 10:00 - 17:30，週六至週日 10:00 - 17:00",
+"en": "Mon-Fri 10:00 - 17:30, Sat-Sun 10:00 - 17:00",
+"ja": "月〜金 10:00 - 17:30、土・日 10:00 - 17:00",
+"ko": "월~금 10:00 - 17:30, 토~일 10:00 - 17:00"
+},
+"description": {
+"zh": "位於迪化街的百年茶莊老店。提供各式優質台灣茶葉，傳承百年製茶工藝，是品茗與選購伴手禮的絕佳選擇。",
+"en": "A century-old tea shop on Dihua Street offering a wide selection of premium Taiwanese teas. A great choice for souvenirs.",
+"ja": "迪化街にある創業百年の老舗茶荘。様々な上質な台湾茶を提供しており、お土産選びにも最適なスポットです。",
+"ko": "디화제에 위치한 100년 전통의 찻집. 다양한 최고급 대만 차를 제공하며 대만 여행 기념품을 고르기에 좋은 곳입니다."
+}
+},
     {
         "id": 15,
         "category": "tea",
@@ -544,7 +592,149 @@
         "title": { "zh": "葉金記藥行", "en": "Ye Jin Ji Medicine", "ja": "葉金記薬行", "ko": "예진지 약행" },
         "address": { "zh": "台北市大同區迪化街一段150號", "en": "No. 150, Sec. 1, Dihua St., Datong Dist., Taipei", "ja": "台北市大同区迪化街一段150号", "ko": "타이베이시 다퉁구 디화제 1단 150호" },
         "hours": { "zh": "09:00–18:00 (週日公休)", "en": "09:00–18:00 (Sun Closed)", "ja": "09:00–18:00 (日曜定休)", "ko": "09:00–18:00 (일요일 휴무)" }
+    },
+    {
+"id": 9,
+"category": "snack",
+"title": {
+"zh": "導演的豆花店",
+"en": "Director's Tofu Pudding Shop",
+"ja": "導演的豆花店",
+"ko": "감독의 도우화 (導演的豆花店)"
+},
+"address": {
+"zh": "103台北市大同區迪化街一段224巷24號",
+"en": "No. 24, Ln. 224, Sec. 1, Dihua St., Datong Dist., Taipei City 103, Taiwan",
+"ja": "103 台湾台北市大同区迪化街一段224巷24号",
+"ko": "대만 타이베이시 다퉁구 디화제 1단 224샹 24호 (우편번호: 103)"
+},
+"hours": {
+"zh": "週三至週四 12:00 - 18:00，週五至週日 11:00 - 18:00，週一、二公休",
+"en": "Wed-Thu 12:00 - 18:00, Fri-Sun 11:00 - 18:00 (Closed Mon & Tue)",
+"ja": "水・木 12:00 - 18:00、金〜日 11:00 - 18:00（月・火定休）",
+"ko": "수~목 12:00 - 18:00, 금~일 11:00 - 18:00 (월, 화요일 휴무)"
+},
+"description": {
+"zh": "隱身大稻埕巷弄的豆花店，由紀錄片導演開設。主打天然手作鹽滷豆花與山梔子粉粿，結合影像空間傳遞純樸古早味。",
+"en": "A cozy shop in Dadaocheng run by a documentary director, offering traditional handmade tofu pudding and fen-guo in a photography-themed space.",
+"ja": "大稲埕の路地裏にあるドキュメンタリー監督が営むお店。天然素材にこだわった手作りの豆花と粉粿（フングェ）が楽しめます。",
+"ko": "다다오청 골목에 위치한 다큐멘터리 감독이 운영하는 디저트 가게. 천연 식재료로 만든 수제 도우화와 펀궈를 사진 테마 공간에서 즐길 수 있습니다."
+}
+},{
+"id": 10,
+"category": "snack",
+"title": {
+"zh": "夏樹甜品",
+"en": "Summer Tree Sweet",
+"ja": "夏樹甜品",
+"ko": "샤수티엔핀 (夏樹甜品)"
+},
+"address": {
+"zh": "103台北市大同區迪化街一段240號",
+"en": "No. 240, Sec. 1, Dihua St., Datong Dist., Taipei City 103, Taiwan",
+"ja": "103 台湾台北市大同区迪化街一段240号",
+"ko": "대만 타이베이시 다퉁구 디화제 1단 240호 (우편번호: 103)"
+},
+"hours": {
+"zh": "每日 10:30 - 18:30",
+"en": "Daily 10:30 - 18:30",
+"ja": "毎日 10:30 - 18:30",
+"ko": "매일 10:30 - 18:30"
+},
+"description": {
+"zh": "位於迪化街的日系文青甜品店。主打天然養生的純手工杏仁豆腐、雪花冰與各式傳統甜品，口感細緻溫潤，深受國內外旅客喜愛。",
+"en": "A charming Japanese-style dessert shop on Dihua Street specializing in natural, handmade almond tofu and shaved ice. Loved by visitors for its comforting flavors.",
+"ja": "迪化街にある和風のレトロなスイーツ店。天然素材で作られた手作りの杏仁豆腐やふわふわのかき氷が人気で、優しい味わいが観光客に愛されています。",
+"ko": "디화제에 위치한 일본 감성의 디저트 카페. 천연 재료로 만든 수제 살구씨 두부와 빙수가 인기이며, 부드럽고 건강한 맛으로 여행객들의 사랑을 받고 있습니다."
+}
+},
+{
+"id": 11,
+"category": "snack",
+"title": {
+"zh": "魚刺人雞蛋糕-大稻埕店",
+"en": "Yuciren Egg Waffle - Dadaocheng Branch",
+"ja": "魚刺人雞蛋糕 大稲埕店",
+"ko": "위츠런 지단가오 다다오청점"
+},
+"address": {
+"zh": "103台北市大同區迪化街一段205號",
+"en": "No. 205, Sec. 1, Dihua St., Datong Dist., Taipei City 103, Taiwan",
+"ja": "103 台湾台北市大同区迪化街一段205号",
+"ko": "대만 타이베이시 다퉁구 디화제 1단 205호 (우편번호: 103)"
+},
+"hours": {
+"zh": "每日 11:00 - 18:30",
+"en": "Daily 11:00 - 18:30",
+"ja": "毎日 11:00 - 18:30",
+"ko": "매일 11:00 - 18:30"
+},
+"description": {
+"zh": "發跡於台中的超人氣品牌。大稻埕分店以老屋復古氛圍搭配創新口味的台式雞蛋糕，是漫步迪化街不可錯過的散步甜點。",
+"en": "A popular egg waffle brand from Taichung. The Dadaocheng branch combines a retro vibe with innovative flavors, making it a must-try walking dessert on Dihua Street.",
+"ja": "台中発の超人気ベビーカステラ専門店。大稲埕店はレトロな雰囲気の中で、斬新なフレーバーの台湾式カステラが楽しめる、迪化街の食べ歩きにぴったりの一品です。",
+"ko": "타이중에서 시작된 인기 대만식 계란빵 브랜드. 다다오청점은 레트로한 분위기 속에서 독창적인 맛을 제공하며, 디화제 산책 시 꼭 맛봐야 할 길거리 디저트입니다."
+}
+},
+{
+    "id": 12,
+    "category": "snack",
+    "title": {
+
+
+        "zh": "[維多麗亞的秋天]雞蛋糕）",
+        "en": "Victoria's Autumn (Egg Waffles)",
+        "ja": "ヴィクトリアの秋（ベビーカステラ）",
+        "ko": "빅토리아의 가을 (계란빵)"
+    },
+    "address": {
+        "zh": "103台北市大同區大有里迪化街一段144號",
+        "en": "No. 144, Sec. 1, Dihua St., Datong Dist., Taipei City 103, Taiwan",
+        "ja": "台湾台北市大同区大有里迪化街一段144号",
+        "ko": "대만 타이베이시 다퉁구 다유리 디화제 1단 144호"
+    },
+    "hours": {
+        "zh": "星期六至星期日 10:00–18:30 (星期一至五休息)",
+        "en": "Sat-Sun 10:00 AM - 6:30 PM (Closed Mon-Fri)",
+        "ja": "土・日 10:00–18:30（月〜金 定休）",
+        "ko": "토~일 10:00–18:30 (월~금 휴무)"
+    },
+    "description": {
+        "zh": "位於迪化街的精緻雞蛋糕攤位，造型獨特外酥內軟，帶有濃郁蛋香。週末限定營業，是逛大稻埕不可錯過的散步甜點。",
+        "en": "An exquisite egg waffle stand on Dihua Street offering crispy and fluffy treats. Open weekends only, perfect for a stroll.",
+        "ja": "迪化街にあるベビーカステラの屋台。外はサクサク、中はふんわりで卵の豊かな香りが特徴。週末のみの限定営業です。",
+        "ko": "디화제에 위치한 계란빵 노점. 겉은 바삭하고 속은 부드러운 식감과 진한 계란 향이 일품입니다. 주말 한정 영업합니다."
     }
+},
+{
+    "id": 1,
+    "category": "snack",
+    "title": {
+        "zh": "宮本家復古味台灣冰淇淋",
+        "en": "Miyamotoka Traditional Taiwanese Ice Cream",
+        "ja": "宮本家 レトロ台湾風アイスクリーム",
+        "ko": "미야모토가 레트로 대만식 아이스크림"
+    },
+    "address": {
+        "zh": "103台北市大同區迪化街一段186號",
+        "en": "No. 186, Sec. 1, Dihua St., Datong Dist., Taipei City 103, Taiwan",
+        "ja": "台湾台北市大同区迪化街一段186号",
+        "ko": "대만 타이베이시 다퉁구 디화제 1단 186호"
+    },
+    "hours": {
+        "zh": "週二至週五 10:30–17:30，週六至週一 12:00–17:30",
+        "en": "Tue-Fri 10:30 AM - 5:30 PM, Sat-Mon 12:00 PM - 5:30 PM",
+        "ja": "火〜金 10:30–17:30、土〜月 12:00–17:30",
+        "ko": "화~금 10:30–17:30, 토~월 12:00–17:30"
+    },
+    "description": {
+        "zh": "迪化街傳統叭噗冰專賣，嚴選在地水果手工製作，無添加奶類，口感純粹天然，是感受大稻埕復古風情的消暑散步甜點。",
+        "en": "A traditional 'ba-pu' ice cream stall on Dihua St. offering natural, fruit-based flavors without dairy. A perfect refreshing treat while exploring Dadaocheng.",
+        "ja": "迪化街にある伝統的なアイスクリームの屋台。旬の果物を使用し、乳製品不使用の自然な味わいが特徴。大稻埕散策の休憩に最適です。",
+        "ko": "디화제에 위치한 전통 아이스크림 노점. 유제품 없이 대만산 과일로 직접 만들어 자연 그대로의 맛을 즐길 수 있는 다다오청 산책 필수 디저트입니다."
+    }
+}
+    
     
 
 ]
