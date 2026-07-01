@@ -42,11 +42,16 @@ function setupEventListeners() {
 // 獲取 JSON 資料
 async function fetchShopsData() {
     try {
-        const response = await fetch('data.json');
+        // 將這裡的 'data.json' 換成你 Apps Script 發布後的網頁應用程式 URL
+        const response = await fetch('https://script.google.com/macros/s/AKfycbyPN0_5dJN-8pG56ja9KlrIEQoMlV3QQZnIv60TQnL72Z3mx4pR7OLWV_336BEA_gH-/exec'); 
+        
+        if (!response.ok) throw new Error('網路回應錯誤');
+        
         shopsData = await response.json();
+        updateUI(); // 確保資料回來後渲染介面
     } catch (error) {
         console.error("載入資料失敗:", error);
-        shopGrid.innerHTML = `<p>資料載入失敗，請確認是否使用 Live Server 開啟。</p>`;
+        shopGrid.innerHTML = `<p>資料載入中，請稍候...</p>`;
     }
 }
 
