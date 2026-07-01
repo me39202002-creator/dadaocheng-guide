@@ -1183,22 +1183,28 @@
     "id": 50,
     "category": "craft",
     "title": {
-      "zh": "印花樂大稻埕店",
-      "en": "In Blooom Dadaocheng",
-      "ja": "印花楽 大稲埕店",
-      "ko": "인블룸 다다오청점"
+        "zh": "印花樂大稻埕店",
+        "en": "inBlooom Dadaocheng Store",
+        "ja": "印花楽 大稲埕店",
+        "ko": "인블룸(印花樂) 다다오청점"
     },
     "address": {
-      "zh": "台北市大同區民樂街28號",
-      "en": "No. 28, Minle St., Datong Dist., Taipei",
-      "ja": "台北市大同区民楽街28号",
-      "ko": "타이베이시 다퉁구 민러제 28호"
+        "zh": "103台北市大同區民樂街28號",
+        "en": "No. 28, Minle St., Datong Dist., Taipei City 103, Taiwan",
+        "ja": "103 台湾台北市大同区民楽街28号",
+        "ko": "대만 타이베이시 다퉁구 민러제 28호 (우편번호: 103)"
     },
     "hours": {
-      "zh": "週一至週日 09:30–19:00",
-      "en": "Mon-Sun 09:30–19:00",
-      "ja": "月-日 09:30–19:00",
-      "ko": "월~일 09:30–19:00"
+        "zh": "每日 10:00 - 19:00",
+        "en": "Daily 10:00 - 19:00",
+        "ja": "毎日 10:00 - 19:00",
+        "ko": "매일 10:00 - 19:00"
+    },
+    "description": {
+        "zh": "以台灣生態與記憶為靈感的圖樣設計品牌。店內販售各式印花布雜貨與手作體驗，將大稻埕的人文風情轉化為充滿溫度的日常美學。",
+        "en": "A design brand inspired by Taiwan's ecology and culture. Offers printed textiles, lifestyle goods, and DIY workshops, turning local heritage into beautiful daily aesthetics.",
+        "ja": "台湾の生態や記憶をモチーフにしたテキスタイルブランド。オリジナルプリントの雑貨や手作り体験を通して、大稲埕の温かな風情と日常の美を伝えています。",
+        "ko": "대만의 생태와 추억에서 영감을 받은 디자인 브랜드입니다. 다양한 프린트 패브릭 잡화와 DIY 체험을 통해 다다오청의 인문학적 감성을 일상의 미학으로 풀어냅니다."
     }
   },
   {
