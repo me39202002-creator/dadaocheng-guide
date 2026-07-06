@@ -5,6 +5,7 @@ const uiTranslations = {
         all: { zh: "全部", en: "All", ja: "すべて", ko: "전체" },
         coffee: { zh: "咖啡", en: "Coffee", ja: "コーヒー", ko: "커피" },
         tea: { zh: "茶館", en: "Tea House", ja: "茶館", ko: "다과점" },
+        restaurant: { zh: "餐廳", en: "Restaurant", ja: "レストラン", ko: "레스토랑" },
         craft: { zh: "文創選物", en: "Crafts", ja: "クラフト", ko: "크래프트" },
         pastry: { zh: "傳統糕餅", en: "Pastry", ja: "伝統菓子", ko: "전통 과자" },
         medicine: { zh: "中藥行", en: "Medicine", ja: "漢方薬局", ko: "한약방" },
@@ -106,7 +107,7 @@ function updateUI() {
 // 渲染篩選按鈕
 function renderFilters() {
     filterBar.innerHTML = '';
-    const categories = ['all', 'coffee', 'tea', 'craft', 'pastry', 'medicine', 'snack'];
+    const categories = ['all', 'coffee', 'tea', 'restaurant','craft', 'pastry', 'medicine', 'snack' ];
     
     categories.forEach(cat => {
         const btn = document.createElement('button');
