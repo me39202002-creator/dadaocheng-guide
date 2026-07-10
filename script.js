@@ -34,23 +34,51 @@ function setupEventListeners() {
 
 // 獲取 Google 試算表資料
 async function fetchShopsData() {
+    // 你的 Apps Script 網址
+    const scriptUrl = 'https://script.google.com/macros/s/AKfycbyPN0_5dJN-8pG56ja9KlrIEQoMlV3QQZnIv60TQnL72Z3mx4pR7OLWV_336BEA_gH-/exec';
+    
+    // 定義一個專屬的「冰箱標籤」，用來存取這包資料
+    const cacheKey = 'dadaocheng_shops_data';
+
     try {
-        // 🌟 這裡請貼上你剛剛「建立新版本」後拿到的 Apps Script 網址
-        const scriptUrl = 'https://script.google.com/macros/s/AKfycbyPN0_5dJN-8pG56ja9KlrIEQoMlV3QQZnIv60TQnL72Z3mx4pR7OLWV_336BEA_gH-/exec';
+        // ========== 步驟 1：檢查本地暫存 ==========
+        const cachedData = localStorage.getItem(cacheKey);
         
+        if (cachedData) {
+            console.log("⚡ 讀取本地暫存資料，瞬間渲染畫面！");
+            const rawData = JSON.parse(cachedData); // 把字串轉回 JSON 格式
+            
+            // 呼叫智慧翻譯機，用舊資料先畫出畫面
+            shopsData = transformSheetData(rawData);
+            displayLatestTimeFromData(shopsData);
+            updateUI(); 
+        } else {
+            console.log("沒有暫存資料，等待伺服器回應...");
+            // 如果你原本有 showLoading() 的動畫，可以加在這裡
+        }
+
+        // ========== 步驟 2：背景偷偷向 GAS 請求最新資料 ==========
         const response = await fetch(scriptUrl); 
         if (!response.ok) throw new Error('網路回應錯誤');
         
         const rawData = await response.json();
         
-        // 呼叫智慧翻譯機，把試算表格式轉成網頁格式
-        shopsData = transformSheetData(rawData);
+        // ========== 步驟 3：把最新資料存進冰箱 (localStorage) ==========
+        localStorage.setItem(cacheKey, JSON.stringify(rawData)); // 存進去前要先轉成字串
         
+        // ========== 步驟 4：用最新資料再次更新畫面 ==========
+        console.log("🔄 取得最新資料，安靜地更新畫面！");
+        shopsData = transformSheetData(rawData);
         displayLatestTimeFromData(shopsData);
         updateUI(); 
+
     } catch (error) {
         console.error("載入資料失敗:", error);
-        shopGrid.innerHTML = `<p style="text-align:center; color:red;">讀取資料庫發生錯誤，請按 F12 查看控制台。</p>`;
+        
+        // 只有在「完全沒有暫存資料」且「網路也斷線」的最糟情況下，才顯示錯誤訊息給使用者看
+        if (!localStorage.getItem(cacheKey)) {
+            shopGrid.innerHTML = `<p style="text-align:center; color:red;">讀取資料庫發生錯誤，請按 F12 查看控制台。</p>`;
+        }
     }
 }
 
