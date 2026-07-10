@@ -39,7 +39,7 @@ header {
 .header-right {
     display: flex;
     align-items: center;
-    gap: 100px; /* 讓時間和選單中間有 15px 的距離 */
+    gap: 20px; /* 修正間距：讓時間和選單保持適中距離 */
 }
 
 /* 時間文字樣式 */
@@ -48,6 +48,22 @@ header {
     font-size: 0.9rem;
     font-weight: 500;
 }
+
+/* 🌟 新增：語言選擇器容器排版 */
+.lang-selector {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Language 標籤與下拉選單的距離 */
+}
+
+/* 🌟 新增：Language 標籤文字樣式 */
+.lang-selector label {
+    color: #ffffff;
+    font-size: 0.9rem; /* 與時間文字保持相同大小 */
+    font-weight: 500;
+    cursor: pointer;
+}
+
 h1 {
     margin: 0;
     font-size: 1.8rem;
