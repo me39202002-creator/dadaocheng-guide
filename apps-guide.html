@@ -8,16 +8,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header>
+  <header>
     <div class="header-container">
-        <!-- 左側現在只留標題 -->
+        <!-- 左側：網站標題 -->
         <div class="header-left">
             <h1 id="site-title" data-i18n="site_title">大稻埕導覽指南</h1>
         </div>
         
-        <!-- 右側維持語言選單 -->
+        <!-- 右側：🌟 把不見的語言選單加回來 -->
         <div class="header-right">
-            <!-- 語言選單等內容... -->
+            <div class="lang-selector">
+                <label for="lang-select">Language:</label>
+                <select id="lang-select">
+                    <option value="zh">繁體中文</option>
+                    <option value="en">English</option>
+                    <option value="ja">日本語</option>
+                    <option value="ko">한국어</option>
+                </select>
+            </div>
         </div>
     </div>
 </header>
@@ -207,6 +215,6 @@
     </main>
     
     <!-- 引入我們接下來要寫的 JS 檔案 -->
-    <script src="app-lang.js"></script>
+  <script src="app-lang.js"></script>
 </body>
 </html>
