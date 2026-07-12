@@ -12,9 +12,12 @@
     <!-- index.html 的 header 區塊修改 -->
 <header>
     <div class="header-container">
-        <h1 id="site-title">大稻埕特色店家</h1>
+        <!-- 左側區塊：包含標題與導覽列 -->
+        <div class="header-left">
+            <h1 id="site-title">大稻埕特色店家</h1>
+        </div>
         
-        <!-- 右側區塊：包含時間與選單 -->
+        <!-- 右側區塊：包含時間與選單 (維持原樣) -->
         <div class="header-right">
             <div class="update-time">
                 <span id="update-label">最後更新: </span>
@@ -22,7 +25,6 @@
             </div>
             
             <div class="lang-selector">
-                <!-- 🌟 新增的 Language 標籤 -->
                 <label for="lang-select">Language:</label>
                 <select id="lang-select">
                     <option value="zh">繁體中文</option>
@@ -32,10 +34,15 @@
                 </select>
             </div>
         </div>
-        
     </div>
 </header>
-
+<!-- 🌟 新增的白色導覽區塊，放在 header 和 main 之間 -->
+<div class="sub-nav-container">
+    <nav class="main-nav">
+        <a href="index.html" class="active" data-i18n="nav_shops">特色店家</a>
+        <a href="apps-guide.html" data-i18n="nav_apps">必備APP推薦</a>
+    </nav>
+</div>
     <main>
         <div class="filter-bar" id="filter-bar">
             </div>

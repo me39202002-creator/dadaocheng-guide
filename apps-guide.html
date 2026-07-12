@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣旅遊必備 APP | Dadaocheng Guide</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <div class="header-container">
+        <!-- 左側現在只留標題 -->
+        <div class="header-left">
+            <h1 id="site-title" data-i18n="site_title">大稻埕導覽指南</h1>
+        </div>
+        
+        <!-- 右側維持語言選單 -->
+        <div class="header-right">
+            <!-- 語言選單等內容... -->
+        </div>
+    </div>
+</header>
+
+<!-- 🌟 新增的白色導覽區塊，放在 header 和 main 之間 -->
+<div class="sub-nav-container">
+    <nav class="main-nav">
+        <a href="index.html" data-i18n="nav_shops">特色店家</a>
+        <!-- 在 apps-guide.html 中，class="active" 要放在下面這行 -->
+        <a href="apps-guide.html" class="active" data-i18n="nav_apps">必備APP推薦</a>
+    </nav>
+</div>
+
+<main>
+    <main class="app-guide-main">
+        <div class="intro-section">
+            <h2 data-i18n="intro_title">外國旅客必備數位工具</h2>
+            <p data-i18n="intro_desc">讓您的台灣之旅更順暢！以下為您整理出在台灣最實用的交通、美食與生活 APP。</p>
+        </div>
+
+        <!-- 類別：地圖與綜合導航 -->
+        <section class="app-category">
+            <h3 class="category-title" data-i18n="cat_nav">🗺️ 地圖與綜合導航 (Maps & Navigation)</h3>
+            <div class="app-grid">
+                <div class="app-card">
+                    <div class="app-icon-wrapper"><div class="icon-placeholder bg-blue">G</div></div>
+                    <div class="app-info">
+                        <h4>Google Maps</h4>
+                        <span class="badge badge-transit" data-i18n="badge_nav">綜合導航</span>
+                        <p class="description" data-i18n="desc_gmaps">在台灣找路、查詢公車與捷運路線最準確的工具。強烈建議搭配街景功能使用。</p>
+                        <div class="download-links">
+                            <a href="#" class="btn-dl ios">App Store</a>
+                            <a href="#" class="btn-dl android">Google Play</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon-wrapper"><div class="icon-placeholder bg-orange">N</div></div>
+                    <div class="app-info">
+                        <h4>Taiwan Travel</h4>
+                        <span class="badge badge-transit" data-i18n="badge_travel">旅遊指南</span>
+                        <p class="description" data-i18n="desc_navitime">NAVITIME 專為訪台旅客設計，提供離線地圖、轉乘資訊與熱門景點指南。</p>
+                        <div class="download-links">
+                            <a href="#" class="btn-dl ios">App Store</a>
+                            <a href="#" class="btn-dl android">Google Play</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 類別：大眾運輸與火車 -->
+        <section class="app-category">
+            <h3 class="category-title" data-i18n="cat_transit">🚆 大眾運輸與火車 (Public Transit & Trains)</h3>
+            <div class="app-grid">
+                <div class="app-card">
+                    <div class="app-icon-wrapper"><div class="icon-placeholder bg-blue">B+</div></div>
+                    <div class="app-info">
+                        <h4>Bus+</h4>
+                        <span class="badge badge-transit" data-i18n="badge_bus">公車動態</span>
+                        <p class="description" data-i18n="desc_busplus">全台公車動態精準預測，等公車必備神器，介面乾淨好用。</p>
+                        <div class="download-links">
+                            <a href="#" class="btn-dl ios">App Store</a>
+                            <a href="#" class="btn-dl android">Google Play</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon-wrapper"><div class="icon-placeholder bg-blue">捷</div></div>
+                    <div class="app-info">
+                        <h4>台北捷運 Go</h4>
+                        <span class="badge badge-transit" data-i18n="badge_mrt">捷運路網</span>
+                        <p class="description" data-i18n="desc_mrtgo">提供台北捷運路線圖、票價查詢及首末班車時間，在複雜的車站內不迷路。</p>
+                        <div class="download-links">
+                            <a href="#" class="btn-dl ios">App Store</a>
+                            <a href="#" class="btn-dl android">Google Play</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon-wrapper"><div class="icon-placeholder bg-orange">T</div></div>
+                    <div class="app-info">
+                        <h4>T Express</h4>
+                        <span class="badge badge-transit" data-i18n="badge_hsr">高鐵訂票</span>
+                        <p class="description" data-i18n="desc_texpress">台灣高鐵官方APP。手機直接買票，進站只需刷手機條碼，跨縣市移動超方便。</p>
+                        <div class="download-links">
+                            <a href="#" class="btn-dl ios">App Store</a>
+                            <a href="#" class="btn-dl android">Google Play</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 類別：叫車與單車租借 -->
+        <section class="app-category">
+            <h3 class="category-title" data-i18n="cat_ride">🚕 叫車與單車租借 (Ride-hailing & Bike Sharing)</h3>
+            <div class="app-grid">
+                <div class="app-card">
+                    <div class="app-icon-wrapper"><div class="icon-placeholder bg-blue">U</div></div>
+                    <div class="app-info">
+                        <h4>Uber</h4>
+                        <span class="badge badge-transit" data-i18n="badge_taxi">叫車服務</span>
+                        <p class="description" data-i18n="desc_uber">在台灣的介面與國外完全相同。綁定信用卡扣款，不用擔心語言不通或被繞路。</p>
+                        <div class="download-links">
+                            <a href="#" class="btn-dl ios">App Store</a>
+                            <a href="#" class="btn-dl android">Google Play</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon-wrapper"><div class="icon-placeholder bg-orange">Y</div></div>
+                    <div class="app-info">
+                        <h4>YouBike 2.0</h4>
+                        <span class="badge badge-transit" data-i18n="badge_bike">共享單車</span>
+                        <p class="description" data-i18n="desc_youbike">查詢最近的腳踏車租借站與剩餘車輛。在大稻埕小巷弄穿梭的最佳交通工具！</p>
+                        <div class="download-links">
+                            <a href="#" class="btn-dl ios">App Store</a>
+                            <a href="#" class="btn-dl android">Google Play</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 類別：票券預訂與行程 -->
+        <section class="app-category">
+            <h3 class="category-title" data-i18n="cat_ticket">🎟️ 票券預訂與行程 (Tickets & Itineraries)</h3>
+            <div class="app-grid">
+                <div class="app-card">
+                    <div class="app-icon-wrapper"><div class="icon-placeholder bg-orange">K</div></div>
+                    <div class="app-info">
+                        <h4>Klook</h4>
+                        <span class="badge badge-tool" data-i18n="badge_ticket">票券預訂</span>
+                        <p class="description" data-i18n="desc_klook">預訂高鐵外國人優惠票、景點門票與上網 SIM 卡，價格通常比現場買便宜。</p>
+                        <div class="download-links">
+                            <a href="#" class="btn-dl ios">App Store</a>
+                            <a href="#" class="btn-dl android">Google Play</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon-wrapper"><div class="icon-placeholder bg-blue">KK</div></div>
+                    <div class="app-info">
+                        <h4>KKday</h4>
+                        <span class="badge badge-tool" data-i18n="badge_tour">在地體驗</span>
+                        <p class="description" data-i18n="desc_kkday">報名在地導覽、手作課程或是包車一日遊的最佳平台，支援多國語言客服。</p>
+                        <div class="download-links">
+                            <a href="#" class="btn-dl ios">App Store</a>
+                            <a href="#" class="btn-dl android">Google Play</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 類別：翻譯與在地通訊 -->
+        <section class="app-category">
+            <h3 class="category-title" data-i18n="cat_comm">💬 翻譯與在地通訊 (Translation & Communication)</h3>
+            <div class="app-grid">
+                <div class="app-card">
+                    <div class="app-icon-wrapper"><div class="icon-placeholder bg-blue">文</div></div>
+                    <div class="app-info">
+                        <h4>Google Translate</h4>
+                        <span class="badge badge-tool" data-i18n="badge_translate">語言翻譯</span>
+                        <p class="description" data-i18n="desc_translate">遇到沒有英文菜單的傳統小吃店時，開啟「相機即時翻譯」功能就能輕鬆點餐。</p>
+                        <div class="download-links">
+                            <a href="#" class="btn-dl ios">App Store</a>
+                            <a href="#" class="btn-dl android">Google Play</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon-wrapper"><div class="icon-placeholder bg-orange">L</div></div>
+                    <div class="app-info">
+                        <h4>LINE</h4>
+                        <span class="badge badge-tool" data-i18n="badge_comm">通訊軟體</span>
+                        <p class="description" data-i18n="desc_line">台灣人最依賴的通訊軟體。許多大稻埕的在地店家都用 LINE 接受訂位或客服詢問。</p>
+                        <div class="download-links">
+                            <a href="#" class="btn-dl ios">App Store</a>
+                            <a href="#" class="btn-dl android">Google Play</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- 引入我們接下來要寫的 JS 檔案 -->
+    <script src="app-lang.js"></script>
+</body>
+</html>
