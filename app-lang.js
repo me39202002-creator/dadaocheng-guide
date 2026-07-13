@@ -64,7 +64,8 @@ const i18n = {
         badge_tour: "Local Tours",
         badge_translate: "Translation",
         badge_comm: "Messaging",
-        
+        badge_tra: "TRA Tickets",
+
         desc_gmaps: "The most accurate tool for navigating routes. Street view is highly recommended.",
         desc_navitime: "Designed for visitors to Taiwan, offering offline maps, transit info, and attraction guides.",
         desc_busplus: "Accurate real-time bus tracking across Taiwan. A must-have for taking the bus.",
@@ -76,6 +77,7 @@ const i18n = {
         desc_kkday: "The best platform to book local tours, workshops, or private chartered day trips.",
         desc_translate: "Use the 'instant camera translation' feature to easily order food at traditional eateries.",
         desc_line: "The most popular messaging app in Taiwan. Many local shops use it for reservations."
+        desc_tra: "Official Taiwan Railways app. Check train schedules, book tickets online, and use your phone as an e-ticket to enter the station.",
     },
     ja: {
         site_title: "大稲埕ガイド",
@@ -101,6 +103,7 @@ const i18n = {
         badge_tour: "現地体験",
         badge_translate: "翻訳",
         badge_comm: "通信アプリ",
+        badge_tra: "台湾鉄道予約",
         
         desc_gmaps: "道案内やルート検索に最も正確なツール。ストリートビューの活用がおすすめです。",
         desc_navitime: "訪台旅行者向けに特化。オフラインマップや乗換案内、人気スポットガイドを提供。",
@@ -112,7 +115,8 @@ const i18n = {
         desc_klook: "外国人向け新幹線割引チケットやSIMカードの予約に。現地購入よりお得なことが多いです。",
         desc_kkday: "現地ツアーや手作り体験、貸切チャーターを予約できる最適なプラットフォーム。",
         desc_translate: "英語メニューのない伝統的な食堂でも、「カメラ翻訳」機能を使えば簡単に注文できます。",
-        desc_line: "台湾で最も使われている通信アプリ。多くのお店がLINEで予約や問い合わせを受け付けています。"
+        desc_line: "台湾で最も使われている通信アプリ。多くのお店がLINEで予約や問い合わせを受け付けています。",
+        desc_tra: "台湾鉄道の公式アプリ。列車時刻表を確認し、オンラインで切符を予約できます。スマートフォンで電子切符を使用して駅に入ることができます。"
     },
     ko: {
         site_title: "다다오청 가이드",
@@ -138,6 +142,7 @@ const i18n = {
         badge_tour: "현지 체험",
         badge_translate: "언어 번역",
         badge_comm: "메신저",
+        badge_tra: "일반 기차 예매",
         
         desc_gmaps: "대만에서 길을 찾고 경로를 조회하는 데 가장 정확한 도구입니다.",
         desc_navitime: "방문객을 위해 설계되었으며 오프라인 지도, 환승 정보 및 명소 가이드를 제공합니다.",
@@ -149,7 +154,8 @@ const i18n = {
         desc_klook: "고속철도 외국인 할인 표, 명소 입장권, SIM 카드를 예약하세요. 현장 구매보다 저렴합니다.",
         desc_kkday: "현지 투어, 수공예 클래스, 일일 대절 택시를 예약하기 가장 좋은 플랫폼입니다.",
         desc_translate: "영어 메뉴가 없는 식당에서 '카메라 즉시 번역' 기능을 켜면 쉽게 주문할 수 있습니다.",
-        desc_line: "대만에서 가장 많이 쓰이는 메신저. 많은 현지 상점이 LINE으로 예약과 문의를 받습니다."
+        desc_line: "대만에서 가장 많이 쓰이는 메신저. 많은 현지 상점이 LINE으로 예약과 문의를 받습니다.",
+        desc_tra: "대만 철도청(TRA) 공식 앱입니다. 기차 시간표 조회, 온라인 티켓 예매가 가능하며, 스마트폰 전자 티켓으로 개찰구를 통과할 수 있습니다.",
     }
 };
 
