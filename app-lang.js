@@ -38,7 +38,7 @@ const i18n = {
         desc_klook: "預訂高鐵外國人優惠票、景點門票與上網 SIM 卡，價格通常比現場買便宜。",
         desc_kkday: "報名在地導覽、手作課程或是包車一日遊的最佳平台，支援多國語言客服。",
         desc_translate: "遇到沒有英文菜單的傳統小吃店時，開啟「相機即時翻譯」功能就能輕鬆點餐。",
-        desc_line: "台灣人最依賴的通訊軟體。許多大稻埕的在地店家都用 LINE 接受訂位或客服詢問。"
+        desc_line: "台灣人最依賴的通訊軟體。許多大稻埕的在地店家都用 LINE 接受訂位或客服詢問。",
     },
     en: {
         site_title: "Dadaocheng Guide",
@@ -76,7 +76,7 @@ const i18n = {
         desc_klook: "Book HSR foreigner discount tickets, attraction passes, and SIM cards. Often cheaper than on-site.",
         desc_kkday: "The best platform to book local tours, workshops, or private chartered day trips.",
         desc_translate: "Use the 'instant camera translation' feature to easily order food at traditional eateries.",
-        desc_line: "The most popular messaging app in Taiwan. Many local shops use it for reservations."
+        desc_line: "The most popular messaging app in Taiwan. Many local shops use it for reservations.",
         desc_tra: "Official Taiwan Railways app. Check train schedules, book tickets online, and use your phone as an e-ticket to enter the station.",
     },
     ja: {
