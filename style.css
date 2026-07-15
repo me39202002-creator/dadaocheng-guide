@@ -246,7 +246,7 @@ h1 {
 }
 .bg-blue { background-color: #4285F4; }
 .bg-orange { background-color: #F89C1E; }
-
+.bg-green { background-color: #2eda7b; }
 /* 卡片文字與按鈕區塊 */
 .app-info {
     display: flex;
