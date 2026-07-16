@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>緊急聯絡 - 大稻埕導覽指南</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <h1 id="site-title" data-i18n="site_title">大稻埕導覽指南</h1>
+            </div>
+            <div class="header-right">
+                <div class="lang-selector">
+                    <label for="lang-select">Language:</label>
+                    <select id="lang-select">
+                        <option value="zh">繁體中文</option>
+                        <option value="en">English</option>
+                        <option value="ja">日本語</option>
+                        <option value="ko">한국어</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 🌟 新增了第三個標籤頁 -->
+        <nav class="top-nav" style="text-align: center; padding: 10px; background: #fff; border-bottom: 1px solid #eaeaea;">
+            <a href="index.html" data-i18n="nav_shops" style="margin: 0 15px; text-decoration: none; color: #666; font-weight: bold;">特色店家</a>
+            <a href="apps-guide.html" data-i18n="nav_apps" style="margin: 0 15px; text-decoration: none; color: #666; font-weight: bold;">必備APP推薦</a>
+            <!-- 加上紅底白字，讓緊急按鈕更醒目 -->
+            <a href="emergency.html" data-i18n="nav_emergency" style="margin: 0 15px; text-decoration: none; color: #e74c3c; font-weight: bold; border-bottom: 3px solid #e74c3c; padding-bottom: 5px;">🚨 緊急協助</a>
+        </nav>
+    </header>
+
+    <main class="app-guide-main" style="max-width: 800px; margin: 0 auto; padding: 40px 20px;">
+        
+        <!-- 頁面標題 -->
+        <div class="intro-section" style="text-align: center; margin-bottom: 40px;">
+            <h2 data-i18n="intro_emer_title" style="color: #e74c3c; font-size: 1.8rem; margin-bottom: 15px;">🚨 緊急聯絡與醫療協助</h2>
+            <p data-i18n="intro_emer_desc" style="color: #666; line-height: 1.6;">台灣是非常安全的旅遊國家，但若遇到突發的身體不適或遺失物品，請不要慌張，以下資源可以隨時提供多國語言的協助：</p>
+        </div>
+
+        <section class="app-category">
+            <div class="app-grid" style="display: grid; grid-template-columns: 1fr; gap: 20px;"> 
+                
+                <!-- 1. 求助熱線 (特別強調版) -->
+                <!-- 🌟 關鍵修正：加入了 display: block; 解決擠壓問題 -->
+                <div class="app-card" style="display: block; background: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); padding: 30px; border-left: 6px solid #e74c3c;">
+                    <h4 style="margin-bottom: 20px; color: #333; font-size: 1.3rem; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px;" data-i18n="title_hotline">📞 24 小時免費求助熱線 (24/7 Toll-Free Hotlines)</h4>
+
+                    <div style="margin-bottom: 25px;">
+                        <strong style="font-size: 1.1rem; display: block; color: #555;" data-i18n="hotline_1_name">外國人在臺生活諮詢熱線 (Foreigners in Taiwan Hotline)：</strong>
+                        <div style="font-size: 2.8rem; font-weight: 900; color: #e74c3c; letter-spacing: 2px; margin: 5px 0;">1990</div>
+                        <p style="color: #666; font-size: 0.95rem; line-height: 1.5;" data-i18n="hotline_1_desc">服務：提供中、英、日等 7 國語言服務。無論是簽證問題、遺失護照、生活求助或遭遇緊急狀況，都可以撥打此專線尋求指引。</p>
+                    </div>
+
+                    <div style="margin-bottom: 25px;">
+                        <strong style="font-size: 1.1rem; display: block; color: #555;" data-i18n="hotline_2_name">24 小時旅遊諮詢熱線 (Tourist Information Hotline)：</strong>
+                        <div style="font-size: 1.8rem; font-weight: 800; color: #d35400; margin: 5px 0;">0800-011-765</div>
+                        <p style="color: #666; font-size: 0.95rem; line-height: 1.5;" data-i18n="hotline_2_desc">服務：由台灣觀光署提供，支援中、英、日、韓語。若在旅途中遇到溝通障礙或需要即時的旅遊指引，可以隨時撥打。</p>
+                    </div>
+
+                    <div style="background: #fdf2f2; padding: 15px; border-radius: 8px;">
+                        <strong style="font-size: 1.1rem; color: #333;" data-i18n="hotline_3_name">緊急報警與救護 (Police & Ambulance)：</strong><br>
+                        <div style="margin-top: 10px;">
+                            <span style="font-size: 1.1rem; color: #555;">報警 (Police)：</span> 
+                            <span style="font-size: 2rem; font-weight: 900; color: #2980b9;">110</span>
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <span style="font-size: 1.1rem; color: #555;">救護車與火警 (Ambulance / Fire)：</span> 
+                            <span style="font-size: 2rem; font-weight: 900; color: #c0392b;">119</span>
+                        </div>
+                        <p style="color: #888; font-size: 0.9rem; margin-top: 10px;" data-i18n="hotline_3_desc">(註：接通後若無法用中文溝通，可說出 "English" 要求英文協助)</p>
+                    </div>
+                </div>
+
+                <!-- 2. 雙語醫療 -->
+                <!-- 🌟 關鍵修正：加入了 display: block; 解決擠壓問題 -->
+                <div class="app-card" style="display: block; background: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); padding: 30px;">
+                    <h4 style="margin-bottom: 15px; color: #333; font-size: 1.2rem; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px;" data-i18n="title_hospital">🏥 鄰近雙語醫療資源 (Nearby Hospitals)</h4>
+                    <p style="color: #666; margin-bottom: 15px;" data-i18n="desc_hospital_intro">若在大稻埕周邊感到身體不適需要就醫，最近且具備完善外語溝通能力的大型醫院是：</p>
+                    <!-- 醫院區塊 -->
+                    <ul style="margin-bottom: 0; padding-left: 20px; color: #666; line-height: 1.8;">
+                        <li data-i18n="hosp_li_1"><strong>臺北市立聯合醫院 中興院區 (Taipei City Hospital - Zhongxing Branch)</strong></li>
+                        <li data-i18n="hosp_li_2"><strong>距離：</strong> 位於大稻埕商圈南側，步行或搭乘計程車約 5-10 分鐘即可抵達。</li>
+                       <!-- 醫院區塊的地址那行 -->
+                    <!-- 醫院區塊的地址那行 -->
+                    <li data-i18n="hosp_li_3"><strong>地址：</strong> <a href="https://www.google.com/maps/search/?api=1&query=臺北市立聯合醫院中興院區" target="_blank" style="color: #2980b9; text-decoration: underline; white-space: nowrap;">台北市大同區鄭州路 145 號 📍</a></li>
+                     <li data-i18n="hosp_li_4"><strong>特色：</strong> 為公立大型綜合醫院，設有急診室 (Emergency Room)，醫師與護理人員皆具備基礎至進階的英語溝通能力。</li>
+                    </ul>
+                </div>
+
+                <!-- 3. 警察局 -->
+                <!-- 🌟 關鍵修正：加入了 display: block; 解決擠壓問題 -->
+                <div class="app-card" style="display: block; background: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); padding: 30px;">
+                    <h4 style="margin-bottom: 15px; color: #333; font-size: 1.2rem; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px;" data-i18n="title_police">👮 大稻埕周邊警察局 (Local Police Stations)</h4>
+                    <p style="color: #666; margin-bottom: 15px;" data-i18n="desc_police_intro">若不慎遺失錢包、護照或隨身物品，大稻埕老街周邊有兩處主要的派出所可就近尋求協助：</p>
+                   <!-- 警察局區塊 -->
+                    <ul style="margin-bottom: 0; padding-left: 20px; color: #666; line-height: 1.8;">
+                        <!-- 警察局區塊的兩行 -->
+                    <!-- 警察局區塊的兩行 -->
+                    <li data-i18n="pol_li_1"><strong>民生西路派出所：</strong> 靠近迪化街北段與大稻埕碼頭 (<a href="https://www.google.com/maps/search/?api=1&query=台北市政府警察局大同分局民生西路派出所" target="_blank" style="color: #2980b9; text-decoration: underline; white-space: nowrap;">台北市大同區保安街 47-1 號 📍</a>)</li>
+                    <li data-i18n="pol_li_2"><strong>延平派出所：</strong> 靠近迪化街南段與永樂市場 (<a href="https://www.google.com/maps/search/?api=1&query=台北市政府警察局大同分局延平派出所" target="_blank" style="color: #2980b9; text-decoration: underline; white-space: nowrap;">台北市大同區延平北路 1 段 86 號 📍</a>)</li>
+                </ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    
+    <!-- 引入多國語言腳本 -->
+    <script src="app-lang.js"></script>
+</body>
+</html>

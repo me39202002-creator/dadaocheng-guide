@@ -58,7 +58,31 @@ const i18n = {
         bank_li_3: "注意事項： 在台灣的銀行辦理任何換匯業務，絕對必須出示護照正本 (Passport)，請務必隨身攜帶。此為雙語分行，溝通十分方便。",
         title_machine: "💡 旅客專屬：自助外幣兌換機 (Currency Exchange Machine)",
         desc_machine: "為了因應大稻埕龐大的觀光人潮，如果您急需小額現金又逢銀行下班時間，可以尋找自助兌幣機（例如：新光銀行 台外幣兌換機）。部分據點設有無需台灣銀行帳戶即可操作的兌換機，支援美金、日幣等主流貨幣直接兌換新台幣，依照螢幕指示掃描護照即可完成。",
+    
+        nav_emergency: "🚨 緊急協助",
+        intro_emer_title: "🚨 緊急聯絡與醫療協助",
+        intro_emer_desc: "台灣是非常安全的旅遊國家，但若遇到突發的身體不適或遺失物品，請不要慌張，以下資源可以隨時提供多國語言的協助：",
+        title_hotline: "📞 24 小時免費求助熱線 (24/7 Toll-Free Hotlines)",
+        hotline_1_name: "外國人在臺生活諮詢熱線 (Foreigners in Taiwan Hotline)：",
+        hotline_1_desc: "服務：提供中、英、日等 7 國語言服務。無論是簽證問題、遺失護照、生活求助或遭遇緊急狀況，都可以撥打此專線尋求指引。",
+        hotline_2_name: "24 小時旅遊諮詢熱線 (Tourist Information Hotline)：",
+        hotline_2_desc: "服務：由台灣觀光署提供，支援中、英、日、韓語。若在旅途中遇到溝通障礙或需要即時的旅遊指引，可以隨時撥打。",
+        hotline_3_name: "緊急報警與救護 (Police & Ambulance)：",
+        hotline_3_desc: "(註：接通後若無法用中文溝通，可說出 'English' 要求英文協助)",
+        title_hospital: "🏥 鄰近雙語醫療資源 (Nearby Hospitals)",
+        desc_hospital_intro: "若在大稻埕周邊感到身體不適需要就醫，最近且具備完善外語溝通能力的大型醫院是：",
+        hosp_li_1: "<strong>臺北市立聯合醫院 中興院區 (Taipei City Hospital - Zhongxing Branch)</strong>",
+        hosp_li_2: "<strong>距離：</strong> 位於大稻埕商圈南側，步行或搭乘計程車約 5-10 分鐘即可抵達。",
+        hosp_li_4: "<strong>特色：</strong> 為公立大型綜合醫院，設有急診室 (Emergency Room)，醫師與護理人員皆具備基礎至進階的英語溝通能力。",
+        title_police: "👮 大稻埕周邊警察局 (Local Police Stations)",
+        hosp_li_3: "<strong>地址：</strong> <a href='https://www.google.com/maps/search/?api=1&query=臺北市立聯合醫院中興院區' target='_blank' style='color: #2980b9; text-decoration: underline; white-space: nowrap;'>台北市大同區鄭州路 145 號 📍</a>",
+        pol_li_1: "<strong>民生西路派出所：</strong> 靠近迪化街北段與大稻埕碼頭 (<a href='https://www.google.com/maps/search/?api=1&query=台北市政府警察局大同分局民生西路派出所' target='_blank' style='color: #2980b9; text-decoration: underline; white-space: nowrap;'>台北市大同區保安街 47-1 號 📍</a>)",
+        pol_li_2: "<strong>延平派出所：</strong> 靠近迪化街南段與永樂市場 (<a href='https://www.google.com/maps/search/?api=1&query=台北市政府警察局大同分局延平派出所' target='_blank' style='color: #2980b9; text-decoration: underline; white-space: nowrap;'>台北市大同區延平北路 1 段 86 號 📍</a>)",
+
+
     },
+
+
     en: {
         site_title: "Dadaocheng Guide",
         nav_shops: "Local Shops",
@@ -115,6 +139,29 @@ const i18n = {
         bank_li_3: "Note: To process any currency exchange at a bank in Taiwan, you MUST present your original passport. Please carry it with you. This is a bilingual branch, so communication is easy.",
         title_machine: "💡 For Travelers: Self-Service Currency Exchange Machines",
         desc_machine: "To accommodate the large number of tourists in Dadaocheng, if you need a small amount of cash after banking hours, look for self-service currency exchange machines (e.g., Shin Kong Bank Currency Exchange Machine). Some locations have machines that do not require a Taiwanese bank account. They support direct exchange of major currencies like USD and JPY into TWD. Just follow the on-screen instructions and scan your passport.",
+    
+        nav_emergency: "🚨 Emergency",
+        intro_emer_title: "🚨 Emergency & Medical Assistance",
+        intro_emer_desc: "Taiwan is a very safe country for travel, but if you encounter sudden illness or lose your belongings, please don't panic. The following resources offer multilingual assistance at any time:",
+        title_hotline: "📞 24/7 Toll-Free Hotlines",
+        hotline_1_name: "Foreigners in Taiwan Hotline:",
+        hotline_1_desc: "Services: Available in 7 languages including English and Japanese. Whether you have visa issues, lost a passport, need daily life assistance, or face an emergency, you can call this hotline for guidance.",
+        hotline_2_name: "Tourist Information Hotline:",
+        hotline_2_desc: "Services: Provided by the Taiwan Tourism Administration, supporting English, Japanese, and Korean. Call anytime for communication issues or immediate travel guidance.",
+        hotline_3_name: "Police & Ambulance:",
+        hotline_3_desc: "(Note: If you cannot communicate in Chinese after connecting, simply say 'English' to request English assistance)",
+        title_hospital: "🏥 Nearby Bilingual Hospitals",
+        desc_hospital_intro: "If you feel unwell around Dadaocheng and need medical attention, the nearest large hospital with excellent foreign language capabilities is:",
+        hosp_li_1: "<strong>Taipei City Hospital - Zhongxing Branch</strong>",
+        hosp_li_2: "<strong>Distance:</strong> Located on the south side of the Dadaocheng area, about a 5-10 minute walk or taxi ride.",
+        hosp_li_4: "<strong>Features:</strong> A large public general hospital with an Emergency Room. Doctors and nurses have basic to advanced English communication skills.",
+        title_police: "👮 Local Police Stations",
+        
+        hosp_li_3: "<strong>Address:</strong> <a href='https://www.google.com/maps/search/?api=1&query=Taipei+City+Hospital+Zhongxing+Branch' target='_blank' style='color: #2980b9; text-decoration: underline; white-space: nowrap;'>No. 145, Zhengzhou Rd., Datong Dist., Taipei City 📍</a>",
+        pol_li_1: "<strong>Minsheng West Rd. Police Station:</strong> Near the north end of Dihua St. and Dadaocheng Wharf (<a href='https://www.google.com/maps/search/?api=1&query=Minsheng+West+Road+Police+Station+Taipei' target='_blank' style='color: #2980b9; text-decoration: underline; white-space: nowrap;'>No. 47-1, Bao'an St., Datong Dist., Taipei City 📍</a>)",
+        pol_li_2: "<strong>Yanping Police Station:</strong> Near the south end of Dihua St. and Yongle Market (<a href='https://www.google.com/maps/search/?api=1&query=Yanping+Police+Station+Taipei' target='_blank' style='color: #2980b9; text-decoration: underline; white-space: nowrap;'>No. 86, Sec. 1, Yanping N. Rd., Datong Dist., Taipei City 📍</a>)",
+
+
     },
     ja: {
         site_title: "大稲埕ガイド",
@@ -173,6 +220,27 @@ const i18n = {
         title_machine: "💡 旅行者向け：外貨自動両替機",
         desc_machine: "大稲埕を訪れる多くの観光客に対応するため、銀行の営業時間外に少額の現金が必要な場合は、外貨自動両替機（例：新光銀行 外貨両替機）を探してみてください。一部の設置場所では台湾の銀行口座がなくても操作可能で、米ドルや日本円などの主要通貨を直接台湾ドルに両替できます。画面の指示に従い、パスポートをスキャンするだけで完了します。",
     
+        nav_emergency: "🚨 緊急サポート",
+        intro_emer_title: "🚨 緊急連絡先と医療サポート",
+        intro_emer_desc: "台湾は非常に安全な旅行先ですが、急な体調不良や落とし物をした場合でも慌てないでください。以下の窓口では多言語でサポートを提供しています。",
+        title_hotline: "📞 24時間無料ヘルプライン",
+        hotline_1_name: "外国人生活相談ホットライン：",
+        hotline_1_desc: "サービス：日本語や英語など7か国語に対応。ビザの問題、パスポートの紛失、生活上の相談、または緊急事態に直面した際のアドバイスを受けられます。",
+        hotline_2_name: "24時間旅行相談ホットライン：",
+        hotline_2_desc: "サービス：台湾観光署が提供しており、日本語、英語、韓国語に対応。旅行中の言葉の壁や緊急の案内が必要な際にいつでも電話できます。",
+        hotline_3_name: "警察と救急車：",
+        hotline_3_desc: "（注：電話が繋がった後、中国語での会話が難しい場合は「Japanese」または「English」と伝えてサポートを求めてください）",
+        title_hospital: "🏥 近隣の多言語対応病院",
+        desc_hospital_intro: "大稲埕周辺で体調を崩し、受診が必要な場合、最も近くて外国語対応が充実している総合病院はこちらです：",
+        hosp_li_1: "<strong>台北市立聯合病院 中興院区</strong>",
+        hosp_li_2: "<strong>アクセス：</strong> 大稲埕エリアの南側に位置し、徒歩またはタクシーで約5〜10分で到着します。",
+        hosp_li_4: "<strong>特徴：</strong> 公立の大型総合病院で、救急外来（ER）を備えています。医師や看護師は基礎から上級レベルの英語コミュニケーション能力を持っています。",
+        title_police: "👮 大稲埕周辺の警察署（派出所）",
+        hosp_li_3: "<strong>住所：</strong> <a href='https://www.google.com/maps/search/?api=1&query=臺北市立聯合醫院中興院區' target='_blank' style='color: #2980b9; text-decoration: underline; white-space: nowrap;'>台北市大同区鄭州路145号 📍</a>",
+        pol_li_1: "<strong>民生西路派出所：</strong> 迪化街の北側・大稲埕碼頭近く（<a href='https://www.google.com/maps/search/?api=1&query=台北市政府警察局大同分局民生西路派出所' target='_blank' style='color: #2980b9; text-decoration: underline; white-space: nowrap;'>台北市大同区保安街47-1号 📍</a>）",
+        pol_li_2: "<strong>延平派出所：</strong> 迪化街の南側・永楽市場近く（<a href='https://www.google.com/maps/search/?api=1&query=台北市政府警察局大同分局延平派出所' target='_blank' style='color: #2980b9; text-decoration: underline; white-space: nowrap;'>台北市大同区延平北路1段86号 📍</a>）",
+
+
     },
     ko: {
         site_title: "다다오청 가이드",
@@ -231,7 +299,28 @@ const i18n = {
         title_machine: "💡 여행객 맞춤: 무인 외화 환전기",
         desc_machine: "다다오청의 많은 관광객을 위해, 은행 영업시간 외에 소액의 현금이 급히 필요한 경우 무인 환전기(예: 신광은행 외화 환전기)를 찾아보세요. 일부 기기는 대만 은행 계좌 없이도 조작할 수 있으며, 미국 달러, 일본 엔화 등 주요 통화를 대만 달러로 바로 환전할 수 있습니다. 화면의 지시에 따라 여권을 스캔하면 완료됩니다.",
     
-    
+        nav_emergency: "🚨 긴급 지원",
+        intro_emer_title: "🚨 긴급 연락처 및 의료 지원",
+        intro_emer_desc: "대만은 매우 안전한 여행지이지만, 갑작스러운 컨디션 난조나 물건 분실 시 당황하지 마세요. 다음 기관에서 다국어 지원 서비스를 제공하고 있습니다.",
+        title_hotline: "📞 24시간 무료 지원 핫라인",
+        hotline_1_name: "외국인 대만 생활 상담 핫라인:",
+        hotline_1_desc: "서비스: 한국어, 영어, 일본어 등 7개 국어 서비스 제공. 비자 문제, 여권 분실, 생활 지원 또는 긴급 상황 발생 시 이 핫라인에 전화하여 안내를 받을 수 있습니다.",
+        hotline_2_name: "24시간 관광 상담 핫라인:",
+        hotline_2_desc: "서비스: 대만 관광청에서 제공하며 한국어, 영어, 일본어를 지원합니다. 여행 중 의사소통에 어려움을 겪거나 즉각적인 여행 안내가 필요할 때 언제든 전화할 수 있습니다.",
+        hotline_3_name: "경찰 및 구급차:",
+        hotline_3_desc: "(참고: 연결 후 중국어로 소통하기 어렵다면 'English' 또는 'Korean'이라고 말하여 도움을 요청하세요)",
+        title_hospital: "🏥 인근 다국어 지원 병원",
+        desc_hospital_intro: "다다오청 주변에서 몸이 불편하여 병원 진료가 필요한 경우, 외국어 소통이 원활하고 가장 가까운 대형 병원은 다음과 같습니다:",
+        hosp_li_1: "<strong>타이베이 시립 연합병원 중싱 원구 (Taipei City Hospital - Zhongxing Branch)</strong>",
+        hosp_li_2: "<strong>거리:</strong> 다다오청 상권 남쪽에 위치하며, 도보 또는 택시로 약 5~10분 거리에 있습니다.",
+        
+        hosp_li_4: "<strong>특징:</strong> 응급실(ER)을 갖춘 공립 대형 종합병원입니다. 의사와 간호사 모두 기초 및 심화 수준의 영어 소통 능력을 갖추고 있습니다.",
+        title_police: "👮 다다오청 주변 경찰서 (파출소)",
+        hosp_li_3: "<strong>주소:</strong> <a href='https://www.google.com/maps/search/?api=1&query=臺北市立聯合醫院中興院區' target='_blank' style='color: #2980b9; text-decoration: underline; white-space: nowrap;'>타이베이시 다퉁구 정저우루 145호 📍</a>",
+        pol_li_1: "<strong>민성시루 파출소:</strong> 디화제 북단 및 다다오청 부두 근처 (<a href='https://www.google.com/maps/search/?api=1&query=台北市政府警察局大同分局民生西路派出所' target='_blank' style='color: #2980b9; text-decoration: underline; white-space: nowrap;'>타이베이시 다퉁구 바오안제 47-1호 📍</a>)",
+        pol_li_2: "<strong>옌핑 파출소:</strong> 디화제 남단 및 융러 시장 근처 (<a href='https://www.google.com/maps/search/?api=1&query=台北市政府警察局大同分局延平派出所' target='_blank' style='color: #2980b9; text-decoration: underline; white-space: nowrap;'>타이베이시 다퉁구 옌핑베이루 1단 86호 📍</a>)",
+
+
     }
 };
 
@@ -244,7 +333,8 @@ function changeLanguage(lang) {
         const key = el.getAttribute('data-i18n');
         // 如果字典檔裡有對應的翻譯，就替換文字
         if (i18n[lang] && i18n[lang][key]) {
-            el.textContent = i18n[lang][key];
+            // 🌟 已經將 textContent 改成 innerHTML
+            el.innerHTML = i18n[lang][key];
         }
     });
 
