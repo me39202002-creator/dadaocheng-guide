@@ -5,11 +5,11 @@ const uiTranslations = {
         all: { zh: "全部", en: "All", ja: "すべて", ko: "전체" },
         coffee: { zh: "咖啡", en: "Coffee", ja: "コーヒー", ko: "커피" },
         tea: { zh: "茶館", en: "Tea House", ja: "茶館", ko: "다과점" },
-        restaurant: { zh: "餐廳", en: "Restaurant", ja: "レストラン", ko: "레스토랑" },
         craft: { zh: "文創選物", en: "Crafts", ja: "クラフト", ko: "크래프트" },
         pastry: { zh: "傳統糕餅", en: "Pastry", ja: "伝統菓子", ko: "전통 과자" },
         medicine: { zh: "中藥行", en: "Medicine", ja: "漢方薬局", ko: "한약방" },
-        snack: { zh: "小吃飲品", en: "Snacks & Drinks", ja: "軽食・飲み物", ko: "간식 및 음료" } 
+        restaurant: { zh: "餐廳", en: "Restaurant", ja: "レストラン", ko: "레스토랑" },
+        snack: { zh: "小吃飲品", en: "Snacks & Drinks", ja: "軽食・飲み物", ko: "간식 및 음료" }
     }
 };
 
@@ -32,53 +32,113 @@ function setupEventListeners() {
     });
 }
 
-// 獲取 Google 試算表資料
+// 安全讀取 localStorage
+function safeGetItem(key) {
+    try { return localStorage.getItem(key); } catch (e) { return null; }
+}
+function safeSetItem(key, value) {
+    try { localStorage.setItem(key, value); } catch (e) { console.warn('localStorage 寫入失敗:', e); }
+}
+
+// 獲取資料（優先從 GAS，失敗則用本地 data.json，最後用 localStorage 快取）
 async function fetchShopsData() {
-    // 你的 Apps Script 網址
     const scriptUrl = 'https://script.google.com/macros/s/AKfycbyPN0_5dJN-8pG56ja9KlrIEQoMlV3QQZnIv60TQnL72Z3mx4pR7OLWV_336BEA_gH-/exec';
-    
-    // 定義一個專屬的「冰箱標籤」，用來存取這包資料
     const cacheKey = 'dadaocheng_shops_data';
+    const cacheTimeKey = 'dadaocheng_shops_time';
+    const CACHE_DURATION = 3600000; // 1 小時（毫秒）
 
-    try {
-        // ========== 步驟 1：檢查本地暫存 ==========
-        const cachedData = localStorage.getItem(cacheKey);
-        
-        if (cachedData) {
-            console.log("⚡ 讀取本地暫存資料，瞬間渲染畫面！");
-            const rawData = JSON.parse(cachedData); // 把字串轉回 JSON 格式
-            
-            // 呼叫智慧翻譯機，用舊資料先畫出畫面
-            shopsData = transformSheetData(rawData);
-            displayLatestTimeFromData(shopsData);
-            updateUI(); 
-        } else {
-            console.log("沒有暫存資料，等待伺服器回應...");
-            // 如果你原本有 showLoading() 的動畫，可以加在這裡
-        }
+    let hasDisplayed = false;
 
-        // ========== 步驟 2：背景偷偷向 GAS 請求最新資料 ==========
-        const response = await fetch(scriptUrl); 
-        if (!response.ok) throw new Error('網路回應錯誤');
-        
-        const rawData = await response.json();
-        
-        // ========== 步驟 3：把最新資料存進冰箱 (localStorage) ==========
-        localStorage.setItem(cacheKey, JSON.stringify(rawData)); // 存進去前要先轉成字串
-        
-        // ========== 步驟 4：用最新資料再次更新畫面 ==========
-        console.log("🔄 取得最新資料，安靜地更新畫面！");
-        shopsData = transformSheetData(rawData);
+    // 嘗試用資料渲染畫面
+    function tryRender(data, source) {
+        if (!data || !Array.isArray(data) || data.length === 0) return false;
+        shopsData = transformSheetData(data);
+        if (shopsData.length === 0) return false;
         displayLatestTimeFromData(shopsData);
-        updateUI(); 
+        updateUI();
+        console.log(`✅ 使用 ${source} 資料渲染，共 ${shopsData.length} 筆`);
+        hasDisplayed = true;
+        return true;
+    }
 
-    } catch (error) {
-        console.error("載入資料失敗:", error);
-        
-        // 只有在「完全沒有暫存資料」且「網路也斷線」的最糟情況下，才顯示錯誤訊息給使用者看
-        if (!localStorage.getItem(cacheKey)) {
-            shopGrid.innerHTML = `<p style="text-align:center; color:red;">讀取資料庫發生錯誤，請按 F12 查看控制台。</p>`;
+    // ========== 步驟 1：檢查 localStorage 快取（含過期判斷）==========
+    const cachedDataStr = safeGetItem(cacheKey);
+    const cachedTimeStr = safeGetItem(cacheTimeKey);
+    const now = Date.now();
+    const cacheValid = cachedDataStr && cachedTimeStr && (now - parseInt(cachedTimeStr)) < CACHE_DURATION;
+
+    if (cacheValid) {
+        try {
+            const cachedData = JSON.parse(cachedDataStr);
+            tryRender(cachedData, 'localStorage 快取');
+        } catch (e) {
+            console.warn('快取資料解析失敗:', e);
         }
+    }
+
+    // 如果沒有有效快取，先顯示載入中
+    if (!hasDisplayed) {
+        shopGrid.innerHTML = `<p style="text-align:center; color:#666; padding:40px 0;">📡 載入店家資料中...</p>`;
+    }
+
+    // ========== 步驟 2：嘗試從 GAS 取得最新資料 ==========
+    let gasData = null;
+    try {
+        const response = await fetch(scriptUrl);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        gasData = await response.json();
+
+        // 成功取得，更新快取
+        safeSetItem(cacheKey, JSON.stringify(gasData));
+        safeSetItem(cacheTimeKey, String(now));
+
+        // 用新資料更新畫面
+        tryRender(gasData, 'Google Sheets');
+        return;
+
+    } catch (gasError) {
+        console.warn('GAS 載入失敗:', gasError.message);
+    }
+
+    // ========== 步驟 3：GAS 失敗，嘗試本地 data.json ==========
+    if (!hasDisplayed) {
+        try {
+            const localResponse = await fetch('data.json');
+            if (localResponse.ok) {
+                const localData = await localResponse.json();
+                if (tryRender(localData, '本地 data.json')) {
+                    safeSetItem(cacheKey, JSON.stringify(localData));
+                    safeSetItem(cacheTimeKey, String(now));
+                    return;
+                }
+            }
+        } catch (localError) {
+            console.warn('本地 data.json 載入失敗:', localError.message);
+        }
+    }
+
+    // ========== 步驟 4：全部失敗，嘗試過期快取（最後手段）==========
+    if (!hasDisplayed && cachedDataStr) {
+        try {
+            const expiredData = JSON.parse(cachedDataStr);
+            if (tryRender(expiredData, '過期快取')) {
+                console.log('⚠️ 使用過期快取資料（網路可能離線）');
+                return;
+            }
+        } catch (e) {
+            console.warn('過期快取解析失敗:', e);
+        }
+    }
+
+    // ========== 步驟 5：完全無法取得資料 ==========
+    if (!hasDisplayed) {
+        shopGrid.innerHTML = `
+            <div style="text-align:center; padding:40px 20px; color:#666;">
+                <p style="font-size:1.2rem; margin-bottom:10px;">😅 暫時無法載入資料</p>
+                <p>請檢查網路連線，或稍後再試。</p>
+                <button onclick="location.reload()" style="margin-top:20px; padding:10px 20px; border-radius:20px; border:1px solid var(--primary-color); background:transparent; color:var(--primary-color); cursor:pointer;">重新整理</button>
+            </div>
+        `;
     }
 }
 
@@ -135,8 +195,8 @@ function updateUI() {
 // 渲染篩選按鈕
 function renderFilters() {
     filterBar.innerHTML = '';
-    const categories = ['all', 'coffee', 'tea', 'restaurant','craft', 'pastry', 'medicine', 'snack' ];
-    
+    const categories = ['all', 'coffee', 'tea', 'restaurant', 'craft', 'pastry', 'medicine', 'snack'];
+
     categories.forEach(cat => {
         const btn = document.createElement('button');
         btn.className = `filter-btn ${currentFilter === cat ? 'active' : ''}`;
@@ -153,24 +213,28 @@ function renderFilters() {
 // 渲染店家卡片
 function renderCards() {
     shopGrid.innerHTML = '';
-    
+
     const filteredShops = currentFilter === 'all' 
         ? shopsData 
         : shopsData.filter(shop => shop.category === currentFilter);
 
     filteredShops.forEach(shop => {
         if (!shop || !shop.title || !shop.title[currentLang]) return; 
-        
+
         const card = document.createElement('div');
         card.className = 'shop-card';
-        
+
         const searchQuery = encodeURIComponent(shop.title[currentLang] + ' ' + shop.address[currentLang]);
         const mapUrl = `https://www.google.com/maps/search/?api=1&query=${searchQuery}`;
-        
+
+        const desc = shop.description && shop.description[currentLang] 
+            ? shop.description[currentLang] 
+            : '';
+
         card.innerHTML = `
             <div class="shop-category">${uiTranslations.filters[shop.category] ? uiTranslations.filters[shop.category][currentLang] : shop.category}</div>
             <h3 class="shop-title">${shop.title[currentLang]}</h3>
-            <p class="shop-description">${shop.description ? shop.description[currentLang] : ''}</p>
+            ${desc ? `<p class="shop-description">${desc}</p>` : ''}
             <div class="shop-info">
                 <span>📍</span>
                 <a href="${mapUrl}" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline; text-underline-offset: 4px;">
@@ -179,14 +243,13 @@ function renderCards() {
             </div>
             <div class="shop-info">
                 <span>⏰</span>
-                <span>${shop.hours[currentLang]}</span>
+                <span>${shop.hours[currentLang] || ''}</span>
             </div>
         `;
         shopGrid.appendChild(card);
     });
 }
 
-// 自動從資料庫中比對出最新的時間
 // 自動從資料庫中比對出最新的時間 (加入時間格式美化)
 function displayLatestTimeFromData(data) {
     let latestTime = "";
@@ -202,7 +265,7 @@ function displayLatestTimeFromData(data) {
     if (displayEl && latestTime !== "") {
         // 將電腦原始時間轉換成 JavaScript 的 Date 物件
         const dateObj = new Date(latestTime);
-        
+
         // 確保這是一個有效的時間
         if (!isNaN(dateObj.getTime())) {
             const year = dateObj.getFullYear();
@@ -210,7 +273,7 @@ function displayLatestTimeFromData(data) {
             const day = String(dateObj.getDate()).padStart(2, '0');
             const hours = String(dateObj.getHours()).padStart(2, '0');
             const minutes = String(dateObj.getMinutes()).padStart(2, '0');
-            
+
             // 組裝成我們想要的格式
             displayEl.textContent = `${year}/${month}/${day} ${hours}:${minutes}`;
         } else {

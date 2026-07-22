@@ -26,6 +26,7 @@ const i18n = {
         badge_tour: "在地體驗",
         badge_translate: "語言翻譯",
         badge_comm: "通訊軟體",
+        badge_tra: "火車訂票",
         
         // APP 描述 (Descriptions)
         desc_gmaps: "在台灣找路、查詢公車與捷運路線最準確的工具。強烈建議搭配街景功能使用。",
@@ -323,6 +324,24 @@ const i18n = {
 
     }
 };
+// 安全的 localStorage 操作
+function safeSetItem(key, value) {
+    try {
+        safeSetItem(key, value);
+    } catch (e) {
+        console.warn('localStorage 不可用:', e);
+    }
+}
+
+function safeGetItem(key, defaultValue) {
+    try {
+        return safeGetItem(key) || defaultValue;
+    } catch (e) {
+        console.warn('localStorage 不可用:', e);
+        return defaultValue;
+    }
+}
+
 
 // 2. 執行語言替換的函數
 function changeLanguage(lang) {
@@ -342,13 +361,13 @@ function changeLanguage(lang) {
     document.getElementById('lang-select').value = lang;
     
     // 🌟 關鍵：將選擇的語言存入 localStorage，讓換頁時可以記住設定
-    localStorage.setItem('preferredLanguage', lang);
+    safeSetItem('preferredLanguage', lang);
 }
 
 // 3. 頁面載入時的初始化設定
 document.addEventListener('DOMContentLoaded', () => {
     // 檢查瀏覽器是否已經有記住的語言設定，沒有的話預設為繁體中文 (zh)
-    const savedLang = localStorage.getItem('preferredLanguage') || 'zh';
+    const savedLang = safeGetItem('preferredLanguage') || 'zh';
     changeLanguage(savedLang);
 
     // 監聽下拉選單的改變事件

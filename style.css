@@ -1,4 +1,9 @@
 /* 基礎設定與字體 */
+/* 基礎設定與字體 */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: #8B3A3A; /* 復古紅磚色 */
     --bg-color: #F9F7F1; /* 溫暖紙張色 */
@@ -14,6 +19,43 @@ body {
     padding: 0;
     background-color: var(--bg-color);
     color: var(--text-main);
+}
+
+/* 圖片響應式 */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* 無障礙：鍵盤導航焦點樣式 */
+:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+a:focus-visible,
+button:focus-visible,
+select:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+
+/* 無障礙：鍵盤導航焦點樣式 */
+:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+a:focus-visible,
+button:focus-visible,
+select:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+    border-radius: 4px;
 }
 
 /* 頁首 */
@@ -158,7 +200,7 @@ h1 {
     margin: 0 0 1rem 0;
     line-height: 1.5;
     display: -webkit-box;
-    -webkit-line-clamp: 10;
+    -webkit-line-clamp: 4;
     line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -336,4 +378,114 @@ h1 {
 .main-nav a.active {
     color: #8C2626; 
     border-bottom: 3px solid #8C2626; 
+}
+
+/* 更小螢幕（手機直向） */
+@media (max-width: 480px) {
+    header {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    .shop-title {
+        font-size: 1.2rem;
+    }
+
+    .shop-description {
+        font-size: 0.85rem;
+    }
+
+    .shop-info {
+        font-size: 0.85rem;
+    }
+
+    .app-card {
+        padding: 15px;
+    }
+
+    .icon-placeholder {
+        width: 48px;
+        height: 48px;
+        font-size: 18px;
+    }
+
+    .app-info h4 {
+        font-size: 1.1rem;
+    }
+
+    .description {
+        font-size: 0.85rem;
+    }
+
+    .btn-dl {
+        font-size: 0.75rem;
+        padding: 5px 10px;
+    }
+
+    .intro-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .category-title {
+        font-size: 1.2rem;
+    }
+
+    .main-nav {
+        gap: 10px;
+    }
+
+    .main-nav a {
+        font-size: 0.85rem;
+        padding: 5px 6px;
+    }
+}
+
+/* 列印樣式：方便旅客列印店家資訊 */
+@media print {
+    header,
+    .sub-nav-container,
+    .filter-bar,
+    .lang-selector,
+    .update-time,
+    .download-links {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    .shop-card {
+        break-inside: avoid;
+        border: 1px solid #ccc;
+        box-shadow: none;
+        page-break-inside: avoid;
+    }
+
+    .shop-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8rem;
+        color: #666;
+        word-break: break-all;
+    }
+
+    .app-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
 }

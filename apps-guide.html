@@ -6,6 +6,7 @@
     <title>台灣旅遊必備 APP | Dadaocheng Guide</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
+<base target="_blank">
 </head>
 <body>
   <header>
@@ -39,8 +40,7 @@
     </nav>
 </div>
 
-<main>
-    <main class="app-guide-main">
+<main class="app-guide-main">
         <div class="intro-section">
             <h2 data-i18n="intro_title">外國旅客必備數位工具</h2>
             <p data-i18n="intro_desc">讓您的台灣之旅更順暢！以下為您整理出在台灣最實用的交通、美食與生活 APP。</p>
@@ -105,7 +105,7 @@
                     <div class="app-info">
                         <h4>台鐵 e 訂通</h4>
                         <!-- 新增的翻譯標籤 badge_tra 與 desc_tra -->
-                        <span class="badge badge-transit" data-i18n="badge_tra">火車訂票</span>
+                        <span class="badge badge-transit" >火車訂票</span>
                         <p class="description" data-i18n="desc_tra">台鐵官方訂票 APP。可查詢火車時刻表、線上預訂，並直接使用手機取得電子車票進出站。</p>
                         <div class="download-links">
                             <!-- 台鐵官方真實下載連結 -->
@@ -236,49 +236,63 @@
             </div>
         </section>
 <!-- 💰 現金提款與換匯指南 (獨立區塊) -->
-        <section class="app-category exchange-guide" style="margin-top: 50px; border-top: 1px solid #eaeaea; padding-top: 40px;">
-            <h3 class="category-title" data-i18n="cat_exchange">💵 現金提款與換匯指南 (Cash & Currency Exchange)</h3>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;" data-i18n="desc_exchange_intro">雖然大稻埕許多特色店家已經支援電子支付或信用卡，但傳統小吃、布市、中藥行，以及悠遊卡 (EasyCard) 儲值通常仍只收取現金。以下是獲取新台幣最方便的方式：</p>
+        <!-- 💰 現金提款與換匯指南 (獨立區塊) -->
+<!-- 💰 現金提款與換匯指南 (獨立區塊) -->
+<section class="app-category exchange-guide" style="margin-top: 50px; border-top: 1px solid #eaeaea; padding-top: 40px;">
+    <h3 class="category-title" data-i18n="cat_exchange">💵 現金提款與換匯指南 (Cash & Currency Exchange)</h3>
+    <p style="color: #555; line-height: 1.6; margin-bottom: 25px;" data-i18n="desc_exchange_intro">雖然大稻埕許多特色店家已經支援電子支付或信用卡，但傳統小吃、布市、中藥行，以及悠遊卡 (EasyCard) 儲值通常仍只收取現金。以下是獲取新台幣最方便的方式：</p>
 
-            <div class="app-grid" style="grid-template-columns: 1fr;"> 
-                
-                <!-- 1. 便利商店提款 -->
-                <div class="app-card" style="display: block; padding: 25px;">
-                    <h4 style="margin-bottom: 15px; color: #333; font-size: 1.1rem; border-bottom: 2px solid #eaeaea; padding-bottom: 10px;" data-i18n="title_atm">🏧 24 小時便利商店跨國提款 (International ATMs)</h4>
-                    <p style="color: #666; margin-bottom: 15px;" data-i18n="desc_atm_intro">台灣的便利商店密度極高，是外國旅客領取現金最方便的管道。</p>
-                    <ul style="margin-bottom: 0; padding-left: 20px; color: #666; line-height: 1.8;">
-                        <li data-i18n="atm_li_1"><strong>哪裡可以領？</strong> 尋找 7-ELEVEN (內建中國信託 ATM) 或 全家便利商店 (內建國泰世華/台新銀行 ATM)。大稻埕周邊步行 3 分鐘內絕對找得到。</li>
-                        <li data-i18n="atm_li_2"><strong>支援卡別：</strong> 機台上若貼有 Visa, Mastercard, PLUS, Cirrus, UnionPay (銀聯) 等標誌，即可使用國外提款卡領取新台幣 (TWD)。</li>
-                        <li data-i18n="atm_li_3"><strong>介面語言：</strong> ATM 均提供英文 (English)、日文 (日本語)、韓文 (한국어) 等多國語言。</li>
-                        <li data-i18n="atm_li_4"><strong>手續費：</strong> 台灣本地銀行通常會收取單筆約 NT$100 的設備手續費（您的發卡銀行可能還會收取跨國手續費，建議一次領取足夠金額）。</li>
-                    </ul>
-                </div>
+    <!-- DCC 警告 -->
+    <div style="display: flex; gap: 12px; align-items: flex-start; padding: 16px 20px; background-color: #fff8f8; border-left: 5px solid #e74c3c; border-radius: 4px; margin-bottom: 28px;">
+        <span style="font-size: 1.3rem; line-height: 1.2;">⚠️</span>
+        <div>
+            <h4 style="margin: 0 0 6px; color: #e74c3c; font-size: 1.05rem;" data-i18n="title_dcc">⚠️ 【重要提醒！避免匯率陷阱 (Avoid DCC Trap)】</h4>
+            <p style="color: #555; line-height: 1.5; margin: 0; font-size: 0.92rem;" data-i18n="desc_dcc">當您在 ATM 提款或商店刷卡時，如果螢幕詢問您要使用「您的母國貨幣」還是「新台幣 (TWD)」結帳，請務必選擇「新台幣 (TWD) / 本地貨幣」！若選擇母國貨幣（即動態貨幣轉換 DCC），ATM 將會使用極差的匯率計算，您可能會因此多付 3%~8% 的隱藏費用。</p>
+        </div>
+    </div>
 
-                <!-- 2. DCC 警告 -->
-                <div class="app-card" style="display: block; padding: 20px 25px; background-color: #fff8f8; border-left: 5px solid #e74c3c;">
-                    <h4 style="margin-bottom: 10px; color: #e74c3c; font-size: 1.1rem;" data-i18n="title_dcc">⚠️ 【重要提醒！避免匯率陷阱 (Avoid DCC Trap)】</h4>
-                    <p style="color: #555; line-height: 1.6; margin-bottom: 0;" data-i18n="desc_dcc">當您在 ATM 提款或商店刷卡時，如果螢幕詢問您要使用「您的母國貨幣」還是「新台幣 (TWD)」結帳，<strong>請務必選擇「新台幣 (TWD) / 本地貨幣」！</strong>若選擇母國貨幣（即動態貨幣轉換 DCC），ATM 將會使用極差的匯率計算，您可能會因此多付 3%~8% 的隱藏費用。</p>
-                </div>
+    <div class="app-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
 
-                <!-- 3. 實體銀行換匯 -->
-                <div class="app-card" style="display: block; padding: 25px;">
-                    <h4 style="margin-bottom: 15px; color: #333; font-size: 1.1rem; border-bottom: 2px solid #eaeaea; padding-bottom: 10px;" data-i18n="title_bank">💱 實體銀行換匯 (Currency Exchange at Banks)</h4>
-                    <p style="color: #666; margin-bottom: 15px;" data-i18n="desc_bank_intro">如果您手邊持有外幣現鈔 (如美金、日圓、歐元) 需要兌換成新台幣，迪化街上就有提供外匯業務的實體銀行：</p>
-                    <ul style="margin-bottom: 0; padding-left: 20px; color: #666; line-height: 1.8;">
-                        <li data-i18n="bank_li_1"><strong>第一銀行 (First Bank) 大稻埕分行：</strong> 台北市大同區迪化街 1 段 63 號 (霞海城隍廟斜對面)。</li>
-                        <li data-i18n="bank_li_2"><strong>營業時間：</strong> 平日 (週一至週五) 09:00 - 15:30。週末與國定假日休息。</li>
-                        <li data-i18n="bank_li_3"><strong>注意事項：</strong> 在台灣的銀行辦理任何換匯業務，<strong>絕對必須出示護照正本 (Passport)</strong>，請務必隨身攜帶。此為雙語分行，溝通十分方便。</li>
-                    </ul>
-                </div>
-
-                <!-- 4. 自助外幣兌換機 -->
-                <div class="app-card" style="display: block; padding: 25px;">
-                    <h4 style="margin-bottom: 15px; color: #333; font-size: 1.1rem; border-bottom: 2px solid #eaeaea; padding-bottom: 10px;" data-i18n="title_machine">💡 旅客專屬：自助外幣兌換機 (Currency Exchange Machine)</h4>
-                    <p style="color: #666; line-height: 1.6; margin-bottom: 0;" data-i18n="desc_machine">為了因應大稻埕龐大的觀光人潮，如果您急需小額現金又逢銀行下班時間，可以尋找自助兌幣機（例如：<strong>新光銀行 台外幣兌換機</strong>）。部分據點設有無需台灣銀行帳戶即可操作的兌換機，支援美金、日幣等主流貨幣直接兌換新台幣，依照螢幕指示掃描護照即可完成。</p>
-                </div>
-
+        <!-- 1. 便利商店提款 -->
+        <div class="app-card" style="display: block; padding: 22px;">
+            <div style="display:flex; align-items:center; gap:10px; margin-bottom: 14px;">
+                <div class="icon-placeholder bg-blue" style="width:32px; height:32px; font-size:0.9rem; display:flex; align-items:center; justify-content:center;">🏧</div>
+                <h4 style="margin: 0; color: #333; font-size: 1.05rem;" data-i18n="title_atm">🏧 24 小時便利商店跨國提款 (International ATMs)</h4>
             </div>
-        </section>
+            <p style="color: #666; font-size: 0.9rem; line-height: 1.6; margin-bottom: 12px;" data-i18n="desc_atm_intro">台灣的便利商店密度極高，是外國旅客領取現金最方便的管道。</p>
+            <ul style="color: #666; font-size: 0.9rem; line-height: 1.7; padding-left: 18px; margin: 0;">
+                <li data-i18n="atm_li_1">哪裡可以領？ 尋找 7-ELEVEN (內建中國信託 ATM) 或 全家便利商店 (內建國泰世華/台新銀行 ATM)。大稻埕周邊步行 3 分鐘內絕對找得到。</li>
+                <li data-i18n="atm_li_2">支援卡別： 機台上若貼有 Visa, Mastercard, PLUS, Cirrus, UnionPay (銀聯) 等標誌，即可使用國外提款卡領取新台幣 (TWD)。</li>
+                <li data-i18n="atm_li_3">介面語言： ATM 均提供英文 (English)、日文 (日本語)、韓文 (한국어) 等多國語言。</li>
+                <li data-i18n="atm_li_4">手續費： 台灣本地銀行通常會收取單筆約 NT$100 的設備手續費（您的發卡銀行可能還會收取跨國手續費，建議一次領取足夠金額）。</li>
+            </ul>
+        </div>
+
+        <!-- 2. 實體銀行換匯 -->
+        <div class="app-card" style="display: block; padding: 22px;">
+            <div style="display:flex; align-items:center; gap:10px; margin-bottom: 14px;">
+                <div class="icon-placeholder bg-orange" style="width:32px; height:32px; font-size:0.9rem; display:flex; align-items:center; justify-content:center;">💱</div>
+                <h4 style="margin: 0; color: #333; font-size: 1.05rem;" data-i18n="title_bank">💱 實體銀行換匯 (Currency Exchange at Banks)</h4>
+            </div>
+            <p style="color: #666; font-size: 0.9rem; line-height: 1.6; margin-bottom: 12px;" data-i18n="desc_bank_intro">如果您手邊持有外幣現鈔 (如美金、日圓、歐元) 需要兌換成新台幣，迪化街上就有提供外匯業務的實體銀行：</p>
+            <ul style="color: #666; font-size: 0.9rem; line-height: 1.7; padding-left: 18px; margin: 0;">
+                <li data-i18n="bank_li_1">第一銀行 (First Bank) 大稻埕分行： 台北市大同區迪化街 1 段 63 號 (霞海城隍廟斜對面)。</li>
+                <li data-i18n="bank_li_2">營業時間： 平日 (週一至週五) 09:00 - 15:30。週末與國定假日休息。</li>
+                <li data-i18n="bank_li_3">注意事項： 在台灣的銀行辦理任何換匯業務，絕對必須出示護照正本 (Passport)，請務必隨身攜帶。此為雙語分行，溝通十分方便。</li>
+            </ul>
+        </div>
+
+        <!-- 3. 自助外幣兌換機 -->
+        <div class="app-card" style="display: block; padding: 22px;">
+            <div style="display:flex; align-items:center; gap:10px; margin-bottom: 14px;">
+                <div class="icon-placeholder bg-green" style="width:32px; height:32px; font-size:0.9rem; display:flex; align-items:center; justify-content:center;">💡</div>
+                <h4 style="margin: 0; color: #333; font-size: 1.05rem;" data-i18n="title_machine">💡 旅客專屬：自助外幣兌換機 (Currency Exchange Machine)</h4>
+            </div>
+            <p style="color: #666; font-size: 0.9rem; line-height: 1.6; margin: 0;" data-i18n="desc_machine">為了因應大稻埕龐大的觀光人潮，如果您急需小額現金又逢銀行下班時間，可以尋找自助兌幣機（例如：新光銀行 台外幣兌換機）。部分據點設有無需台灣銀行帳戶即可操作的兌換機，支援美金、日幣等主流貨幣直接兌換新台幣，依照螢幕指示掃描護照即可完成。</p>
+        </div>
+
+    </div>
+</section>
 
     </main>
         <!-- 引入我們接下來要寫的 JS 檔案 -->
