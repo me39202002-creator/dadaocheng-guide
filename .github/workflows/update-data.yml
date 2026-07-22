@@ -20,7 +20,7 @@ jobs:
       - name: Fetch and Format data from GAS
         run: |
           curl -sL "https://script.google.com/macros/s/AKfycbyPN0_5dJN-8pG56ja9KlrIEQoMlV3QQZnIv60TQnL72Z3mx4pR7OLWV_336BEA_gH-/exec" > temp.json
-          jq . temp.json > data.json
+          jq 'map(select(."Title (ZH)" != "" and ."Title (ZH)" != null))' temp.json > data.json
           rm temp.json
       # 3. 檢查檔案是否有變更，如果有，就自動 Commit 並 Push 推送
       - name: Commit and push if changed
