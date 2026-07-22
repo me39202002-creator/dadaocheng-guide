@@ -1,0 +1,31 @@
+name: Auto Update Data JSON
+
+# 設定觸發條件
+on:
+  schedule:
+    # 每天台灣時間早上 8 點 (UTC 0點) 自動執行一次
+    - cron: '0 0 * * *'
+  # 允許我們在 GitHub 網頁上手動點擊按鈕執行
+  workflow_dispatch: 
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. 取得你 GitHub 儲存庫的檔案
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. 呼叫你的 Google Apps Script，下載最新資料並覆寫 data.json
+      - name: Fetch latest data from GAS
+        run: |
+          curl -L "https://script.google.com/macros/s/AKfycbyPN0_5dJN-8pG56ja9KlrIEQoMlV3QQZnIv60TQnL72Z3mx4pR7OLWV_336BEA_gH-/exec" -o data.json
+
+      # 3. 檢查檔案是否有變更，如果有，就自動 Commit 並 Push 推送
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "GitHub Action Bot"
+          git config --global user.email "action@github.com"
+          git add data.json
+          git commit -m "🤖 自動同步 Google 試算表最新資料" || exit 0
+          git push
