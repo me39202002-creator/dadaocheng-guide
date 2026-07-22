@@ -374,4 +374,19 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('lang-select').addEventListener('change', (event) => {
         changeLanguage(event.target.value);
     });
+    // ==========================================
+// PWA Service Worker 註冊 (讓網站支援離線讀取)
+// ==========================================
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        // 指定剛剛建立的 service-worker.js
+        navigator.serviceWorker.register('./service-worker.js')
+            .then(registration => {
+                console.log('PWA ServiceWorker 註冊成功！範圍是:', registration.scope);
+            })
+            .catch(err => {
+                console.log('PWA ServiceWorker 註冊失敗:', err);
+            });
+    });
+}
 });
