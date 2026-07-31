@@ -1405,5 +1405,26 @@
     "Description (JA)": "迪化街にあるイカ焼きの創始店。様々なオリジナルフレーバーの新鮮なイカを提供。大稲埕のレトロな街歩きに最適な屋台グルメです。",
     "Description (KO)": "디화제에 위치한 오징어구이 본점. 다양한 독창적인 맛의 통오징어 구이를 제공합니다. 다다오청 옛길을 산책하며 즐기기 좋은 간식입니다.",
     "UpdateTime": "2026-07-22T04:51:54.000Z"
+  },
+  {
+    "ID": 68,
+    "Category": "snack",
+    "Title (ZH)": "阿仁牛軋餅 台北迪化歸綏店",
+    "Title (EN)": "Rren Nougat Taipei Dihua Guisui Store",
+    "Title (JA)": "阿仁ヌガー 台北迪化帰綏店",
+    "Title (KO)": "아런 누가크래커 타이베이 디화 구이쑤이점",
+    "Address (ZH)": "台北市大同區歸綏街271號",
+    "Address (EN)": "No. 271, Guisui St., Datong Dist., Taipei City, Taiwan",
+    "Address (JA)": "〒103 台湾台北市大同区帰綏街271号",
+    "Address (KO)": "타이완 타이베이시 다퉁구 구이쑤이제 271",
+    "Hours (ZH)": "週一至週日 10:00-19:30",
+    "Hours (EN)": "Mon-Sun 10:00-19:30",
+    "Hours (JA)": "月～日 10:00-19:30",
+    "Hours (KO)": "월~일 10:00-19:30",
+    "Description (ZH)": "來自桃園的人氣伴手禮，主打牛軋餅與雪Q餅。口感軟Q不黏牙，結合在地優質食材，是送禮與解饞最佳選擇。",
+    "Description (EN)": "A popular souvenir shop famous for nougat biscuits and snowflake crisps. Soft, chewy, non-sticky, and made with premium local ingredients.",
+    "Description (JA)": "ヌガークラッカーと雪Q餅が人気の台湾土産店。柔らかくて歯に付かず、厳選された地元食材を使用しています。",
+    "Description (KO)": "누가크래커와 쉐큐빙이 인기 있는 타이완 기념품 전문점입니다. 부드럽고 쫀득하며 치아에 들러붙지 않아 선물용으로 좋습니다.",
+    "UpdateTime": "2026-07-31T02:24:59.000Z"
   }
 ]
