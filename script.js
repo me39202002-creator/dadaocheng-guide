@@ -1,3 +1,13 @@
+// 防範 XSS 的字串跳脫函式
+function escapeHTML(str) {
+    if (!str) return '';
+    return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
 // 介面翻譯字典
 const uiTranslations = {
     title: { zh: "大稻埕特色店家", en: "Datong Featured Shops", ja: "大稲埕の名店", ko: "다다오청 특색 매장" },
@@ -224,26 +234,38 @@ function renderCards() {
         const card = document.createElement('div');
         card.className = 'shop-card';
 
+        // 🌟 1. 將外部變數取出來，並統一使用 escapeHTML 進行跳脫保護
+        const safeTitle = escapeHTML(shop.title[currentLang]);
+        const safeAddress = escapeHTML(shop.address[currentLang]);
+        const safeHours = escapeHTML(shop.hours[currentLang]);
+        
+        // 處理分類文字的安全防護
+        const rawCategory = uiTranslations.filters[shop.category] ? uiTranslations.filters[shop.category][currentLang] : shop.category;
+        const safeCategory = escapeHTML(rawCategory);
+
+        // 處理簡介的安全防護
+        const desc = shop.description && shop.description[currentLang] 
+            ? escapeHTML(shop.description[currentLang]) 
+            : '';
+
+        // 🌟 2. 處理網址 (URL 需要使用 encodeURIComponent，這不受 HTML 跳脫影響)
         const searchQuery = encodeURIComponent(shop.title[currentLang] + ' ' + shop.address[currentLang]);
         const mapUrl = `https://www.google.com/maps/search/?api=1&query=${searchQuery}`;
 
-        const desc = shop.description && shop.description[currentLang] 
-            ? shop.description[currentLang] 
-            : '';
-
+        // 🌟 3. 將已經「消毒」過的安全變數 (safe 字首) 塞進 HTML 結構中
         card.innerHTML = `
-            <div class="shop-category">${uiTranslations.filters[shop.category] ? uiTranslations.filters[shop.category][currentLang] : shop.category}</div>
-            <h3 class="shop-title">${shop.title[currentLang]}</h3>
+            <div class="shop-category">${safeCategory}</div>
+            <h3 class="shop-title">${safeTitle}</h3>
             ${desc ? `<p class="shop-description">${desc}</p>` : ''}
             <div class="shop-info">
                 <span>📍</span>
                 <a href="${mapUrl}" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline; text-underline-offset: 4px;">
-                    ${shop.address[currentLang]}
+                    ${safeAddress}
                 </a>
             </div>
             <div class="shop-info">
                 <span>⏰</span>
-                <span>${shop.hours[currentLang] || ''}</span>
+                <span>${safeHours}</span>
             </div>
         `;
         shopGrid.appendChild(card);

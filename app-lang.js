@@ -327,7 +327,8 @@ const i18n = {
 // 安全的 localStorage 操作
 function safeSetItem(key, value) {
     try {
-        safeSetItem(key, value);
+        // 修正：呼叫原生的 localStorage API，而不是呼叫函式自己
+        localStorage.setItem(key, value); 
     } catch (e) {
         console.warn('localStorage 不可用:', e);
     }
@@ -335,7 +336,8 @@ function safeSetItem(key, value) {
 
 function safeGetItem(key, defaultValue) {
     try {
-        return safeGetItem(key) || defaultValue;
+        // 修正：呼叫原生的 localStorage API
+        return localStorage.getItem(key) || defaultValue; 
     } catch (e) {
         console.warn('localStorage 不可用:', e);
         return defaultValue;

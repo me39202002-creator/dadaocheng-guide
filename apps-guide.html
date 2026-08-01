@@ -3,68 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>台灣旅遊必備 APP | Dadaocheng Guide</title>
+    <title>?�灣?��?必�? APP | Dadaocheng Guide</title>
     <link rel="icon" type="image/png" href="favicon.png">
-   <!-- 加入這三行 PWA 設定 👇 -->
+   <!-- ?�入?��?�?PWA 設�? ?? -->
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#8B3A3A">
     <link rel="apple-touch-icon" href="favicon.png">
-    <!-- 加入這三行 PWA 設定 👆 -->
+    <!-- ?�入?��?�?PWA 設�? ?? -->
     <link rel="stylesheet" href="style.css">
-<base target="_blank">
+<base target="_self">
 </head>
 <body>
   <header>
     <div class="header-container">
-        <!-- 左側：網站標題 -->
+        <!-- 左側：網站�?�?-->
         <div class="header-left">
-            <h1 id="site-title" data-i18n="site_title">大稻埕導覽指南</h1>
+            <h1 id="site-title" data-i18n="site_title">大稻?��?覽�???/h1>
         </div>
-            <!-- 右側：🌟 把不見的語言選單加回來 -->
+            <!-- ?�側：�???��?見�?語�??�單?��?�?-->
         <div class="header-right">
             <div class="lang-selector">
                 <label for="lang-select">Language:</label>
                 <select id="lang-select">
-                    <option value="zh">繁體中文</option>
+                    <option value="zh">繁�?中�?</option>
                     <option value="en">English</option>
-                    <option value="ja">日本語</option>
-                    <option value="ko">한국어</option>
+                    <option value="ja">?�本�?/option>
+                    <option value="ko">?�국??/option>
                 </select>
             </div>
         </div>
     </div>
 </header>
 
-<!-- 🌟 新增的白色導覽區塊，放在 header 和 main 之間 -->
+<!-- ?? ?��??�白?��?覽�?塊�??�在 header ??main 之�? -->
 <div class="sub-nav-container">
     <nav class="main-nav">
-        <a href="index.html" data-i18n="nav_shops">特色店家</a>
-        <!-- 在 apps-guide.html 中，class="active" 要放在下面這行 -->
-        <a href="apps-guide.html" class="active" data-i18n="nav_apps">必備APP推薦</a>
-        <a href="emergency.html" data-i18n="nav_emergency" style="margin: 0 15px; text-decoration: none; color: #e74c3c; font-weight: bold; border-bottom: 3px solid #e74c3c; padding-bottom: 5px;">🚨 緊急協助</a>
+        <a href="index.html" data-i18n="nav_shops">?�色店家</a>
+        <!-- ??apps-guide.html 中�?class="active" 要放?��??�這�? -->
+        <a href="apps-guide.html" class="active" data-i18n="nav_apps">必�?APP?�薦</a>
+        <a href="emergency.html" data-i18n="nav_emergency" style="margin: 0 15px; text-decoration: none; color: #e74c3c; font-weight: bold; border-bottom: 3px solid #e74c3c; padding-bottom: 5px;">?�� 緊急�???/a>
     </nav>
 </div>
 
 <main class="app-guide-main">
         <div class="intro-section">
-            <h2 data-i18n="intro_title">外國旅客必備數位工具</h2>
-            <p data-i18n="intro_desc">讓您的台灣之旅更順暢！以下為您整理出在台灣最實用的交通、美食與生活 APP。</p>
+            <h2 data-i18n="intro_title">外�??�客必�??��?工具</h2>
+            <p data-i18n="intro_desc">讓您?�台????�更?�暢！以下為?�整?�出?�台???實用?�交?�、�?食�??�活 APP??/p>
         </div>
 
-       <!-- 類別：地圖與綜合導航 -->
+       <!-- 類別：地?��?綜�?導航 -->
         <section class="app-category">
-            <h3 class="category-title" data-i18n="cat_nav">🗺️ 地圖與綜合導航 (Maps & Navigation)</h3>
+            <h3 class="category-title" data-i18n="cat_nav">?���??��??��??��???(Maps & Navigation)</h3>
             <div class="app-grid">
                 <div class="app-card">
                     <div class="app-icon-wrapper"><div class="icon-placeholder bg-blue">G</div></div>
                     <div class="app-info">
                         <h4>Google Maps</h4>
-                        <span class="badge badge-transit" data-i18n="badge_nav">綜合導航</span>
-                        <p class="description" data-i18n="desc_gmaps">在台灣找路、查詢公車與捷運路線最準確的工具。強烈建議搭配街景功能使用。</p>
+                        <span class="badge badge-transit" data-i18n="badge_nav">綜�?導航</span>
+                        <p class="description" data-i18n="desc_gmaps">?�台??��路、查詢公車�??��?路�??�準確?�工?�。強?�建議搭?��??��??�使?��?/p>
                         <div class="download-links">
-                            <!-- 🌟 已更新真實連結與另開視窗 -->
-                            <a href="https://apps.apple.com/app/google-maps/id585027354" target="_blank" class="btn-dl ios">App Store</a>
-                            <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.maps" target="_blank" class="btn-dl android">Google Play</a>
+                            <!-- ?? 已更?��?實�???�另?��?�?-->
+                            <a href="https://apps.apple.com/app/google-maps/id585027354" target="_self" class="btn-dl ios">App Store</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.maps" target="_self" class="btn-dl android">Google Play</a>
                         </div>
                     </div>
                 </div>
@@ -72,50 +72,50 @@
             </div>
         </section>
 
-       <!-- 類別：大眾運輸與火車 -->
+       <!-- 類別：大?��?輸�??��? -->
         <section class="app-category">
-            <h3 class="category-title" data-i18n="cat_transit">🚆 大眾運輸與火車 (Public Transit & Trains)</h3>
+            <h3 class="category-title" data-i18n="cat_transit">?? 大眾?�輸?�火�?(Public Transit & Trains)</h3>
             <div class="app-grid">
                 
                 <div class="app-card">
                     <div class="app-icon-wrapper"><div class="icon-placeholder bg-blue">B+</div></div>
                     <div class="app-info">
                         <h4>Bus+</h4>
-                        <span class="badge badge-transit" data-i18n="badge_bus">公車動態</span>
-                        <p class="description" data-i18n="desc_busplus">全台公車動態精準預測，等公車必備神器，介面乾淨好用。</p>
+                        <span class="badge badge-transit" data-i18n="badge_bus">?��??��?</span>
+                        <p class="description" data-i18n="desc_busplus">?�台?��??��?精�??�測，�??��?必�?神器，�??�乾淨好?��?/p>
                         <div class="download-links">
-                            <!-- 🌟 已更新 Bus+ 真實連結與另開視窗 -->
-                            <a href="https://apps.apple.com/tw/app/id967861325" target="_blank" class="btn-dl ios">App Store</a>
-                            <a href="https://play.google.com/store/apps/details?id=hearsilent.busplus" target="_blank" class="btn-dl android">Google Play</a>
+                            <!-- ?? 已更??Bus+ ?�實????�另?��?�?-->
+                            <a href="https://apps.apple.com/tw/app/id967861325" target="_self" class="btn-dl ios">App Store</a>
+                            <a href="https://play.google.com/store/apps/details?id=hearsilent.busplus" target="_self" class="btn-dl android">Google Play</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="app-card">
-                    <div class="app-icon-wrapper"><div class="icon-placeholder bg-blue">捷</div></div>
+                    <div class="app-icon-wrapper"><div class="icon-placeholder bg-blue">??/div></div>
                     <div class="app-info">
-                        <h4>台北捷運 Go</h4>
-                        <span class="badge badge-transit" data-i18n="badge_mrt">捷運路網</span>
-                        <p class="description" data-i18n="desc_mrtgo">提供台北捷運路線圖、票價查詢及首末班車時間，在複雜的車站內不迷路。</p>
+                        <h4>?��??��? Go</h4>
+                        <span class="badge badge-transit" data-i18n="badge_mrt">?��?路網</span>
+                        <p class="description" data-i18n="desc_mrtgo">?��??��??��?路�??�、票?�查詢�?首末?��??��?，在複�??��?站內不迷路�?/p>
                         <div class="download-links">
-                            <!-- 🌟 已更新台北捷運 Go 真實連結與另開視窗 -->
-                            <a href="https://apps.apple.com/tw/app/%E5%8F%B0%E5%8C%97%E6%8D%B7%E9%81%8Bgo/id997212021" target="_blank" class="btn-dl ios">App Store</a>
-                            <a href="https://play.google.com/store/apps/details?id=tw.com.trtc.is.android05&hl=en_NZ" target="_blank" class="btn-dl android">Google Play</a>
+                            <!-- ?? 已更?�台?�捷??Go ?�實????�另?��?�?-->
+                            <a href="https://apps.apple.com/tw/app/%E5%8F%B0%E5%8C%97%E6%8D%B7%E9%81%8Bgo/id997212021" target="_self" class="btn-dl ios">App Store</a>
+                            <a href="https://play.google.com/store/apps/details?id=tw.com.trtc.is.android05&hl=en_NZ" target="_self" class="btn-dl android">Google Play</a>
                         </div>
                     </div>
                 </div>
-                         <!-- 卡片：台鐵 e 訂通 -->
+                         <!-- ?��?：台??e 訂�?-->
                 <div class="app-card">
-                    <div class="app-icon-wrapper"><div class="icon-placeholder bg-blue">鐵</div></div>
+                    <div class="app-icon-wrapper"><div class="icon-placeholder bg-blue">??/div></div>
                     <div class="app-info">
-                        <h4>台鐵 e 訂通</h4>
-                        <!-- 新增的翻譯標籤 badge_tra 與 desc_tra -->
-                        <span class="badge badge-transit" >火車訂票</span>
-                        <p class="description" data-i18n="desc_tra">台鐵官方訂票 APP。可查詢火車時刻表、線上預訂，並直接使用手機取得電子車票進出站。</p>
+                        <h4>?�鐵 e 訂�?/h4>
+                        <!-- ?��??�翻譯�?�?badge_tra ??desc_tra -->
+                        <span class="badge badge-transit" >?��?訂票</span>
+                        <p class="description" data-i18n="desc_tra">?�鐵官方訂票 APP?�可?�詢?��??�刻表、�?上�?訂�?並直?�使?��?機�?得電子�?票進出站�?/p>
                         <div class="download-links">
-                            <!-- 台鐵官方真實下載連結 -->
-                            <a href="https://apps.apple.com/tw/app/台鐵e訂通/id1441617748" target="_blank" class="btn-dl ios">App Store</a>
-                            <a href="https://play.google.com/store/apps/details?id=tw.gov.tra.twtraffic" target="_blank" class="btn-dl android">Google Play</a>
+                            <!-- ?�鐵官方?�實下�???? -->
+                            <a href="https://apps.apple.com/tw/app/?�鐵e訂�?id1441617748" target="_self" class="btn-dl ios">App Store</a>
+                            <a href="https://play.google.com/store/apps/details?id=tw.gov.tra.twtraffic" target="_self" class="btn-dl android">Google Play</a>
                         </div>
                     </div>
                 </div>
@@ -126,46 +126,46 @@
                     <div class="app-info">
                         <h4>T Express</h4>
                         <span class="badge badge-transit" data-i18n="badge_hsr">高鐵訂票</span>
-                        <p class="description" data-i18n="desc_texpress">台灣高鐵官方APP。手機直接買票，進站只需刷手機條碼，跨縣市移動超方便。</p>
+                        <p class="description" data-i18n="desc_texpress">?�灣高鐵官方APP?��?機直?�買票�??��??��??��?機�?碼�?跨縣市移?��??�便??/p>
                         <div class="download-links">
-                            <!-- 🌟 已更新 T Express 真實連結與另開視窗 -->
-                            <a href="https://apps.apple.com/tw/app/id468963664" target="_blank" class="btn-dl ios">App Store</a>
-                            <a href="https://play.google.com/store/apps/details?id=tw.com.thsrc.texpress" target="_blank" class="btn-dl android">Google Play</a>
+                            <!-- ?? 已更??T Express ?�實????�另?��?�?-->
+                            <a href="https://apps.apple.com/tw/app/id468963664" target="_self" class="btn-dl ios">App Store</a>
+                            <a href="https://play.google.com/store/apps/details?id=tw.com.thsrc.texpress" target="_self" class="btn-dl android">Google Play</a>
                         </div>
                     </div>
                 </div>
 
             </div>
         </section>
-      <!-- 類別：叫車與單車租借 -->
+      <!-- 類別：叫車�??��?租�?-->
         <section class="app-category">
-            <h3 class="category-title" data-i18n="cat_ride">🚕 叫車與單車租借 (Ride-hailing & Bike Sharing)</h3>
+            <h3 class="category-title" data-i18n="cat_ride">?? ?��??�單車�???(Ride-hailing & Bike Sharing)</h3>
             <div class="app-grid">
                 
-                <!-- 卡片：Uber -->
+                <!-- ?��?：Uber -->
                 <div class="app-card">
                     <div class="app-icon-wrapper"><div class="icon-placeholder bg-blue">U</div></div>
                     <div class="app-info">
                         <h4>Uber</h4>
-                        <span class="badge badge-transit" data-i18n="badge_taxi">叫車服務</span>
-                        <p class="description" data-i18n="desc_uber">在台灣的介面與國外完全相同。綁定信用卡扣款，不用擔心語言不通或被繞路。</p>
+                        <span class="badge badge-transit" data-i18n="badge_taxi">?��??��?</span>
+                        <p class="description" data-i18n="desc_uber">?�台???介面?��?外�??�相?�。�?定信?�卡??��，�??��?心�?言不通�?被�?路�?/p>
                         <div class="download-links">
-                            <a href="https://apps.apple.com/app/uber/id368677368" target="_blank" class="btn-dl ios">App Store</a>
-                            <a href="https://play.google.com/store/apps/details?id=com.ubercab" target="_blank" class="btn-dl android">Google Play</a>
+                            <a href="https://apps.apple.com/app/uber/id368677368" target="_self" class="btn-dl ios">App Store</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.ubercab" target="_self" class="btn-dl android">Google Play</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- 卡片：YouBike 2.0 -->
+                <!-- ?��?：YouBike 2.0 -->
                 <div class="app-card">
                     <div class="app-icon-wrapper"><div class="icon-placeholder bg-orange">Y</div></div>
                     <div class="app-info">
                         <h4>YouBike 2.0</h4>
-                        <span class="badge badge-transit" data-i18n="badge_bike">共享單車</span>
-                        <p class="description" data-i18n="desc_youbike">查詢最近的腳踏車租借站與剩餘車輛。在大稻埕小巷弄穿梭的最佳交通工具！</p>
+                        <span class="badge badge-transit" data-i18n="badge_bike">?�享?��?</span>
+                        <p class="description" data-i18n="desc_youbike">?�詢?�近�??��?車�??��??�剩餘�?輛。在大稻?��?巷�?穿梭?��?佳交?�工?��?</p>
                         <div class="download-links">
-                            <a href="https://apps.apple.com/tw/app/youbike微笑單車-官方版/id1483423095" target="_blank" class="btn-dl ios">App Store</a>
-                            <a href="https://play.google.com/store/apps/details?id=tw.com.youbike.plus&pcampaignid=web_share" target="_blank" class="btn-dl android">Google Play</a>
+                            <a href="https://apps.apple.com/tw/app/youbike微�??��?-官方??id1483423095" target="_self" class="btn-dl ios">App Store</a>
+                            <a href="https://play.google.com/store/apps/details?id=tw.com.youbike.plus&pcampaignid=web_share" target="_self" class="btn-dl android">Google Play</a>
                         </div>
                     </div>
                 </div>
@@ -174,21 +174,21 @@
         </section>
 
 
-        <!-- 類別：票券預訂與行程 (重新開始新的獨立區塊) -->
+        <!-- 類別：票?��?訂�?行�? (?�新?��??��??��??��? -->
         <section class="app-category">
-            <h3 class="category-title" data-i18n="cat_ticket">🎟️ 票券預訂與行程 (Tickets & Itineraries)</h3>
+            <h3 class="category-title" data-i18n="cat_ticket">??�?票券?��??��?�?(Tickets & Itineraries)</h3>
             <div class="app-grid">
-                <!-- 這裡是 Klook 的卡片開頭 -->
+                <!-- ?�裡??Klook ?�卡?��???-->
                 <div class="app-card">
                     <div class="app-icon-wrapper"><div class="icon-placeholder bg-orange">K</div></div>
                     <div class="app-info">
                         <h4>Klook</h4>
-                        <span class="badge badge-tool" data-i18n="badge_ticket">票券預訂</span>
-                        <p class="description" data-i18n="desc_klook">預訂高鐵外國人優惠票、景點門票與上網 SIM 卡，價格通常比現場買便宜。</p>
+                        <span class="badge badge-tool" data-i18n="badge_ticket">票券?��?</span>
+                        <p class="description" data-i18n="desc_klook">?��?高鐵外�?人優?�票?�景點�?票�?上網 SIM ?��??�格?�常比現?�買便�???/p>
                         <div class="download-links">
-                            <!-- 🌟 已更新 Klook 真實連結與另開視窗 -->
-                            <a href="https://apps.apple.com/tw/app/klook-全球旅遊-玩樂體驗預訂平台/id961850126" target="_blank" class="btn-dl ios">App Store</a>
-                            <a href="https://play.google.com/store/apps/details?id=com.klook" target="_blank" class="btn-dl android">Google Play</a>
+                            <!-- ?? 已更??Klook ?�實????�另?��?�?-->
+                            <a href="https://apps.apple.com/tw/app/klook-?��??��?-?��?體�??��?平台/id961850126" target="_self" class="btn-dl ios">App Store</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.klook" target="_self" class="btn-dl android">Google Play</a>
                         </div>
                     </div>
                 </div>
@@ -196,32 +196,32 @@
                     <div class="app-icon-wrapper"><div class="icon-placeholder bg-blue">KK</div></div>
                     <div class="app-info">
                         <h4>KKday</h4>
-                        <span class="badge badge-tool" data-i18n="badge_tour">在地體驗</span>
-                        <p class="description" data-i18n="desc_kkday">報名在地導覽、手作課程或是包車一日遊的最佳平台，支援多國語言客服。</p>
+                        <span class="badge badge-tool" data-i18n="badge_tour">?�地體�?</span>
+                        <p class="description" data-i18n="desc_kkday">?��??�地導覽?��?作課程�??��?車�??��??��?佳平?��??�援多�?語�?客�???/p>
                         <div class="download-links">
-                            <!-- 🌟 已更新 KKday 真實連結與另開視窗 -->
-                            <a href="https://apps.apple.com/us/app/kkday-your-travel-companion/id1248267356" target="_blank" class="btn-dl ios">App Store</a>
-                            <a href="https://play.google.com/store/apps/details?id=com.kkday.member&pcampaignid=web_share" target="_blank" class="btn-dl android">Google Play</a>
+                            <!-- ?? 已更??KKday ?�實????�另?��?�?-->
+                            <a href="https://apps.apple.com/us/app/kkday-your-travel-companion/id1248267356" target="_self" class="btn-dl ios">App Store</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.kkday.member&pcampaignid=web_share" target="_self" class="btn-dl android">Google Play</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 類別：翻譯與在地通訊 -->
+        <!-- 類別：翻譯�??�地?��? -->
         <section class="app-category">
-            <h3 class="category-title" data-i18n="cat_comm">💬 翻譯與在地通訊 (Translation & Communication)</h3>
+            <h3 class="category-title" data-i18n="cat_comm">?�� 翻譯?�在?�通�? (Translation & Communication)</h3>
             <div class="app-grid">
                 <div class="app-card">
-                    <div class="app-icon-wrapper"><div class="icon-placeholder bg-blue">文</div></div>
+                    <div class="app-icon-wrapper"><div class="icon-placeholder bg-blue">??/div></div>
                     <div class="app-info">
                         <h4>Google Translate</h4>
-                        <span class="badge badge-tool" data-i18n="badge_translate">語言翻譯</span>
-                        <p class="description" data-i18n="desc_translate">遇到沒有英文菜單的傳統小吃店時，開啟「相機即時翻譯」功能就能輕鬆點餐。</p>
+                        <span class="badge badge-tool" data-i18n="badge_translate">語�?翻譯</span>
+                        <p class="description" data-i18n="desc_translate">?�到沒�??��??�單?�傳統�??��??��??��??�相機即?�翻譯」�??�就?��?鬆�?餐�?/p>
                         <div class="download-links">
-                            <!-- 🌟 已更新 Google Translate 真實連結與另開視窗 -->
-                            <a href="https://apps.apple.com/tw/app/id414706506" target="_blank" class="btn-dl ios">App Store</a>
-                            <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.translate" target="_blank" class="btn-dl android">Google Play</a>
+                            <!-- ?? 已更??Google Translate ?�實????�另?��?�?-->
+                            <a href="https://apps.apple.com/tw/app/id414706506" target="_self" class="btn-dl ios">App Store</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.translate" target="_self" class="btn-dl android">Google Play</a>
                         </div>
                     </div>
                 </div>
@@ -229,78 +229,78 @@
                     <div class="app-icon-wrapper"><div class="icon-placeholder bg-green">L</div></div>
                     <div class="app-info">
                         <h4>LINE</h4>
-                        <span class="badge badge-tool" data-i18n="badge_comm">通訊軟體</span>
-                        <p class="description" data-i18n="desc_line">台灣人最依賴的通訊軟體。許多大稻埕的在地店家都用 LINE 接受訂位或客服詢問。</p>
+                        <span class="badge badge-tool" data-i18n="badge_comm">?��?軟�?</span>
+                        <p class="description" data-i18n="desc_line">?�灣人�?依賴?�通�?軟�??�許多大稻�??�在?��?家都??LINE ?��?訂�??�客?�詢?��?/p>
                         <div class="download-links">
-                            <!-- 🌟 已更新 LINE 真實連結與另開視窗 -->
-                            <a href="https://apps.apple.com/tw/app/id443904275" target="_blank" class="btn-dl ios">App Store</a>
-                            <a href="https://play.google.com/store/apps/details?id=jp.naver.line.android" target="_blank" class="btn-dl android">Google Play</a>
+                            <!-- ?? 已更??LINE ?�實????�另?��?�?-->
+                            <a href="https://apps.apple.com/tw/app/id443904275" target="_self" class="btn-dl ios">App Store</a>
+                            <a href="https://play.google.com/store/apps/details?id=jp.naver.line.android" target="_self" class="btn-dl android">Google Play</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-<!-- 💰 現金提款與換匯指南 (獨立區塊) -->
-        <!-- 💰 現金提款與換匯指南 (獨立區塊) -->
-<!-- 💰 現金提款與換匯指南 (獨立區塊) -->
+<!-- ?�� ?��??�款?��??��???(?��??��? -->
+        <!-- ?�� ?��??�款?��??��???(?��??��? -->
+<!-- ?�� ?��??�款?��??��???(?��??��? -->
 <section class="app-category exchange-guide" style="margin-top: 50px; border-top: 1px solid #eaeaea; padding-top: 40px;">
-    <h3 class="category-title" data-i18n="cat_exchange">💵 現金提款與換匯指南 (Cash & Currency Exchange)</h3>
-    <p style="color: #555; line-height: 1.6; margin-bottom: 25px;" data-i18n="desc_exchange_intro">雖然大稻埕許多特色店家已經支援電子支付或信用卡，但傳統小吃、布市、中藥行，以及悠遊卡 (EasyCard) 儲值通常仍只收取現金。以下是獲取新台幣最方便的方式：</p>
+    <h3 class="category-title" data-i18n="cat_exchange">?�� ?��??�款?��??��???(Cash & Currency Exchange)</h3>
+    <p style="color: #555; line-height: 1.6; margin-bottom: 25px;" data-i18n="desc_exchange_intro">?�然大稻?�許多特?��?家已經支?�電子支付�?信用?��?但傳統�??�、�?市、中?��?，以?��??�卡 (EasyCard) ?�值通常仍只?��??��??�以下是?��??�台�???�便?�方式�?</p>
 
-    <!-- DCC 警告 -->
+    <!-- DCC 警�? -->
     <div style="display: flex; gap: 12px; align-items: flex-start; padding: 16px 20px; background-color: #fff8f8; border-left: 5px solid #e74c3c; border-radius: 4px; margin-bottom: 28px;">
-        <span style="font-size: 1.3rem; line-height: 1.2;">⚠️</span>
+        <span style="font-size: 1.3rem; line-height: 1.2;">?��?</span>
         <div>
-            <h4 style="margin: 0 0 6px; color: #e74c3c; font-size: 1.05rem;" data-i18n="title_dcc">⚠️ 【重要提醒！避免匯率陷阱 (Avoid DCC Trap)】</h4>
-            <p style="color: #555; line-height: 1.5; margin: 0; font-size: 0.92rem;" data-i18n="desc_dcc">當您在 ATM 提款或商店刷卡時，如果螢幕詢問您要使用「您的母國貨幣」還是「新台幣 (TWD)」結帳，請務必選擇「新台幣 (TWD) / 本地貨幣」！若選擇母國貨幣（即動態貨幣轉換 DCC），ATM 將會使用極差的匯率計算，您可能會因此多付 3%~8% 的隱藏費用。</p>
+            <h4 style="margin: 0 0 6px; color: #e74c3c; font-size: 1.05rem;" data-i18n="title_dcc">?��? ?��?要�??��??��??��??�阱 (Avoid DCC Trap)??/h4>
+            <p style="color: #555; line-height: 1.5; margin: 0; font-size: 0.92rem;" data-i18n="desc_dcc">?�您??ATM ?�款?��?店刷?��?，�??�螢幕詢?�您要使?�「您?��??�貨�?���??�「新?�幣 (TWD)?��?帳�?請�?必選?�「新?�幣 (TWD) / ?�地貨幣?��??�選?��??�貨�???��??�貨�????DCC）�?ATM 將�?使用極差?�匯?��?算�??�可?��??�此多�? 3%~8% ?�隱?�費?��?/p>
         </div>
     </div>
 
     <div class="app-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
 
-        <!-- 1. 便利商店提款 -->
+        <!-- 1. 便利?��??�款 -->
         <div class="app-card" style="display: block; padding: 22px;">
             <div style="display:flex; align-items:center; gap:10px; margin-bottom: 14px;">
-                <div class="icon-placeholder bg-blue" style="width:32px; height:32px; font-size:0.9rem; display:flex; align-items:center; justify-content:center;">🏧</div>
-                <h4 style="margin: 0; color: #333; font-size: 1.05rem;" data-i18n="title_atm">🏧 24 小時便利商店跨國提款 (International ATMs)</h4>
+                <div class="icon-placeholder bg-blue" style="width:32px; height:32px; font-size:0.9rem; display:flex; align-items:center; justify-content:center;">?��</div>
+                <h4 style="margin: 0; color: #333; font-size: 1.05rem;" data-i18n="title_atm">?�� 24 小�?便利?��?跨�??�款 (International ATMs)</h4>
             </div>
-            <p style="color: #666; font-size: 0.9rem; line-height: 1.6; margin-bottom: 12px;" data-i18n="desc_atm_intro">台灣的便利商店密度極高，是外國旅客領取現金最方便的管道。</p>
+            <p style="color: #666; font-size: 0.9rem; line-height: 1.6; margin-bottom: 12px;" data-i18n="desc_atm_intro">?�灣?�便?��?店�?度極高�??��??��?客�??�現?��??�便?�管?��?/p>
             <ul style="color: #666; font-size: 0.9rem; line-height: 1.7; padding-left: 18px; margin: 0;">
-                <li data-i18n="atm_li_1">哪裡可以領？ 尋找 7-ELEVEN (內建中國信託 ATM) 或 全家便利商店 (內建國泰世華/台新銀行 ATM)。大稻埕周邊步行 3 分鐘內絕對找得到。</li>
-                <li data-i18n="atm_li_2">支援卡別： 機台上若貼有 Visa, Mastercard, PLUS, Cirrus, UnionPay (銀聯) 等標誌，即可使用國外提款卡領取新台幣 (TWD)。</li>
-                <li data-i18n="atm_li_3">介面語言： ATM 均提供英文 (English)、日文 (日本語)、韓文 (한국어) 等多國語言。</li>
-                <li data-i18n="atm_li_4">手續費： 台灣本地銀行通常會收取單筆約 NT$100 的設備手續費（您的發卡銀行可能還會收取跨國手續費，建議一次領取足夠金額）。</li>
+                <li data-i18n="atm_li_1">?�裡?�以?��? 尋找 7-ELEVEN (?�建中�?信�? ATM) ???�家便利?��? (?�建?�泰世華/?�新?��?ATM)?�大稻�??��?步�? 3 ?��??��?對找得到??/li>
+                <li data-i18n="atm_li_2">?�援?�別�?機台上若貼�? Visa, Mastercard, PLUS, Cirrus, UnionPay (?�?? 等�?誌�??�可使用?��??�款?��??�新?�幣 (TWD)??/li>
+                <li data-i18n="atm_li_3">介面語�?�?ATM ?��?供英??(English)?�日??(?�本�??��???(?�국?? 等�??��?言??/li>
+                <li data-i18n="atm_li_4">?��?費�? ?�灣?�地?�行通常?�收?�單筆�? NT$100 ?�設?��?續費（您?�發?��?行可?��??�收?�跨?��?續費，建議�?次�??�足夠�?額�???/li>
             </ul>
         </div>
 
-        <!-- 2. 實體銀行換匯 -->
+        <!-- 2. 實�??�行�???-->
         <div class="app-card" style="display: block; padding: 22px;">
             <div style="display:flex; align-items:center; gap:10px; margin-bottom: 14px;">
-                <div class="icon-placeholder bg-orange" style="width:32px; height:32px; font-size:0.9rem; display:flex; align-items:center; justify-content:center;">💱</div>
-                <h4 style="margin: 0; color: #333; font-size: 1.05rem;" data-i18n="title_bank">💱 實體銀行換匯 (Currency Exchange at Banks)</h4>
+                <div class="icon-placeholder bg-orange" style="width:32px; height:32px; font-size:0.9rem; display:flex; align-items:center; justify-content:center;">?��</div>
+                <h4 style="margin: 0; color: #333; font-size: 1.05rem;" data-i18n="title_bank">?�� 實�??�行�???(Currency Exchange at Banks)</h4>
             </div>
-            <p style="color: #666; font-size: 0.9rem; line-height: 1.6; margin-bottom: 12px;" data-i18n="desc_bank_intro">如果您手邊持有外幣現鈔 (如美金、日圓、歐元) 需要兌換成新台幣，迪化街上就有提供外匯業務的實體銀行：</p>
+            <p style="color: #666; font-size: 0.9rem; line-height: 1.6; margin-bottom: 12px;" data-i18n="desc_bank_intro">如�??��??��??��?�?��??(如�??�、日?�、�??? ?�要�??��??�台�??迪�?街�?就�??��?外匯業�??�實體�?行�?</p>
             <ul style="color: #666; font-size: 0.9rem; line-height: 1.7; padding-left: 18px; margin: 0;">
-                <li data-i18n="bank_li_1">第一銀行 (First Bank) 大稻埕分行： 台北市大同區迪化街 1 段 63 號 (霞海城隍廟斜對面)。</li>
-                <li data-i18n="bank_li_2">營業時間： 平日 (週一至週五) 09:00 - 15:30。週末與國定假日休息。</li>
-                <li data-i18n="bank_li_3">注意事項： 在台灣的銀行辦理任何換匯業務，絕對必須出示護照正本 (Passport)，請務必隨身攜帶。此為雙語分行，溝通十分方便。</li>
+                <li data-i18n="bank_li_1">第�??��?(First Bank) 大稻?��?行�? ?��?市大?��?迪�?�?1 �?63 ??(?�海?��?廟�?對面)??/li>
+                <li data-i18n="bank_li_2">?�業?��?�?平日 (?��??�週�?) 09:00 - 15:30?�週末?��?定�??��??��?/li>
+                <li data-i18n="bank_li_3">注�?事�?�??�台????�行辦?�任何�??�業?��?絕�?必�??�示護照�?�� (Passport)，�??��??�身?�帶?�此?��?語�?行�?溝通�??�方便�?/li>
             </ul>
         </div>
 
-        <!-- 3. 自助外幣兌換機 -->
+        <!-- 3. ?�助外幣?��?�?-->
         <div class="app-card" style="display: block; padding: 22px;">
             <div style="display:flex; align-items:center; gap:10px; margin-bottom: 14px;">
-                <div class="icon-placeholder bg-green" style="width:32px; height:32px; font-size:0.9rem; display:flex; align-items:center; justify-content:center;">💡</div>
-                <h4 style="margin: 0; color: #333; font-size: 1.05rem;" data-i18n="title_machine">💡 旅客專屬：自助外幣兌換機 (Currency Exchange Machine)</h4>
+                <div class="icon-placeholder bg-green" style="width:32px; height:32px; font-size:0.9rem; display:flex; align-items:center; justify-content:center;">?��</div>
+                <h4 style="margin: 0; color: #333; font-size: 1.05rem;" data-i18n="title_machine">?�� ?�客專屬：自?��?�???��? (Currency Exchange Machine)</h4>
             </div>
-            <p style="color: #666; font-size: 0.9rem; line-height: 1.6; margin: 0;" data-i18n="desc_machine">為了因應大稻埕龐大的觀光人潮，如果您急需小額現金又逢銀行下班時間，可以尋找自助兌幣機（例如：新光銀行 台外幣兌換機）。部分據點設有無需台灣銀行帳戶即可操作的兌換機，支援美金、日幣等主流貨幣直接兌換新台幣，依照螢幕指示掃描護照即可完成。</p>
+            <p style="color: #666; font-size: 0.9rem; line-height: 1.6; margin: 0;" data-i18n="desc_machine">?��??��?大稻?��?大�?觀?�人潮�?如�??�急�?小�??��??�逢�?行�??��??��??�以尋找?�助?�幣機�?例�?：新?��?�??��?�???��?）。部?��?點設?�無?�?�灣?�行帳?�即?��?作�??��?機�??�援美�??�日�??主�?貨幣?�接?��??�台�??依照?��??�示?��?護照?�可完�???/p>
         </div>
 
     </div>
 </section>
 
     </main>
-        <!-- 引入我們接下來要寫的 JS 檔案 -->
+        <!-- 引入?�們接下�?要寫??JS 檔�? -->
   <script src="app-lang.js"></script>
 </body>
 </html>
