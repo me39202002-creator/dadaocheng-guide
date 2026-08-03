@@ -19,7 +19,11 @@ const uiTranslations = {
         pastry: { zh: "傳統糕餅", en: "Pastry", ja: "伝統菓子", ko: "전통 과자" },
         medicine: { zh: "中藥行", en: "Medicine", ja: "漢方薬局", ko: "한약방" },
         restaurant: { zh: "餐廳", en: "Restaurant", ja: "レストラン", ko: "레스토랑" },
-        snack: { zh: "小吃飲品", en: "Snacks & Drinks", ja: "軽食・飲み物", ko: "간식 및 음료" }
+        snack: { zh: "小吃飲品", en: "Snacks & Drinks", ja: "軽食・飲み物", ko: "간식 및 음료" },
+        
+        // 👉 請務必確保有加入這兩行，少一行都會導致讀不到 'zh' 而白畫面
+        bar: { zh: "酒吧", en: "Bar", ja: "バー", ko: "바" },
+        culture: { zh: "文化", en: "Culture", ja: "文化", ko: "문화" }
     }
 };
 
@@ -201,23 +205,39 @@ function updateUI() {
     renderFilters();
     renderCards();
 }
-
-// 渲染篩選按鈕
+// 渲染篩選下拉選單
 function renderFilters() {
     filterBar.innerHTML = '';
-    const categories = ['all', 'coffee', 'tea', 'restaurant', 'craft', 'pastry', 'medicine', 'snack'];
+    // 包含您剛剛新增的 bar 與 culture
+    const categories = ['all', 'coffee', 'tea', 'restaurant', 'craft', 'pastry', 'medicine', 'snack', 'bar', 'culture'];
 
-    categories.forEach(cat => {
-        const btn = document.createElement('button');
-        btn.className = `filter-btn ${currentFilter === cat ? 'active' : ''}`;
-        btn.textContent = uiTranslations.filters[cat][currentLang];
-        btn.onclick = () => {
-            currentFilter = cat;
-            renderFilters();
-            renderCards();
-        };
-        filterBar.appendChild(btn);
+    // 建立下拉選單 (select) 元素
+    const select = document.createElement('select');
+    select.className = 'category-select';
+    
+    // 當選單選項改變時觸發
+    select.addEventListener('change', (e) => {
+        currentFilter = e.target.value;
+        renderCards(); // 只需要重新渲染卡片，不需要重新渲染整個選單
     });
+
+    // 建立選單內的各個選項 (option)
+    categories.forEach(cat => {
+        const option = document.createElement('option');
+        option.value = cat;
+        // 根據目前語言取得對應的翻譯文字
+        option.textContent = uiTranslations.filters[cat][currentLang];
+        
+        // 標記目前被選取的分類
+        if (currentFilter === cat) {
+            option.selected = true;
+        }
+        
+        select.appendChild(option);
+    });
+
+    // 將下拉選單加入到畫面中
+    filterBar.appendChild(select);
 }
 
 // 渲染店家卡片

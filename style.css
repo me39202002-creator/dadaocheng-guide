@@ -489,3 +489,37 @@ h1 {
         page-break-inside: avoid;
     }
 }
+
+/* ===== 分類下拉選單樣式 (放大版) ===== */
+.category-select {
+    appearance: auto; /* 使用瀏覽器預設的下拉箭頭 */
+    padding: 12px 30px 12px 20px; /* 👆 1. 修改這裡：增加內邊距，讓按鈕變高 */
+    font-size: 1.25rem;           /* 👆 2. 修改這裡：把字體放大 */
+    font-weight: bold;
+    color: var(--primary-color);
+    background-color: var(--card-bg);
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    cursor: pointer;
+    min-width: 280px;             /* 👆 3. 修改這裡：增加最小寬度，讓它更有存在感 */
+    max-width: 100%;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    text-align: center;           /* 👆 4. (選擇性) 新增這行讓裡面的文字置中 */
+}
+
+.category-select:focus, 
+.category-select:hover {
+    border-color: #6d2d2d;
+    box-shadow: 0 4px 10px rgba(139, 58, 58, 0.15);
+}
+
+/* 為了讓下拉選單在不同裝置上看起來更一致，微調 filter-bar */
+.filter-bar {
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center; /* 讓下拉選單置中 */
+    padding: 0 1rem;
+}
