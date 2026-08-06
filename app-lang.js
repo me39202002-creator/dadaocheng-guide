@@ -400,80 +400,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // ======================================================
     // PWA Service Worker 註冊與「更新可用」通知邏輯
     // ======================================================
+    // 🌟 變更：移除前端更新通知 UI，回歸瀏覽器預設的背景更新機制。
+    // Service Worker 仍會註冊並提供離線快取功能。
+    // 新版本將在使用者關閉所有分頁後，下次造訪時自動啟用。
     if ('serviceWorker' in navigator) {
-        // 專門處理 Service Worker 註冊與更新的函數
-        const registerServiceWorker = () => {
+        window.addEventListener('load', () => {
             navigator.serviceWorker.register('./service-worker.js')
                 .then(registration => {
                     console.log('PWA ServiceWorker 註冊成功！範圍是:', registration.scope);
-
-                    // 監聽是否有新版本的 Service Worker 被找到
-                    registration.addEventListener('updatefound', () => {
-                        const newWorker = registration.installing;
-                        console.log('發現新版 Service Worker，正在安裝:', newWorker);
-
-                        // 監聽新版 Service Worker 的狀態變化
-                        newWorker.addEventListener('statechange', () => {
-                            // 當新版 SW 安裝完成並進入 'installed' 狀態 (等待啟用)
-                            if (newWorker.state === 'installed') {
-                                // 檢查目前是否有正在作用中的 SW
-                                if (navigator.serviceWorker.controller) {
-                                    console.log('新版 Service Worker 已準備就緒，顯示更新通知。');
-                                    // 顯示更新通知給使用者
-                                    showUpdateNotification(registration);
-                                }
-                            }
-                        });
-                    });
                 })
                 .catch(err => {
                     console.log('PWA ServiceWorker 註冊失敗:', err);
                 });
-        };
-
-        // 顯示更新通知的 UI
-        const showUpdateNotification = (registration) => {
-            // 避免重複顯示
-            if (document.getElementById('sw-update-notification')) return;
-
-            // 讀取當前語言，以便顯示對應的通知文字
-            const currentLang = document.documentElement.lang || 'zh';
-            const translations = i18n[currentLang] || i18n.zh;
-
-            const notification = document.createElement('div');
-            notification.id = 'sw-update-notification';
-            notification.innerHTML = `
-                <div class="sw-update-content">
-                    <p>${translations.update_available}</p>
-                    <button id="sw-update-button">${translations.update_now}</button>
-                </div>
-            `;
-            document.body.appendChild(notification);
-
-            const style = document.createElement('style');
-            style.textContent = `
-                #sw-update-notification { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background-color: #333; color: white; padding: 15px 25px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); z-index: 1000; }
-                .sw-update-content { display: flex; align-items: center; gap: 20px; }
-                .sw-update-content p { margin: 0; }
-                #sw-update-button { background-color: var(--primary-color, #c0392b); color: white; border: none; padding: 8px 16px; border-radius: 5px; cursor: pointer; font-weight: bold; }
-            `;
-            document.head.appendChild(style);
-
-            document.getElementById('sw-update-button').addEventListener('click', () => {
-                const btn = document.getElementById('sw-update-button');
-                btn.textContent = translations.updating;
-                btn.disabled = true;
-                registration.waiting?.postMessage({ action: 'SKIP_WAITING' });
-            });
-        };
-
-        // 當新的 SW 透過 skipWaiting() 取得控制權後，這個事件會被觸發
-        navigator.serviceWorker.addEventListener('controllerchange', () => {
-            console.log('Service Worker 已更新，重新載入頁面...');
-            window.location.reload();
         });
-
-        // 頁面載入時執行註冊
-        window.addEventListener('load', registerServiceWorker);
     }
 });
