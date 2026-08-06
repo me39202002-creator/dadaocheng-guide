@@ -44,6 +44,12 @@ self.addEventListener('activate', event => {
 
 // 3. 攔截請求階段：實作「快取優先，網路備援，並動態更新快取」策略
 self.addEventListener('fetch', event => {
+    // 關鍵修正：永遠不要快取 service-worker.js 檔案本身。
+    // 如果我們快取了這個檔案，瀏覽器將無法偵測到新版本的 Service Worker，從而導致更新失敗或無限迴圈。
+    if (event.request.url.includes('service-worker.js')) {
+        return; // 讓瀏覽器使用其預設的網路行為處理
+    }
+
     event.respondWith(
         caches.match(event.request)
             .then(response => {

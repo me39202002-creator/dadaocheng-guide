@@ -27,7 +27,7 @@ const uiTranslations = {
     }
 };
 
-let currentLang = 'zh';
+let currentLang = safeGetItem('preferredLanguage') || 'zh';
 let currentFilter = 'all';
 let shopsData = [];
 
@@ -96,6 +96,9 @@ async function fetchShopsData() {
             }
         } catch (e) {
             console.warn('快取資料解析失敗:', e);
+            // 清除損壞的快取，避免下次讀取時再次失敗
+            safeSetItem(cacheKey, '');
+            safeSetItem(cacheTimeKey, '');
         }
     }
 

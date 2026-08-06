@@ -80,6 +80,11 @@ const i18n = {
         pol_li_1: "<strong>民生西路派出所：</strong> 靠近迪化街北段與大稻埕碼頭 (<a href='https://www.google.com/maps/search/?api=1&query=台北市政府警察局大同分局民生西路派出所' target='_blank' style='color: #2980b9; text-decoration: underline; white-space: nowrap;'>台北市大同區保安街 47-1 號 📍</a>)",
         pol_li_2: "<strong>延平派出所：</strong> 靠近迪化街南段與永樂市場 (<a href='https://www.google.com/maps/search/?api=1&query=台北市政府警察局大同分局延平派出所' target='_blank' style='color: #2980b9; text-decoration: underline; white-space: nowrap;'>台北市大同區延平北路 1 段 86 號 📍</a>)",
 
+        // PWA 更新通知
+        update_available: "網站有新版本可用！",
+        update_now: "立即更新",
+        updating: "更新中..."
+
 
     },
 
@@ -162,6 +167,11 @@ const i18n = {
         pol_li_1: "<strong>Minsheng West Rd. Police Station:</strong> Near the north end of Dihua St. and Dadaocheng Wharf (<a href='https://www.google.com/maps/search/?api=1&query=Minsheng+West+Road+Police+Station+Taipei' target='_blank' style='color: #2980b9; text-decoration: underline; white-space: nowrap;'>No. 47-1, Bao'an St., Datong Dist., Taipei City 📍</a>)",
         pol_li_2: "<strong>Yanping Police Station:</strong> Near the south end of Dihua St. and Yongle Market (<a href='https://www.google.com/maps/search/?api=1&query=Yanping+Police+Station+Taipei' target='_blank' style='color: #2980b9; text-decoration: underline; white-space: nowrap;'>No. 86, Sec. 1, Yanping N. Rd., Datong Dist., Taipei City 📍</a>)",
 
+        // PWA Update Notification
+        update_available: "A new version is available!",
+        update_now: "Update Now",
+        updating: "Updating..."
+
 
     },
     ja: {
@@ -240,6 +250,11 @@ const i18n = {
         hosp_li_3: "<strong>住所：</strong> <a href='https://www.google.com/maps/search/?api=1&query=臺北市立聯合醫院中興院區' target='_blank' style='color: #2980b9; text-decoration: underline; white-space: nowrap;'>台北市大同区鄭州路145号 📍</a>",
         pol_li_1: "<strong>民生西路派出所：</strong> 迪化街の北側・大稲埕碼頭近く（<a href='https://www.google.com/maps/search/?api=1&query=台北市政府警察局大同分局民生西路派出所' target='_blank' style='color: #2980b9; text-decoration: underline; white-space: nowrap;'>台北市大同区保安街47-1号 📍</a>）",
         pol_li_2: "<strong>延平派出所：</strong> 迪化街の南側・永楽市場近く（<a href='https://www.google.com/maps/search/?api=1&query=台北市政府警察局大同分局延平派出所' target='_blank' style='color: #2980b9; text-decoration: underline; white-space: nowrap;'>台北市大同区延平北路1段86号 📍</a>）",
+
+        // PWA 更新通知
+        update_available: "新しいバージョンが利用可能です！",
+        update_now: "今すぐ更新",
+        updating: "更新中..."
 
 
     },
@@ -320,6 +335,11 @@ const i18n = {
         hosp_li_3: "<strong>주소:</strong> <a href='https://www.google.com/maps/search/?api=1&query=臺北市立聯合醫院中興院區' target='_blank' style='color: #2980b9; text-decoration: underline; white-space: nowrap;'>타이베이시 다퉁구 정저우루 145호 📍</a>",
         pol_li_1: "<strong>민성시루 파출소:</strong> 디화제 북단 및 다다오청 부두 근처 (<a href='https://www.google.com/maps/search/?api=1&query=台北市政府警察局大同分局民生西路派出所' target='_blank' style='color: #2980b9; text-decoration: underline; white-space: nowrap;'>타이베이시 다퉁구 바오안제 47-1호 📍</a>)",
         pol_li_2: "<strong>옌핑 파출소:</strong> 디화제 남단 및 융러 시장 근처 (<a href='https://www.google.com/maps/search/?api=1&query=台北市政府警察局大同分局延平派出所' target='_blank' style='color: #2980b9; text-decoration: underline; white-space: nowrap;'>타이베이시 다퉁구 옌핑베이루 1단 86호 📍</a>)",
+
+        // PWA 업데이트 알림
+        update_available: "새로운 버전을 사용할 수 있습니다!",
+        update_now: "지금 업데이트",
+        updating: "업데이트 중..."
 
 
     }
@@ -416,12 +436,16 @@ document.addEventListener('DOMContentLoaded', () => {
             // 避免重複顯示
             if (document.getElementById('sw-update-notification')) return;
 
+            // 讀取當前語言，以便顯示對應的通知文字
+            const currentLang = document.documentElement.lang || 'zh';
+            const translations = i18n[currentLang] || i18n.zh;
+
             const notification = document.createElement('div');
             notification.id = 'sw-update-notification';
             notification.innerHTML = `
                 <div class="sw-update-content">
-                    <p>網站有新版本可用！</p>
-                    <button id="sw-update-button">立即更新</button>
+                    <p>${translations.update_available}</p>
+                    <button id="sw-update-button">${translations.update_now}</button>
                 </div>
             `;
             document.body.appendChild(notification);
@@ -437,7 +461,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             document.getElementById('sw-update-button').addEventListener('click', () => {
                 const btn = document.getElementById('sw-update-button');
-                btn.textContent = '更新中...';
+                btn.textContent = translations.updating;
                 btn.disabled = true;
                 registration.waiting?.postMessage({ action: 'SKIP_WAITING' });
             });
