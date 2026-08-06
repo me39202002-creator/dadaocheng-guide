@@ -24,17 +24,52 @@ self.addEventListener('install', event => {
     );
 });
 
-// 2. 攔截請求階段：當旅客開啟網頁時，先看快取有沒有，有就直接給，達成離線瀏覽
+// 2. 啟用階段：清除舊版本的快取
+self.addEventListener('activate', event => {
+    const cacheWhitelist = [CACHE_NAME];
+    event.waitUntil(
+        caches.keys().then(cacheNames => {
+            return Promise.all(
+                cacheNames.map(cacheName => {
+                    // 如果快取名稱不在白名單中，就刪除它
+                    if (cacheWhitelist.indexOf(cacheName) === -1) {
+                        console.log('刪除舊快取:', cacheName);
+                        return caches.delete(cacheName);
+                    }
+                })
+            );
+        })
+    );
+});
+
+// 3. 攔截請求階段：實作「快取優先，網路備援，並動態更新快取」策略
 self.addEventListener('fetch', event => {
     event.respondWith(
         caches.match(event.request)
             .then(response => {
-                // 如果快取裡有這個檔案，就直接回傳 (即使沒網路也會通)
+                // 快取命中 - 直接回傳快取中的資源
                 if (response) {
                     return response;
                 }
-                // 如果快取沒有，就正常透過網路去抓
-                return fetch(event.request);
+
+                // 快取未命中 - 透過網路請求資源
+                return fetch(event.request).then(
+                    networkResponse => {
+                        // 檢查是否為有效的回應
+                        if (!networkResponse || networkResponse.status !== 200 || networkResponse.type !== 'basic') {
+                            return networkResponse;
+                        }
+
+                        // 將成功獲取的資源複製一份存入快取
+                        const responseToCache = networkResponse.clone();
+                        caches.open(CACHE_NAME)
+                            .then(cache => {
+                                cache.put(event.request, responseToCache);
+                            });
+                        
+                        return networkResponse;
+                    }
+                );
             })
     );
 });

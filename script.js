@@ -46,113 +46,96 @@ function setupEventListeners() {
     });
 }
 
-// 安全讀取 localStorage
-function safeGetItem(key) {
-    try { return localStorage.getItem(key); } catch (e) { return null; }
-}
-function safeSetItem(key, value) {
-    try { localStorage.setItem(key, value); } catch (e) { console.warn('localStorage 寫入失敗:', e); }
-}
+// 移除重複的 safeGetItem / safeSetItem 函式。
+// 這些輔助函式已在 app-lang.js 中定義。
+// 為了遵循 DRY (Don't Repeat Yourself) 原則，我們應確保 app-lang.js 在此腳本之前載入，
+// 並共用其提供的版本。
 
-// 獲取資料（優先從 GAS，失敗則用本地 data.json，最後用 localStorage 快取）
+// 獲取資料（優先從本地 data.json，再背景更新）
 async function fetchShopsData() {
     const scriptUrl = 'https://script.google.com/macros/s/AKfycbyPN0_5dJN-8pG56ja9KlrIEQoMlV3QQZnIv60TQnL72Z3mx4pR7OLWV_336BEA_gH-/exec';
     const cacheKey = 'dadaocheng_shops_data';
     const cacheTimeKey = 'dadaocheng_shops_time';
-    const CACHE_DURATION = 3600000; // 1 小時（毫秒）
+    const CACHE_DURATION = 3600000; // 1 小時
 
-    let hasDisplayed = false;
-
-    // 嘗試用資料渲染畫面
-    function tryRender(data, source) {
+    function render(data, source) {
         if (!data || !Array.isArray(data) || data.length === 0) return false;
-        shopsData = transformSheetData(data);
+        
+        const transformedData = transformSheetData(data);
+        // 防止資料相同又重新渲染導致畫面閃爍
+        if (JSON.stringify(shopsData) === JSON.stringify(transformedData)) {
+            console.log(`✅ ${source} 資料與當前畫面相同，無需更新。`);
+            displayLatestTimeFromData(shopsData); // 確保時間戳一致
+            return true;
+        }
+
+        shopsData = transformedData;
         if (shopsData.length === 0) return false;
+
         displayLatestTimeFromData(shopsData);
         updateUI();
         console.log(`✅ 使用 ${source} 資料渲染，共 ${shopsData.length} 筆`);
-        hasDisplayed = true;
         return true;
     }
 
-    // ========== 步驟 1：檢查 localStorage 快取（含過期判斷）==========
+    // ========== 步驟 1: 快速顯示初始資料 ==========
+    let initialRenderSource = null;
+    shopGrid.innerHTML = `<p style="text-align:center; color:#666; padding:40px 0;">📡 載入店家資料中...</p>`;
+
+    // 優先從快取讀取
     const cachedDataStr = safeGetItem(cacheKey);
     const cachedTimeStr = safeGetItem(cacheTimeKey);
-    const now = Date.now();
-    const cacheValid = cachedDataStr && cachedTimeStr && (now - parseInt(cachedTimeStr)) < CACHE_DURATION;
-
-    if (cacheValid) {
+    if (cachedDataStr && cachedTimeStr && (Date.now() - parseInt(cachedTimeStr)) < CACHE_DURATION) {
         try {
             const cachedData = JSON.parse(cachedDataStr);
-            tryRender(cachedData, 'localStorage 快取');
+            if (render(cachedData, 'localStorage 快取')) {
+                initialRenderSource = 'cache';
+            }
         } catch (e) {
             console.warn('快取資料解析失敗:', e);
         }
     }
 
-    // 如果沒有有效快取，先顯示載入中
-    if (!hasDisplayed) {
-        shopGrid.innerHTML = `<p style="text-align:center; color:#666; padding:40px 0;">📡 載入店家資料中...</p>`;
-    }
-
-    // ========== 步驟 2：嘗試從 GAS 取得最新資料 ==========
-    let gasData = null;
-    try {
-        const response = await fetch(scriptUrl);
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        gasData = await response.json();
-
-        // 成功取得，更新快取
-        safeSetItem(cacheKey, JSON.stringify(gasData));
-        safeSetItem(cacheTimeKey, String(now));
-
-        // 用新資料更新畫面
-        tryRender(gasData, 'Google Sheets');
-        return;
-
-    } catch (gasError) {
-        console.warn('GAS 載入失敗:', gasError.message);
-    }
-
-    // ========== 步驟 3：GAS 失敗，嘗試本地 data.json ==========
-    if (!hasDisplayed) {
+    // 若快取無效或失敗，則讀取本地 data.json
+    if (!initialRenderSource) {
         try {
             const localResponse = await fetch('data.json');
-            if (localResponse.ok) {
-                const localData = await localResponse.json();
-                if (tryRender(localData, '本地 data.json')) {
-                    safeSetItem(cacheKey, JSON.stringify(localData));
-                    safeSetItem(cacheTimeKey, String(now));
-                    return;
-                }
+            if (!localResponse.ok) throw new Error('本地 data.json 載入失敗');
+            const localData = await localResponse.json();
+            if (render(localData, '本地 data.json')) {
+                initialRenderSource = 'local';
             }
         } catch (localError) {
-            console.warn('本地 data.json 載入失敗:', localError.message);
+            console.warn('本地 data.json 處理失敗:', localError.message);
         }
     }
 
-    // ========== 步驟 4：全部失敗，嘗試過期快取（最後手段）==========
-    if (!hasDisplayed && cachedDataStr) {
-        try {
-            const expiredData = JSON.parse(cachedDataStr);
-            if (tryRender(expiredData, '過期快取')) {
-                console.log('⚠️ 使用過期快取資料（網路可能離線）');
-                return;
-            }
-        } catch (e) {
-            console.warn('過期快取解析失敗:', e);
-        }
-    }
-
-    // ========== 步驟 5：完全無法取得資料 ==========
-    if (!hasDisplayed) {
+    // 如果連本地資料都失敗，顯示錯誤
+    if (!initialRenderSource) {
         shopGrid.innerHTML = `
             <div style="text-align:center; padding:40px 20px; color:#666;">
                 <p style="font-size:1.2rem; margin-bottom:10px;">😅 暫時無法載入資料</p>
                 <p>請檢查網路連線，或稍後再試。</p>
                 <button onclick="location.reload()" style="margin-top:20px; padding:10px 20px; border-radius:20px; border:1px solid var(--primary-color); background:transparent; color:var(--primary-color); cursor:pointer;">重新整理</button>
-            </div>
-        `;
+            </div>`;
+        return; // 中斷後續網路請求
+    }
+
+    // ========== 步驟 2: 在背景靜默地從 Google Sheets 取得最新資料 ==========
+    console.log('📡 背景擷取最新資料...');
+    try {
+        const response = await fetch(scriptUrl);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const gasData = await response.json();
+        
+        // 成功取得新資料後，更新畫面並存入快取
+        if (render(gasData, 'Google Sheets')) {
+            safeSetItem(cacheKey, JSON.stringify(gasData));
+            safeSetItem(cacheTimeKey, String(Date.now()));
+        }
+    } catch (gasError) {
+        console.warn('背景更新 Google Sheets 資料失敗:', gasError.message);
+        // 背景更新失敗，不打擾使用者
     }
 }
 
@@ -242,17 +225,17 @@ function renderFilters() {
 
 // 渲染店家卡片
 function renderCards() {
-    shopGrid.innerHTML = '';
-
     const filteredShops = currentFilter === 'all' 
         ? shopsData 
         : shopsData.filter(shop => shop.category === currentFilter);
 
-    filteredShops.forEach(shop => {
-        if (!shop || !shop.title || !shop.title[currentLang]) return; 
+    if (filteredShops.length === 0) {
+        shopGrid.innerHTML = `<p style="text-align:center; color:#666; padding:40px 0;">這個分類目前沒有店家喔！</p>`;
+        return;
+    }
 
-        const card = document.createElement('div');
-        card.className = 'shop-card';
+    const cardsHTML = filteredShops.map(shop => {
+        if (!shop || !shop.title || !shop.title[currentLang]) return ''; 
 
         // 🌟 1. 將外部變數取出來，並統一使用 escapeHTML 進行跳脫保護
         const safeTitle = escapeHTML(shop.title[currentLang]);
@@ -272,24 +255,27 @@ function renderCards() {
         const searchQuery = encodeURIComponent(shop.title[currentLang] + ' ' + shop.address[currentLang]);
         const mapUrl = `https://www.google.com/maps/search/?api=1&query=${searchQuery}`;
 
-        // 🌟 3. 將已經「消毒」過的安全變數 (safe 字首) 塞進 HTML 結構中
-        card.innerHTML = `
-            <div class="shop-category">${safeCategory}</div>
-            <h3 class="shop-title">${safeTitle}</h3>
-            ${desc ? `<p class="shop-description">${desc}</p>` : ''}
-            <div class="shop-info">
-                <span>📍</span>
-                <a href="${mapUrl}" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline; text-underline-offset: 4px;">
-                    ${safeAddress}
-                </a>
-            </div>
-            <div class="shop-info">
-                <span>⏰</span>
-                <span>${safeHours}</span>
+        // 🌟 3. 將已經「消毒」過的安全變數 (safe 字首) 塞進 HTML 結構中，並回傳字串
+        return `
+            <div class="shop-card">
+                <div class="shop-category">${safeCategory}</div>
+                <h3 class="shop-title">${safeTitle}</h3>
+                ${desc ? `<p class="shop-description">${desc}</p>` : ''}
+                <div class="shop-info">
+                    <span>📍</span>
+                    <a href="${mapUrl}" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline; text-underline-offset: 4px;">
+                        ${safeAddress}
+                    </a>
+                </div>
+                <div class="shop-info">
+                    <span>⏰</span>
+                    <span>${safeHours}</span>
+                </div>
             </div>
         `;
-        shopGrid.appendChild(card);
-    });
+    }).join('');
+
+    shopGrid.innerHTML = cardsHTML;
 }
 
 // 自動從資料庫中比對出最新的時間 (加入時間格式美化)
