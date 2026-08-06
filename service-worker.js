@@ -73,3 +73,11 @@ self.addEventListener('fetch', event => {
             })
     );
 });
+
+// 4. 監聽來自客戶端(網頁)的訊息
+self.addEventListener('message', event => {
+    // 如果收到的訊息是要求 service worker 跳過等待，立即啟用
+    if (event.data && event.data.action === 'SKIP_WAITING') {
+        self.skipWaiting();
+    }
+});
