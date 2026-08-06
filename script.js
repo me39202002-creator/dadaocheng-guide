@@ -46,10 +46,13 @@ function setupEventListeners() {
     });
 }
 
-// 移除重複的 safeGetItem / safeSetItem 函式。
-// 這些輔助函式已在 app-lang.js 中定義。
-// 為了遵循 DRY (Don't Repeat Yourself) 原則，我們應確保 app-lang.js 在此腳本之前載入，
-// 並共用其提供的版本。
+/*
+ * 為了確保 script.js 可以獨立運作，不受載入順序影響，
+ * 我們將 localStorage 安全操作函式放在這裡。
+ * 這能有效避免因 script 載入順序錯誤而導致的 ReferenceError。
+*/
+function safeGetItem(key) { try { return localStorage.getItem(key); } catch (e) { return null; } }
+function safeSetItem(key, value) { try { localStorage.setItem(key, value); } catch (e) { console.warn('localStorage 寫入失敗:', e); } }
 
 // 獲取資料（優先從本地 data.json，再背景更新）
 async function fetchShopsData() {
